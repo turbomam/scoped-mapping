@@ -25,7 +25,7 @@ Installation
 
   python3.9 -m venv sm_venv
   source sm_venv/bin/activate
-  pip3 install pandas requests PyYAML
+  pip3 install pandas PyYAML requests strsimpy
   pip3 install -i https://test.pypi.org/simple/ scoped-mapping
 
 
@@ -34,12 +34,14 @@ Sample code
 
 taking a list of strings as input::
 
+  import scoped_mapping
   searchres_annotations = scoped_mapping.search_get_annotations_wrapper(
       ['Homo-sapiens', 'mus    musculus', 'rattus norvegicus'],
       bad_chars='._-', cat_name='test',  ontoprefix='ncbitaxon', query_fields='label')
 
 taking the enums from a LinkML model as input::
 
+  import scoped_mapping
   my_model_file = 'data/webmap_enums.yaml'
   my_selected_enum = 'Taxon_enum'
 
