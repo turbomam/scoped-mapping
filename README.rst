@@ -43,3 +43,24 @@ taking the enums from a LinkML model as input::
                                              cat_name='unknown', ontoprefix='ncbitaxon')
   my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
   no_acceptable_mappings = scoped_mapping.get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
+  
+----
+
+Deploying
+
+::
+
+  git add ...
+  git commit -m ...
+  git push
+  git tag ...
+  python3.9 -m build --sdist --wheel .
+  
+rm dist/scoped_mapping... (old versions)
+
+::
+
+  twine upload --repository pypitest dist/*
+
+uninstall and reinstall locally (see above)
+
