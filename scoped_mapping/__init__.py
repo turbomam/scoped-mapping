@@ -312,11 +312,14 @@ def rewrite_yaml(model, enum, best_acceptable):
         model['enums'][enum]['permissible_values'][row.raw]['description'] = row.label
 
 
-# my_model_file = '/Users/MAM/webmap_enums.yaml'
-# my_selected_enum = 'Taxon_enum'
-# my_model = read_yaml_model(my_model_file)
-# yaml_mapped = map_from_yaml(my_model, my_selected_enum, print_enums=True, cat_name='unknown', ontoprefix='ncbitaxon')
-# my_best_acceptable = get_best_acceptable(yaml_mapped)
-# no_acceptable_mappings = get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
-# rewrite_yaml(my_model, my_selected_enum, my_best_acceptable)
-# yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
+import scoped_mapping
+import yaml
+import sys
+my_model_file = 'webmap_enums.yaml'
+my_selected_enum = 'Taxon_enum'
+my_model = scoped_mapping.read_yaml_model(my_model_file)
+yaml_mapped = scoped_mapping.map_from_yaml(my_model, my_selected_enum, print_enums=True, cat_name='unknown', ontoprefix='ncbitaxon')
+my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
+no_acceptable_mappings = scoped_mapping.get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
+scoped_mapping.rewrite_yaml(my_model, my_selected_enum, my_best_acceptable)
+yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
