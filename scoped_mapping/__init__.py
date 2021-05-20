@@ -1,9 +1,12 @@
+# import pprint
+
 import requests as requests
 from pkg_resources import get_distribution, DistributionNotFound
 import pandas as pd
 import re
 import urllib
 from strsimpy.cosine import Cosine
+import yaml
 
 try:
     __version__ = get_distribution(__name__).version
@@ -178,6 +181,7 @@ def get_label_like(current_row):
 def get_csr_frame(raw_list, bad_chars=standard_replacement_chars, category_name=standard_cat_name,
                   ontoprefix='', query_fields='', rows_requested=5):
     wo_frame = get_whiteout_frame(raw_list, bad_chars)
+    # get_wo_list returns a unique list
     woed_list = get_wo_list(wo_frame)
     category_search_results_list = search_over_category(category_name, woed_list, ontology_phrase=ontoprefix,
                                                         qf_phrase=query_fields, row_req=rows_requested)
@@ -225,7 +229,7 @@ def merge_and_compare(category_search_results_frame, bulk_label_like):
     for unique_query in unique_queries:
         per_query = search_annotations_merge[search_annotations_merge['query'] == unique_query]
         pqs = per_query.sort_values(by='cosine_dist', ascending=True)
-        cosine_ranks = list(range(1, len(pqs.index)+1))
+        cosine_ranks = list(range(1, len(pqs.index) + 1))
         pqs['cosine_rank'] = cosine_ranks
         reranked.append(pqs)
     reranked = pd.concat(reranked)
@@ -234,10 +238,7 @@ def merge_and_compare(category_search_results_frame, bulk_label_like):
 
 def search_get_annotations_wrapper(raw_list, bad_chars=standard_replacement_chars, cat_name=standard_cat_name,
                                    ontoprefix='', query_fields=''):
-    wo_frame = get_whiteout_frame(raw_list, bad_chars)
-    # get_wo_list returns a unique list after tidying
-    woed_list = get_wo_list(wo_frame)
-    my_category_search_results_frame = get_csr_frame(woed_list, bad_chars, category_name=cat_name,
+    my_category_search_results_frame = get_csr_frame(raw_list, bad_chars, category_name=cat_name,
                                                      ontoprefix=ontoprefix, query_fields=query_fields)
     # prep_for_label_like returns unique combinations of ontologies and term IRIs
     my_label_like_prepped = prep_for_label_like(my_category_search_results_frame)
@@ -247,12 +248,68 @@ def search_get_annotations_wrapper(raw_list, bad_chars=standard_replacement_char
     return merged_and_compared
 
 
+def read_yaml_model(modelfile):
+    with open(modelfile) as file:
+        inner_inferred_model = yaml.load(file, Loader=yaml.FullLoader)
+    return inner_inferred_model
+
+
+def get_avaialbe_enums(model):
+    avaialble_enums = list(model['enums'].keys())
+    avaialble_enums.sort()
+    return avaialble_enums
+
+
+def get_permissible_values(model, enum):
+    epv = list(model['enums'][enum]['permissible_values'].keys())
+    return epv
+
+
+def get_best_acceptable(mappings, max_cosine=0.05):
+    mappings['cosine_dist'] = mappings['cosine_dist'].astype(float)
+    under_max_flag = mappings['cosine_dist'] <= max_cosine
+    best_acceptable = mappings[under_max_flag]
+    ba_raws = list(set(best_acceptable['raw']))
+    ba_raws.sort()
+    accepted_best = []
+    for raw in ba_raws:
+        working = best_acceptable[best_acceptable['raw'] == raw]
+        min_cosine_rank = working['cosine_rank'].min()
+        working = working[working['cosine_rank'] == min_cosine_rank]
+        min_search_rank = working['search_rank'].min()
+        working = working[working['search_rank'] == min_search_rank]
+        accepted_best.append(working)
+    catted_best = pd.concat(accepted_best)
+    return catted_best
+
+
 # # one category or enum at a time
 # # has the advantage of specifying category-specific target ontologies
 # # but what about the performance boost of shared queries?
-# searchres_annotations = search_get_annotations_wrapper(['Homo-sapiens', 'mus    musculus', 'rattus norvegicus'],
-#                                                        bad_chars='._-',
-#                                                        cat_name='test',
-#                                                        ontoprefix='ncbitaxon',
-#                                                        query_fields='label')
 
+def map_from_yaml(model_file, selected_enum, print_enums=False, bad_chars=standard_replacement_chars,
+                  cat_name=standard_cat_name, ontoprefix='', query_fields=''):
+    model = read_yaml_model(model_file)
+    if print_enums:
+        print(get_avaialbe_enums(model))
+    enum_permissible_values = get_permissible_values(model, selected_enum)
+    searchres_annotations = search_get_annotations_wrapper(
+        enum_permissible_values,
+        bad_chars=bad_chars, cat_name=cat_name, ontoprefix=ontoprefix, query_fields=query_fields)
+    return searchres_annotations
+
+# separate functions for yaml or tabular inputs?
+# def get_no_mappings():
+# def get_acceptable_mappings():
+
+# searchres_annotations = scoped_mapping.search_get_annotations_wrapper(
+#     ['Homo-sapiens', 'mus    musculus', 'rattus norvegicus'],
+#     bad_chars='._-', cat_name='test',  ontoprefix='ncbitaxon', query_fields='label')
+
+
+# my_model_file = '/Users/MAM/Documents/gitrepos/linkml-model-enrichment/target/webmap_enums.yaml'
+# my_selected_enum = 'Taxon_enum'
+# yaml_mapped = scoped_mapping.map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
+#                             cat_name='unknown', ontoprefix='ncbitaxon')
+# my_best_acceptable = get_best_acceptable(yaml_mapped)
+# my_best_acceptable.to_csv('xxx.csv')
