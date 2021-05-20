@@ -16,13 +16,17 @@ Dependencies
 - strsimpy>=0.2.0
 - PyYAML>=5.4.1
 
+
+
+
 Installation
 ------------
 ::
 
-  pip3 install -i https://test.pypi.org/simple/ scoped-mapping
   python3.9 -m venv sm_venv
   source sm_venv/bin/activate
+  pip3 install pandas requests PyYAML
+  pip3 install -i https://test.pypi.org/simple/ scoped-mapping
 
 
 Sample code
