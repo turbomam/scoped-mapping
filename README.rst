@@ -44,13 +44,17 @@ taking a list of strings as input::
 taking the enums from a LinkML model as input::
 
   import scoped_mapping
+  import yaml
+  import sys
   my_model_file = 'webmap_enums.yaml'
   my_selected_enum = 'Taxon_enum'
-
-  yaml_mapped = scoped_mapping.map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
-                                             cat_name='unknown', ontoprefix='ncbitaxon')
+  my_model = scoped_mapping.read_yaml_model(my_model_file)
+  yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
+  yaml_mapped = scoped_mapping.map_from_yaml(my_model, my_selected_enum, print_enums=True, cat_name='unknown', ontoprefix='ncbitaxon')
   my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
   no_acceptable_mappings = scoped_mapping.get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
+  scoped_mapping.rewrite_yaml(my_model, my_selected_enum, my_best_acceptable)
+  yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
   
 ----
 
