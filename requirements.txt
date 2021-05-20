@@ -1,0 +1,4 @@
+setuptools~=56.2.0
+pandas~=1.2.4
+requests~=2.25.1
+strsimpy~=0.2.0
