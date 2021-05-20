@@ -25,7 +25,9 @@ Installation
 
   python3.9 -m venv sm_venv
   source sm_venv/bin/activate
-  pip3 install pandas PyYAML requests strsimpy
+  curl https://raw.githubusercontent.com/turbomam/scoped-mapping/main/requirements.txt -o requirements.txt
+  curl https://raw.githubusercontent.com/turbomam/scoped-mapping/main/data/webmap_enums.yaml -o webmap_enums.yaml
+  pip3 install -r requirements.txt
   pip3 install -i https://test.pypi.org/simple/ scoped-mapping
 
 
@@ -42,7 +44,7 @@ taking a list of strings as input::
 taking the enums from a LinkML model as input::
 
   import scoped_mapping
-  my_model_file = 'data/webmap_enums.yaml'
+  my_model_file = 'webmap_enums.yaml'
   my_selected_enum = 'Taxon_enum'
 
   yaml_mapped = scoped_mapping.map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
