@@ -7,11 +7,23 @@ Note that GitHub uses a hypen and PyPI uses an underscore
 
 Dependencies
 ------------
+- Python 3.9?
+- pip3?
+- venv?
+- setuptools>=56.2.0
+- pandas>=1.2.4
+- requests>=2.25.1
+- strsimpy>=0.2.0
+- PyYAML>=5.4.1
 
 Installation
 ------------
+::
 
-``pip3 install -i https://test.pypi.org/simple/ scoped-mapping``
+  pip3 install -i https://test.pypi.org/simple/ scoped-mapping
+  python3.9 -m venv sm_venv
+  source sm_venv/bin/activate
+
 
 Sample code
 -----------
