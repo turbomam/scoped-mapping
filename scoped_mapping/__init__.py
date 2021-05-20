@@ -316,12 +316,13 @@ def get_no_acceptable_mappings(all_mappings, best_acceptables):
 #     bad_chars='._-', cat_name='test',  ontoprefix='ncbitaxon', query_fields='label')
 
 
-# my_model_file = '/Users/MAM/Documents/gitrepos/linkml-model-enrichment/target/webmap_enums.yaml'
+# my_model_file = 'data/webmap_enums.yaml'
 # my_selected_enum = 'Taxon_enum'
 #
-# # yaml_mapped = scoped_mapping.map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
-# #                                            cat_name='unknown', ontoprefix='ncbitaxon')
-# # my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
+# yaml_mapped = scoped_mapping.map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
+#                                            cat_name='unknown', ontoprefix='ncbitaxon')
+# my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
+# no_acceptable_mappings = scoped_mapping.get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
 #
 # yaml_mapped = map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
 #                             cat_name='unknown', ontoprefix='ncbitaxon')
