@@ -298,9 +298,18 @@ def map_from_yaml(model_file, selected_enum, print_enums=False, bad_chars=standa
         bad_chars=bad_chars, cat_name=cat_name, ontoprefix=ontoprefix, query_fields=query_fields)
     return searchres_annotations
 
-# separate functions for yaml or tabular inputs?
-# def get_no_mappings():
-# def get_acceptable_mappings():
+
+# def get_no_mappings
+def get_no_acceptable_mappings(all_mappings, best_acceptables):
+    best_accepted_raws = set(best_acceptables['raw'])
+    all_raws = set(all_mappings['raw'])
+    failure_raws = all_raws - best_accepted_raws
+    frl = list(failure_raws)
+    failure_flag = all_mappings['raw'].isin(frl)
+    # print(failure_flag)
+    failures = all_mappings[failure_flag]
+    return failures
+
 
 # searchres_annotations = scoped_mapping.search_get_annotations_wrapper(
 #     ['Homo-sapiens', 'mus    musculus', 'rattus norvegicus'],
@@ -309,7 +318,15 @@ def map_from_yaml(model_file, selected_enum, print_enums=False, bad_chars=standa
 
 # my_model_file = '/Users/MAM/Documents/gitrepos/linkml-model-enrichment/target/webmap_enums.yaml'
 # my_selected_enum = 'Taxon_enum'
-# yaml_mapped = scoped_mapping.map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
+#
+# # yaml_mapped = scoped_mapping.map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
+# #                                            cat_name='unknown', ontoprefix='ncbitaxon')
+# # my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
+#
+# yaml_mapped = map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
 #                             cat_name='unknown', ontoprefix='ncbitaxon')
 # my_best_acceptable = get_best_acceptable(yaml_mapped)
-# my_best_acceptable.to_csv('xxx.csv')
+#
+# no_acceptable_mappings = get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
+#
+# no_acceptable_mappings.to_csv('xxx.csv')
