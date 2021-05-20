@@ -1,5 +1,5 @@
-# import pprint
 
+import sys
 import requests as requests
 from pkg_resources import get_distribution, DistributionNotFound
 import pandas as pd
@@ -20,9 +20,6 @@ retained_reordered_ols_cols = ['category', 'raw', 'query', 'label', 'iri', 'obo_
                                'ontology_name', 'ontology_prefix', 'search_rank']
 
 ols_annotation_cols = ['iri', 'name', 'scope', 'type']
-
-# merged_cols = ['category', 'raw', 'query', 'name', 'cosine_dist', 'obo_id', 'label',
-#                'search_rank', 'ontology_prefix', 'scope', 'type', 'iri', 'ontology_name']
 
 merged_cols = ['category', 'raw', 'query', 'name', 'cosine_rank', 'cosine_dist', 'obo_id', 'label',
                'search_rank', 'ontology_prefix', 'scope', 'type', 'iri', 'ontology_name']
@@ -287,9 +284,8 @@ def get_best_acceptable(mappings, max_cosine=0.05):
 # # has the advantage of specifying category-specific target ontologies
 # # but what about the performance boost of shared queries?
 
-def map_from_yaml(model_file, selected_enum, print_enums=False, bad_chars=standard_replacement_chars,
+def map_from_yaml(model, selected_enum, print_enums=False, bad_chars=standard_replacement_chars,
                   cat_name=standard_cat_name, ontoprefix='', query_fields=''):
-    model = read_yaml_model(model_file)
     if print_enums:
         print(get_avaialbe_enums(model))
     enum_permissible_values = get_permissible_values(model, selected_enum)
@@ -308,3 +304,19 @@ def get_no_acceptable_mappings(all_mappings, best_acceptables):
     failure_flag = all_mappings['raw'].isin(frl)
     failures = all_mappings[failure_flag]
     return failures
+
+
+def rewrite_yaml(model, enum, best_acceptable):
+    for row in best_acceptable.itertuples(index=True, name='Pandas'):
+        model['enums'][enum]['permissible_values'][row.raw]['meaning'] = row.obo_id
+        model['enums'][enum]['permissible_values'][row.raw]['description'] = row.label
+
+
+# my_model_file = '/Users/MAM/webmap_enums.yaml'
+# my_selected_enum = 'Taxon_enum'
+# my_model = read_yaml_model(my_model_file)
+# yaml_mapped = map_from_yaml(my_model, my_selected_enum, print_enums=True, cat_name='unknown', ontoprefix='ncbitaxon')
+# my_best_acceptable = get_best_acceptable(yaml_mapped)
+# no_acceptable_mappings = get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
+# rewrite_yaml(my_model, my_selected_enum, my_best_acceptable)
+# yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
