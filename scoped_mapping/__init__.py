@@ -306,28 +306,5 @@ def get_no_acceptable_mappings(all_mappings, best_acceptables):
     failure_raws = all_raws - best_accepted_raws
     frl = list(failure_raws)
     failure_flag = all_mappings['raw'].isin(frl)
-    # print(failure_flag)
     failures = all_mappings[failure_flag]
     return failures
-
-
-# searchres_annotations = scoped_mapping.search_get_annotations_wrapper(
-#     ['Homo-sapiens', 'mus    musculus', 'rattus norvegicus'],
-#     bad_chars='._-', cat_name='test',  ontoprefix='ncbitaxon', query_fields='label')
-
-
-# my_model_file = 'data/webmap_enums.yaml'
-# my_selected_enum = 'Taxon_enum'
-#
-# yaml_mapped = scoped_mapping.map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
-#                                            cat_name='unknown', ontoprefix='ncbitaxon')
-# my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
-# no_acceptable_mappings = scoped_mapping.get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
-#
-# yaml_mapped = map_from_yaml(my_model_file, my_selected_enum, print_enums=True,
-#                             cat_name='unknown', ontoprefix='ncbitaxon')
-# my_best_acceptable = get_best_acceptable(yaml_mapped)
-#
-# no_acceptable_mappings = get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
-#
-# no_acceptable_mappings.to_csv('xxx.csv')
