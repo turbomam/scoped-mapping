@@ -1,6 +1,5 @@
-# setuptools>=56.2.0
-# requests>=2.25.1
-# strsimpy>=0.2.0
-# PyYAML>=5.4.1
-# pandas
-
+setuptools>=56.2.0
+requests>=2.25.1
+strsimpy>=0.2.0
+PyYAML>=5.4.1
+pandas
