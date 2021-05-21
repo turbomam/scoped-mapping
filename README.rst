@@ -75,7 +75,7 @@ This requires the riot library from Apache Jena. We don't have a suggested metho
   mkdir bin
   make bin/rdftab
 
-Running subsequent steps may require editing semantic-sql's Makefile. Specifically, invocation of relation-graph should be prepended with ``bin/``. For example:
+Running subsequent steps may require editing semantic-sql's ``Makefile``. Specifically, invocation of relation-graph should be prepended with ``bin/``. For example:
 
 ::
 
