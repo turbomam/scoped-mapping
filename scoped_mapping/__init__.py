@@ -1,12 +1,29 @@
-
-import sys
-import requests as requests
+from datetime import datetime
 from pkg_resources import get_distribution, DistributionNotFound
+from strsimpy.cosine import Cosine
+import numpy as np
+import os
 import pandas as pd
 import re
+import requests as requests
+import sqlite3
+import string
+import sys
 import urllib
-from strsimpy.cosine import Cosine
 import yaml
+from xml.etree import ElementTree
+# import rexpy
+from tdda import rexpy
+
+# TODO
+# import error
+# don't really want to use this anyway
+# use rdftab instead
+# from ontobio.ontol_factory import OntologyFactory
+
+# TODO add logging
+# TODO makefile for obtaining the Biosample harmonized_table.db
+# TODO index
 
 try:
     __version__ = get_distribution(__name__).version
@@ -29,10 +46,6 @@ standard_replacement_chars = '._\\- '
 standard_cat_name = 'unknown'
 
 ols_session = requests.Session()
-
-
-def adder(x, y):
-    return x + y
 
 
 def one_ols_submission(raw_submission, ontology_phrase='', qf_phrase='', row_req=5):
@@ -64,11 +77,8 @@ def one_ols_submission(raw_submission, ontology_phrase='', qf_phrase='', row_req
     #              'rows': 5,
     #              'type': 'class',
     #             'queryFields': 'label'}
-    # pp.pprint(userdata)
     resp = ols_session.get('https://www.ebi.ac.uk/ols/api/search', params=userdata)
     rj = resp.json()
-    # pp.pprint(list(rj.keys()))
-    # pp.pprint(rj['responseHeader'])
     rjf = pd.DataFrame(rj['response']['docs'])
     rjf_rows = len(rjf.index)
     if rjf_rows < 1:
@@ -76,7 +86,6 @@ def one_ols_submission(raw_submission, ontology_phrase='', qf_phrase='', row_req
         blank_row = pd.Series([''] * col_count)
         rjf = rjf.append(blank_row, ignore_index=True)
         rjf.columns = ols_cols
-    # clogger.info(rjf)
     return rjf
 
 
@@ -312,14 +321,293 @@ def rewrite_yaml(model, enum, best_acceptable):
         model['enums'][enum]['permissible_values'][row.raw]['description'] = row.label
 
 
-import scoped_mapping
-import yaml
-import sys
-my_model_file = 'webmap_enums.yaml'
-my_selected_enum = 'Taxon_enum'
-my_model = scoped_mapping.read_yaml_model(my_model_file)
-yaml_mapped = scoped_mapping.map_from_yaml(my_model, my_selected_enum, print_enums=True, cat_name='unknown', ontoprefix='ncbitaxon')
-my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
-no_acceptable_mappings = scoped_mapping.get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
-scoped_mapping.rewrite_yaml(my_model, my_selected_enum, my_best_acceptable)
-yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
+def get_sqlite_con(sqlite_file):
+    sqlite_con = sqlite3.connect(sqlite_file)
+    return sqlite_con
+
+
+def get_package_dictionary():
+    bio_s_columns = ['Name', 'DisplayName', 'ShortName', 'EnvPackage', 'EnvPackageDisplay', 'NotAppropriateFor',
+                     'Description', 'Example']
+    bio_s_df = pd.DataFrame(columns=bio_s_columns)
+    bio_s_xml = requests.get('https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml', allow_redirects=True)
+    bio_s_root = ElementTree.fromstring(bio_s_xml.content)
+    for node in bio_s_root:
+        rowdict = {}
+        for framecol in bio_s_columns:
+            temp = node.find(framecol).text
+            temptext = ''
+            if temp is not None:
+                temptext = temp
+            rowdict[framecol] = temptext
+        bio_s_df = bio_s_df.append(rowdict, ignore_index=True)
+    return bio_s_df
+
+
+def timed_query(query, connection, print_timing=False):
+    start_time = datetime.now()
+    if print_timing: print(start_time)
+    result = pd.read_sql(query, connection)
+    end_time = datetime.now()
+    duration = end_time - start_time
+    if print_timing: print(end_time)
+    if print_timing: print(duration)
+    return [result, duration]
+
+
+def make_tidy_col(data_frame, col_in, col_out):
+    punct_regex = re.compile('[%s]' % re.escape(string.punctuation))
+    data_frame[col_out] = data_frame[col_in].str.lower()
+    data_frame[col_out] = data_frame[col_out].str.replace(punct_regex, ' ', regex=True)
+    data_frame[col_out] = data_frame[col_out].str.replace(' +', ' ', regex=True)
+    data_frame[col_out] = data_frame[col_out].str.strip()
+    return data_frame
+
+
+def add_unique_to_list(uniquelist, non_unique):
+    a = list(set(list(uniquelist)))
+    b = list(set(list(non_unique)))
+    print(a)
+    print(b)
+    c = a + b
+    c = list(set(list(c)))
+    c.sort()
+    return c
+
+
+def discover_id_pattern(example_ids):
+    extracted = rexpy.extract(example_ids)
+    extracted = extracted[0]
+    extracted = re.sub('^\\^', '', extracted)
+    extracted = re.sub('\\$$', '', extracted)
+    return extracted
+
+
+def add_prefix_col(dataframe, col_with_prefixes, prefix_col):
+    term_list = dataframe[col_with_prefixes].str.split(':')
+    prefixes = [item[0] for item in term_list]
+    dataframe[prefix_col] = prefixes
+    return dataframe
+
+
+def get_multi_term_patterns(dataframe, col_with_prefixes, prefix_col):
+    prefixes = dataframe[prefix_col]
+    unique_prefixes = list(set(prefixes))
+    unique_prefixes.sort()
+    inner_id_patterns = {}
+    for one_unique in unique_prefixes:
+        temp = list(ids_from_envo[col_with_prefixes][ids_from_envo[prefix_col] == one_unique])
+        extracted = rexpy.extract(temp)
+        extracted = extracted[0]
+        extracted = re.sub('^\\^', '', extracted)
+        extracted = re.sub('\\$$', '', extracted)
+        inner_id_patterns[one_unique] = extracted
+    return inner_id_patterns
+
+
+def decompose_series(series_to_decompose, id_pattern):
+    extracts = series_to_decompose.to_frame()
+    extracts.columns = ['string']
+    for_capture = '(' + id_pattern + ')'
+    p = re.compile(for_capture)
+    extracts['extract'] = extracts['string'].str.extract(p)
+    extracts = extracts.fillna('')
+    for_replacement = '\\[?' + id_pattern + '\\]?'
+    extracts['remaining_string'] = extracts['string'].str.replace(for_replacement, '', regex=True)
+    extracts = make_tidy_col(extracts, 'remaining_string', 'remaining_tidied')
+    return extracts
+
+
+# def extract_with_pattern(dataframe, col_to_extract, pattern_name):
+#     series_decomposition = decompose_series(dataframe[col_to_extract], id_patterns[pattern_name])
+#     return series_decomposition
+
+
+def env_package_nomralizastion(dataframe, col_to_normalize, pattern_name):
+    dataframe[['lhs', 'rhs']] = dataframe[col_to_normalize].str.split('.', expand=True)
+    flag = dataframe['rhs'].apply(lambda x: x is None)
+    # antiflag = ~flag
+    temp = dataframe['lhs'][flag]
+    dataframe.loc[flag, 'rhs'] = temp
+    dataframe.loc[flag, 'lhs'] = ''
+    series_decomposition = decompose_series(dataframe['rhs'], id_patterns[pattern_name])
+    print(series_decomposition)
+    dataframe = pd.concat([dataframe, series_decomposition], axis=1)
+    # dataframe.append(series_decomposition, ignore_index=True)
+    # extracted = extract_with_pattern(dataframe, 'rhs', pattern_name)
+    return dataframe
+
+
+def add_overrides(dataframe, incol, outcol, override_dict):
+    dataframe[outcol] = dataframe[incol]
+    print(dataframe)
+    for key, value in override_dict.items():
+        # print(key, value)
+        flag = dataframe[incol] == key
+        dataframe.loc[flag, outcol] = value
+    return dataframe
+
+
+def flag_canonical(dataframe, incol, outcol, canonicals):
+    print(dataframe[incol])
+    print(canonicals)
+    dataframe[outcol] = False
+    flag = dataframe[incol].isin(canonicals)
+    dataframe.loc[flag, outcol] = True
+    return dataframe
+
+
+# # DATA
+# biosample_sqlite_file = "/Users/MAM/Documents/gitrepos/biosample-analysis/target/harmonized_table.db"
+# # TODO process these as a list?
+# ncbitaxon_sqlite_file = "/Users/MAM/Documents/gitrepos/semantic-sql/db/ncbitaxon.db"
+# envo_sqlite_file = "/Users/MAM/Documents/gitrepos/semantic-sql/db/envo.db"
+# ncbitaxon_cnx = sqlite3.connect(ncbitaxon_sqlite_file)
+# envo_cnx = sqlite3.connect(envo_sqlite_file)
+#
+# # Sample of the data we're working with
+# biosample_cnx = sqlite3.connect(biosample_sqlite_file)
+# q = """
+# select
+#     id,
+#     env_package,
+#     package,
+#     package_name,
+#     host_taxid,
+#     taxonomy_id,
+#     env_broad_scale,
+#     env_local_scale,
+#     env_medium
+#     from biosample b
+# limit 10
+# """
+# biosample_first_ten = pd.read_sql(q, biosample_cnx)
+#
+# # Get the canonical checklist and package terms from NCBI
+# # This document doesn't do a very good job of differentiating checklists (MIMAG, MIMARKS, etc.)
+# # from packages (soil, water, etc.)
+# package_dictionary = get_package_dictionary()
+# print(package_dictionary)
+# package_dictionary.to_sql('package_dictionary', biosample_cnx, if_exists='replace', index=False)
+#
+# # Do the Biosample checklist/package fields match any of the cannonical values?
+# # How many Biosample rows are there?
+# q = """
+# select count(*) as biosample_row_count
+# from biosample b
+# """
+# [biosample_row_count, query_duration] = timed_query(q, biosample_cnx, print_timing=False)
+# print(biosample_row_count)
+# print(query_duration)
+#
+# # How many of those rows can be inner-joined with the canonical checklists/packages?
+# # Specifically, joining biosample.package_name = package_dictionary.DisplayName
+# # TODO add indexing to docs and or makefile
+# # create index biosample_package_name_idx on biosample(package_name);
+# # create index package_dictionary_DisplayName_idx on package_dictionary(DisplayName);
+# # create index biosample_package_idx on biosample(package);
+# # create index biosample_p_pn_idx on biosample(package, package_name);
+# q = """
+# select
+#     count(*) as cannonical_package_name_count
+# from
+#     biosample b
+# inner join package_dictionary pd on
+#     b.package_name = pd.DisplayName
+# """
+# [cannonical_package_name_count, query_duration] = timed_query(q, biosample_cnx, print_timing=True)
+# print(cannonical_package_name_count)
+# print(query_duration)
+#
+# # What do the combinations of package and package_name look like in the Biosample dataset?
+# q = """
+# select
+#     package,
+#     package_name,
+#     count(*) as count
+# from
+#     biosample b
+# group by
+#     package ,
+#     package_name
+# order by
+#     package ,
+#     package_name
+# """
+# [package_name_combos, query_duration] = timed_query(q, biosample_cnx, print_timing=True)
+# print(package_name_combos)
+# print(query_duration)
+#
+# # What about the Biosample env_package values?
+# # Are they also a small, highly regular set?
+# q = """
+# select
+#     env_package,
+#     count(*) as count
+# from
+#     biosample b
+# group by
+#     env_package
+# order by
+#     count(*) desc
+# """
+# [env_package_count, query_duration] = timed_query(q, biosample_cnx)
+# print(env_package_count)
+# print(query_duration)
+#
+# # env_package is going to need some cleanup
+# # First, get a set of all canonical env_package values
+# package_dictionary = make_tidy_col(package_dictionary, 'EnvPackage', 'eptidy')
+# package_dictionary = make_tidy_col(package_dictionary, 'EnvPackageDisplay', 'epdtidy')
+# # update in sqlite
+# package_dictionary.to_sql('package_dictionary', biosample_cnx, if_exists='replace', index=False)
+# valid_combo = []
+# valid_combo = add_unique_to_list(valid_combo, package_dictionary['eptidy'])
+# valid_combo = add_unique_to_list(valid_combo, package_dictionary['epdtidy'])
+# print(valid_combo)
+#
+# # determine ID patterns
+# q = """
+# select
+#     distinct stanza
+#     from statements s
+# where
+#     predicate = 'rdf:type'
+#     and "object" = 'owl:Class'
+#     and stanza = subject"""
+# # include non-envo IDs that come from envo?
+# [ids_from_envo, query_duration] = timed_query(q, envo_cnx)
+# ids_from_envo = add_prefix_col(ids_from_envo, 'stanza', 'prefix')
+# id_patterns = get_multi_term_patterns(ids_from_envo, 'stanza', 'prefix')
+#
+# env_package_normalized = env_package_nomralizastion(env_package_count, 'env_package', 'ENVO')
+#
+# env_package_overrides = {
+#     'built environment': 'built',
+#     'misc environment': 'miscellaneous',
+#     'missing': 'no environmental package',
+#     'unknown': 'no environmental package',
+#     'default': 'no environmental package',
+#     'unspecified': 'no environmental package',
+#     'not available': 'no environmental package',
+#     'not collected': 'no environmental package' \
+#     }
+#
+# env_package_normalized = add_overrides(env_package_normalized, 'remaining_tidied', 'ep_override', env_package_overrides)
+#
+# env_package_normalized = flag_canonical(env_package_normalized, 'ep_override', 'is_canonical', valid_combo)
+#
+# env_package_normalized.to_sql('env_package_normalized', biosample_cnx, if_exists='replace', index=False)
+
+# import scoped_mapping
+# import yaml
+# import sys
+# my_model_file = 'webmap_enums.yaml'
+# my_selected_enum = 'Taxon_enum'`
+# my_model = scoped_mapping.read_yaml_model(my_model_file)
+# yaml_mapped = scoped_mapping.map_from_yaml(my_model, my_selected_enum, print_enums=True,
+#                                            cat_name='unknown', ontoprefix='ncbitaxon')
+# my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
+# no_acceptable_mappings = scoped_mapping.get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
+# scoped_mapping.rewrite_yaml(my_model, my_selected_enum, my_best_acceptable)
+# yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
