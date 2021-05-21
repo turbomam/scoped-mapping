@@ -1,0 +1,14 @@
+OLD NOTES
+
+build ncbitaxon with semantic sql for entailed edges
+
+  requires lots of RAM
+ 
+doesn't require standalone instalations of rdftab or relation-graph any more
+doesnt require robot or export ROBOT_JAVA_ARGS=-Xmx24G anymore
+----
+
+
+
+
+
