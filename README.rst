@@ -3,7 +3,7 @@ scoped-mapping
 
 When mapping input strings from column/field ``X`` in some datasource, consider the values in column/field ``Y`` to determine what ontology to map to.
 
-Note that GitHub uses a hypen and PyPI uses an underscore
+Note that GitHub uses a hyphen and PyPI uses an underscore
 
 Dependencies
 ------------
@@ -56,9 +56,50 @@ taking the enums from a LinkML model as input::
   scoped_mapping.rewrite_yaml(my_model, my_selected_enum, my_best_acceptable)
   yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
   
-----
+
+
+Scoping mappings based on subsets of NCBItaxon
+----------------------------------------------
+
+One way to do subsetting or scoping is to check taxon values to see if they represent subclasses of some parent. For example, the NCBI Biosample metadata collection has MIxS triads (broad, narrow and medium) that could me mapped to ENVO terms in many cases. But ENVO might not be appropriate for cultured samples or samples that were taken from a multicellular organism. One way to check this is by looking for transitive subclasses in  NCBItaxon. There are numerous ways to do that, but they are all generally computationally expensive.
+
+Here, we use rdftab and relation-graph (via semantic-sql) to infer those transitive subClassOf relationships and load them into an SQLite database. Building this database requires lots of RAM and roughly 10 GB of disk space, but after that 
+
+This requires the riot library from Apache Jena. We don't have a suggested method for installing that into Windows or Linux yet. On MacOS, Jena can easily be installed with homebrew https://brew.sh/
+
+::
+
+  brew install jena
+  git clone git@github.com:cmungall/semantic-sql.git
+  cd semantic-sql
+  mkdir bin
+  make bin/rdftab
+
+Running subsequent steps may require editing semantic-sql's Makefile. Specifically, invocation of relation-graph should be prepended with ``bin/``. For example:
+
+::
+
+  # ---
+  # Inferences
+  # ---
+  # We use relation-graph
+  inferences/%-inf.ttl: owl/%.owl
+          bin/relation-graph 
+        
+etc.
+
+
+``make bin/relation-graph``
+
+Use as much RAM as possible. Otherwise inferring edges in NCBItaxon will be slow.
+
+::
+
+  export JAVA_OPTS=-Xmx24G
+  make db/ncbitaxon.db
 
 Deploying
+---------
 
 ::
 
