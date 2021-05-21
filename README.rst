@@ -67,9 +67,10 @@ Here, we use rdftab and relation-graph (via semantic-sql) to infer those transit
 
 This requires the riot library from Apache Jena. We don't have a suggested method for installing that into Windows or Linux yet. On MacOS, Jena can easily be installed with homebrew https://brew.sh/
 
+``brew install jena``
+
 ::
 
-  brew install jena
   git clone git@github.com:cmungall/semantic-sql.git
   cd semantic-sql
   mkdir bin
