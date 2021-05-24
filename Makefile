@@ -25,6 +25,7 @@ harmonized_table.db: /tmp/htdb_fileId
 	# test for existence approach
 	[ ! -e /tmp/gdcookie ] || rm /tmp/gdcookie
 	[ ! -e /tmp/htdb_fileId ] || rm /tmp/htdb_fileId
+	sqlite3 target/harmonized_table.db < ht_indicies.sql
 
 semantic-sql:
 	# requires Apache Jena's riot library
