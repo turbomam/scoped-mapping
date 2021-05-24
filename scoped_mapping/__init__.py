@@ -762,8 +762,8 @@ def flag_canonical(dataframe, incol, outcol, canonicals):
 # [mapping_candidates, query_duration] = timed_query(q, biosample_cnx)
 # print(mapping_candidates)
 #
-# # The Biosample format allows for pipe-deimited environmental package lists
-# # Seperate those out into their components
+# # The Biosample format allows for pipe-delimited environmental package lists
+# # Separate those out into their components
 # multi_frames = []
 # for row in mapping_candidates.itertuples(index=True, name='Pandas'):
 #     split_check = row.env_broad_scale
