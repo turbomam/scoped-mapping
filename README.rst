@@ -34,31 +34,7 @@ Installation
 Sample code
 -----------
 
-Taking a list of strings as input::
-
-  import scoped_mapping
-  searchres_annotations = scoped_mapping.search_get_annotations_wrapper(
-      ['Homo-sapiens', 'mus    musculus', 'rattus norvegicus'],
-      bad_chars='._-', cat_name='test',  ontoprefix='ncbitaxon', query_fields='label')
-
-Taking the enums from a LinkML model as input::
-
-  import scoped_mapping
-  import yaml
-  import sys
-  my_model_file = 'webmap_enums.yaml'
-  my_selected_enum = 'Taxon_enum'
-  my_model = scoped_mapping.read_yaml_model(my_model_file)
-  yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
-  yaml_mapped = scoped_mapping.map_from_yaml(my_model, my_selected_enum, print_enums=True, cat_name='unknown', ontoprefix='ncbitaxon')
-  
-Finding the best matches, reporting the faioures, and fedding the best matches back into the LinkML model::
-
-  my_best_acceptable = scoped_mapping.get_best_acceptable(yaml_mapped)
-  no_acceptable_mappings = scoped_mapping.get_no_acceptable_mappings(yaml_mapped, my_best_acceptable)
-  scoped_mapping.rewrite_yaml(my_model, my_selected_enum, my_best_acceptable)
-  yaml.safe_dump(my_model, sys.stdout, default_flow_style=False)
-  
+See Jupyter Notebooks  
 
 
 Scoping mappings based on subsets of NCBItaxon
