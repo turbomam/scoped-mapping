@@ -451,13 +451,14 @@ def decompose_series(series_to_decompose, id_pattern):
 #     # extracted = extract_with_pattern(dataframe, 'rhs', pattern_name)
 #     return dataframe
 
+
 def env_package_nomralizastion(dataframe, col_to_normalize, pattern_name, id_replacement_rule):
     dataframe[['lhs', 'rhs']] = dataframe[col_to_normalize].str.split('.', expand=True)
     flag = dataframe['rhs'].apply(lambda x: x is None)
     temp = dataframe['lhs'][flag]
     dataframe.loc[flag, 'rhs'] = temp
     dataframe.loc[flag, 'lhs'] = ''
-    series_decomposition = decompose_series(dataframe['rhs'], id_patterns[pattern_name])
+    series_decomposition = decompose_series(dataframe['rhs'], id_replacement_rule)
     dataframe = pd.concat([dataframe, series_decomposition], axis=1)
     return dataframe
 
