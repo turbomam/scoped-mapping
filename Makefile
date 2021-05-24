@@ -25,3 +25,34 @@ harmonized_table.db: /tmp/htdb_fileId
 	# test for existence approach
 	[ ! -e /tmp/gdcookie ] || rm /tmp/gdcookie
 	[ ! -e /tmp/htdb_fileId ] || rm /tmp/htdb_fileId
+
+semantic-sql:
+	# requires Apache Jena's riot library
+	# following MacOS homebrew installation approach
+	git clone git@github.com:cmungall/semantic-sql.git
+	cd semantic-sql ; mkdir bin ; \
+		sed -i .bak 's^relation-graph --ontology-file^bin/relation-graph --ontology-file^' Makefile ; \
+		make bin/rdftab ; \
+		make bin/relation-graph; \
+		brew install jena
+
+semantic-sql/db/ncbitaxon.db: semantic-sql
+	date
+	export JAVA_OPTS=-Xmx24G ; \
+	cd semantic-sql ; \
+	make db/ncbitaxon.db
+	date
+
+semantic-sql/db/envo.db: semantic-sql
+	date
+	export JAVA_OPTS=-Xmx24G ; \
+	cd semantic-sql ; \
+	make db/envo.db
+	date
+
+.PHONY all: semantic-sql/db/ncbitaxon.db semantic-sql/db/envo.db
+
+clean:
+	rm -rf harmonized_table.db
+	rm -rf semantic-sql
+
