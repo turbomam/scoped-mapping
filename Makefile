@@ -1,0 +1,27 @@
+htdb_fileId = 1r_FOSBBNa5qXAd3Upu2V--VdivlVehL3
+htdb_fileName = target/harmonized_table.db.gz
+/tmp/htdb_fileId:
+	# get code for confirming download of large file without virus scanning
+	# TODO switch to using temporary files instead of named files that somebody else might delete or overwrite
+	[ ! -e /tmp/gdcookie ] || rm /tmp/gdcookie
+	[ ! -e /tmp/htdb_fileId ] || rm /tmp/htdb_fileId
+	curl -sc /tmp/gdcookie "https://drive.google.com/uc?export=download&id=$(htdb_fileId)" > /dev/null; \
+	awk '/_warning_/ {print $$NF}' /tmp/gdcookie > /tmp/htdb_fileId
+
+harmonized_table.db: /tmp/htdb_fileId
+# gets a gzipped SQLite database
+# that was derived from biosample metadata records
+# that have a "harmonized name" field
+# in ftp://ftp.ncbi.nlm.nih.gov/biosample/biosample_set.xml.gz
+# via Google Drive
+	$(eval gc4m=$(shell cat /tmp/htdb_fileId))
+	curl -Lb /tmp/gdcookie "https://drive.google.com/uc?export=download&confirm=$(gc4m)&id=$(htdb_fileId)" -o $(htdb_fileName)
+	# is force really a good idea here?
+	# or just make another rule?
+	# does Bill already have one?
+	ls -lh target/harmonized_table.db*
+	gunzip -f $(htdb_fileName)
+	ls -lh target/harmonized_table.db*
+	# test for existence approach
+	[ ! -e /tmp/gdcookie ] || rm /tmp/gdcookie
+	[ ! -e /tmp/htdb_fileId ] || rm /tmp/htdb_fileId
