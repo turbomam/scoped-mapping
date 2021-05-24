@@ -5,6 +5,7 @@ PyYAML>=5.4.1
 pandas>=1.2.4
 numpy>=1.20.3
 tdda>=1.0.32
+notebook
 
 # ontobio~=2.7.3
 # rexpy~=0.0.0
