@@ -5,17 +5,7 @@ When mapping input strings from column/field ``X`` in some datasource, consider 
 
 Note that GitHub uses a hyphen and PyPI uses an underscore
 
-Dependencies
-------------
-- Python 3.9?
-- pip3?
-- venv?
-- setuptools>=56.2.0
-- pandas>=1.2.4
-- requests>=2.25.1
-- strsimpy>=0.2.0
-- PyYAML>=5.4.1
-
+Currently compatible with MacOS. Requires the riot library from Apache Jena. ``make all`` uses homebrew for installing Jena, but does not install homebrew.
 
 
 
@@ -29,6 +19,8 @@ Installation
   curl https://raw.githubusercontent.com/turbomam/scoped-mapping/main/data/webmap_enums.yaml -o webmap_enums.yaml
   pip3 install -r requirements.txt
   pip3 install -i https://test.pypi.org/simple/ scoped-mapping
+  make all
+  
 
 
 Sample code
