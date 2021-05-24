@@ -624,232 +624,234 @@ def flag_canonical(dataframe, incol, outcol, canonicals):
 # env_package_normalized.to_sql('env_package_normalized', biosample_cnx, if_exists='replace', index=False)
 # print(query_duration)
 
-# What do the successful normalizations look like?
-q = """
-select
-    env_package,
-    count,
-    lhs,
-    extract,
-    ep_override
-from
-    env_package_normalized
-where
-    is_canonical = 1
-"""
-[successful_normalizastions, query_duration] = timed_query(q, biosample_cnx)
-print(successful_normalizastions)
-print(query_duration)
+# ---- DONE-ISH?
 
-# Are there any normalization failures?
-q = """
-select
-    env_package,
-    count,
-    lhs,
-    extract,
-    ep_override
-from
-    env_package_normalized
-where
-    is_canonical = 0
-"""
-[normalizastion_failures, query_duration] = timed_query(q, biosample_cnx)
-print(normalizastion_failures)
-print(query_duration)
-
-# utilizing ncbtitaxon
-# specifically, flag the biosamples whose taxon_id indicates they are an unclassified entity
-# ignoring the others will throw out samples OF multicellular organisms, like fruit flies
-# Add previous notes about what kinds of samples are missed by this bifurcation
-# like bacteria.unclassified_bacteria
-
-q = """
-select
-    distinct s.subject
-from
-    entailed_edge ee
-join statements s on
-    ee.subject = s.subject
-where
-    ee.predicate = 'rdfs:subClassOf'
-    and ee.object = 'NCBITaxon:2787823'
-    and s.predicate = 'rdfs:label'
-"""
-[unclassified_taxa, query_duration] = timed_query(q, ncbitaxon_cnx)
-# unclassified_taxa['bare_id'] = unclassified_taxa['subject'].str.replace('NCBITaxon:', '', regex=True)
-# unclassified_taxa = unclassified_taxa[['bare_id']]
-# unclassified_taxa.columns = ['bare_id']
-unclassified_taxa['unclassified'] = True
-print(unclassified_taxa)
-print(query_duration)
-
-# SLOW
-# CHECK INDICES
-# Get the taxonomy_id values from the Biosamples
-q = """
-select
-    taxonomy_id biosample_taxid,
-    count(*) as count
-from
-    biosample b
-group by
-    taxonomy_id
-order by
-    count(*) desc
-"""
-[biosample_tax_id_counts, query_duration] = timed_query(q, biosample_cnx)
-biosample_tax_id_counts['curie'] = 'NCBITaxon:' + biosample_tax_id_counts['biosample_taxid'].astype(str)
-
-# Merge the two taxon id datasets
-# I.e. flag the the Biosample records whose taxonomy_id field belongs to a subclass of 'unclassified entries'.
-biosample_tax_id_counts = biosample_tax_id_counts.merge(unclassified_taxa, left_on='curie',
-                                                        right_on='subject', how='left')
-biosample_tax_id_counts.unclassified.fillna(False, inplace=True)
-print(query_duration)
-
-# should really add labels to all of them
-q = """
-select
-    subject ,
-    value
-from statements
-where
-    predicate = 'rdfs:label' and subject = stanza
-"""
-[all_tax_labels, query_duration] = timed_query(q, ncbitaxon_cnx)
-
-biosample_tax_id_counts = biosample_tax_id_counts.merge(all_tax_labels, left_on='curie',
-                                                        right_on='subject', how='left')
-
-biosample_tax_id_counts = biosample_tax_id_counts[['curie', 'biosample_taxid', 'count', 'unclassified', 'value']]
-biosample_tax_id_counts.columns = ['curie', 'biosample_taxid', 'count', 'unclassified', 'label']
-print(biosample_tax_id_counts)
-print(query_duration)
-biosample_tax_id_counts.to_sql('biobiosample_tax_id_counts', biosample_cnx, if_exists='replace', index=False)
-
-# Almost all of the taxa that are common in th biosample collection are either unclassified/metagenomes
-# or easily recognized cellular organisms
-# exceptions include:
-# 32630 = synthetic construct (other entries; other sequences; artificial sequences)
-#     'other entries' would add 16k rows on top of the 1k 'unclassified entities'
-#     metagenomes account for 331 of the 'unclassified entities'
-#     there are also a small number of uncultured/unclassified microorganisms in the biosample dataset
-# 77133 = uncultured bacterium (cellular organisms; Bacteria; environmental samples)
-#     'cellular organisms' would add 2M rows on top of the 1k 'unclassified entities'
-#     'cellular organisms; Bacteria; environmental samples' adds 26k
-
-# Get a table of scoped mixs annotations to be mapped to ontology classes.
-biosample_col_to_map = 'env_broad_scale'
-scoping_col = 'env_package_normalized.ep_override'
-scoping_value = 'water'
-# In this case, the scoping includes an inner join requirement for 'unclassified entities'
-
-q = 'select ' + biosample_col_to_map + """, count(*) as count
-from
-    biosample b
-join env_package_normalized on
-    b.env_package = env_package_normalized.env_package
-inner join biobiosample_tax_id_counts stic on
-    b.taxonomy_id = stic.biosample_taxid
-where """ + scoping_col + " = '" + scoping_value + \
-    "' group by " + biosample_col_to_map + """
-order by
-    count(*) desc"""
-[mapping_candidates, query_duration] = timed_query(q, biosample_cnx)
-print(mapping_candidates)
-
-# The Biosample format allows for pipe-deimited environmental package lists
-# Seperate those out into their components
-multi_frames = []
-for row in mapping_candidates.itertuples(index=True, name='Pandas'):
-    split_check = row.env_broad_scale
-    if split_check is None:
-        split_check = ''
-    splitted = pd.Series(split_check.split("|"))
-    splitted_count = len(splitted)
-    repeated = [split_check] * splitted_count
-    repeated = pd.Series(repeated)
-    as_frame = pd.DataFrame(dict(repeated=repeated, splitted=splitted)).reset_index()
-    multi_frames.append(as_frame)
-concat_frame = pd.concat(multi_frames)
-concat_frame = concat_frame[['repeated', 'splitted']]
-mapping_candidates = mapping_candidates.merge(concat_frame, left_on='env_broad_scale', right_on='repeated', how='left')
-print(mapping_candidates)
-
-# Now try to extract ontology terms that are already present
-candidate_series_decomposition = decompose_series(mapping_candidates['splitted'], id_patterns[target_onto_prefix])
-mapping_candidates = pd.concat([mapping_candidates, candidate_series_decomposition], axis=1)
-
-# And join the extracted IDs with their labels
-ontodb = '/Users/MAM/Documents/gitrepos/semantic-sql/db/' + target_onto_prefix.lower() + '.db'
-ontocon = sqlite3.connect(ontodb)
-q = """
-select
-    subject ,
-    value
-from
-    statements s
-where
-    predicate = 'rdfs:label'
-"""
-[onto_labels, query_duration] = timed_query(q, ontocon)
-mapping_candidates = mapping_candidates.merge(onto_labels, left_on='extract', right_on='subject', how='left')
-
-# Use cosine string distance to see if the labels match
-# I.e. the labels claimed by the Biosample data set and the labels asserted in the ontology
-# if they're close enough, consider the assigned ID legit
-# how close is close enough?
-my_cosine_obj = Cosine(1)
-mapping_candidates.value = mapping_candidates.value.fillna('')
-mapping_candidates['cosine'] = mapping_candidates.apply(
-    lambda my_row: my_cosine_obj.distance(my_row['remaining_tidied'].lower(), my_row['value'].lower()), axis=1)
-
-# Get ready to join in the other direction
-# I.e. trying to find ontology term IDs based on perfect label matches. Be careful not to reuse column names.
-mapping_candidates.columns = ['env_broad_scale', 'count', 'repeated', 'splitted', 'string', 'extract',
-                              'remaining_string', 'remaining_tidied', 'term_id', 'lab_from_id', 'lfi_cosine']
-mapping_candidates = mapping_candidates.merge(onto_labels, left_on='remaining_tidied', right_on='value', how='left')
-mapping_candidates.columns = ['env_broad_scale', 'count', 'repeated', 'splitted', 'string', 'extract',
-                              'remaining_string', 'remaining_tidied', 'term_id', 'lab_from_id',
-                              'lfi_cosine', 'term_id_from_lab', 'value']
-
-# Record a consensus
-# If either merging on codes or labels was successful.
-# cosines for first pass check on assigned IDs still haven't been filtered?
-mapping_candidates['consensus_id'] = mapping_candidates['term_id']
-mapping_candidates['consensus_id'][mapping_candidates['consensus_id'].isnull()] = \
-    mapping_candidates['term_id_from_lab'][mapping_candidates['consensus_id'].isnull()]
-mapping_candidates['consensus_lab'] = mapping_candidates['lab_from_id']
-mapping_candidates['consensus_lab'][mapping_candidates['consensus_lab'] == ''] = \
-    mapping_candidates['value'][mapping_candidates['consensus_lab'] == '']
-mapping_candidates.to_sql('mapping_scratch', biosample_cnx, if_exists='replace', index=False)
-
-# For which Biosample annotations were not mappings by merging found?
-# It looks like remaining_tidied is retaining too much punctuation
-# and loosing useful digits (relative to remaining_string)?
-# Should try harder to parse not-quite-right embedded IDs like ...
-needs_search = mapping_candidates.remaining_tidied[mapping_candidates.consensus_id.isna()]
-needs_search_counts = needs_search.value_counts()
-print(needs_search_counts)
-
-# ----
-
-# Use a search engine
-# For the mixs annotations that didn't already have cannonical IDs or labels
-ebs_raw_list = list(needs_search_counts.index)
-# get whiteout frame and relateds
-ebs_wo_frame = get_whiteout_frame(ebs_raw_list, replaced_chars=chars_to_whiteout)
-ebs_wo_list = get_wo_list(ebs_wo_frame)
-ebs_search_res = search_get_annotations_wrapper(ebs_wo_list, bad_chars=chars_to_whiteout, cat_name=biosample_col_to_map,
-                                                ontoprefix=target_onto_prefix.lower(), query_fields='', rr=5)
-my_best_acceptable = get_best_acceptable(ebs_search_res)
-no_acceptable_mappings = get_no_acceptable_mappings(ebs_search_res, my_best_acceptable)
-# Some broad scales look like place names
-# Some get a good hit if 'biome' is added
-# how to manually review and then add back in?
-# add tp database
-#    no acceptable
-#    best acceptable
-#    ebs_search_results (no acceptable + all acceptable)?
-#    mapping_candidates -> mapping_scratch
+# # What do the successful normalizations look like?
+# q = """
+# select
+#     env_package,
+#     count,
+#     lhs,
+#     extract,
+#     ep_override
+# from
+#     env_package_normalized
+# where
+#     is_canonical = 1
+# """
+# [successful_normalizastions, query_duration] = timed_query(q, biosample_cnx)
+# print(successful_normalizastions)
+# print(query_duration)
+#
+# # Are there any normalization failures?
+# q = """
+# select
+#     env_package,
+#     count,
+#     lhs,
+#     extract,
+#     ep_override
+# from
+#     env_package_normalized
+# where
+#     is_canonical = 0
+# """
+# [normalizastion_failures, query_duration] = timed_query(q, biosample_cnx)
+# print(normalizastion_failures)
+# print(query_duration)
+#
+# # utilizing ncbtitaxon
+# # specifically, flag the biosamples whose taxon_id indicates they are an unclassified entity
+# # ignoring the others will throw out samples OF multicellular organisms, like fruit flies
+# # Add previous notes about what kinds of samples are missed by this bifurcation
+# # like bacteria.unclassified_bacteria
+#
+# q = """
+# select
+#     distinct s.subject
+# from
+#     entailed_edge ee
+# join statements s on
+#     ee.subject = s.subject
+# where
+#     ee.predicate = 'rdfs:subClassOf'
+#     and ee.object = 'NCBITaxon:2787823'
+#     and s.predicate = 'rdfs:label'
+# """
+# [unclassified_taxa, query_duration] = timed_query(q, ncbitaxon_cnx)
+# # unclassified_taxa['bare_id'] = unclassified_taxa['subject'].str.replace('NCBITaxon:', '', regex=True)
+# # unclassified_taxa = unclassified_taxa[['bare_id']]
+# # unclassified_taxa.columns = ['bare_id']
+# unclassified_taxa['unclassified'] = True
+# print(unclassified_taxa)
+# print(query_duration)
+#
+# # SLOW
+# # CHECK INDICES
+# # Get the taxonomy_id values from the Biosamples
+# q = """
+# select
+#     taxonomy_id biosample_taxid,
+#     count(*) as count
+# from
+#     biosample b
+# group by
+#     taxonomy_id
+# order by
+#     count(*) desc
+# """
+# [biosample_tax_id_counts, query_duration] = timed_query(q, biosample_cnx)
+# biosample_tax_id_counts['curie'] = 'NCBITaxon:' + biosample_tax_id_counts['biosample_taxid'].astype(str)
+#
+# # Merge the two taxon id datasets
+# # I.e. flag the the Biosample records whose taxonomy_id field belongs to a subclass of 'unclassified entries'.
+# biosample_tax_id_counts = biosample_tax_id_counts.merge(unclassified_taxa, left_on='curie',
+#                                                         right_on='subject', how='left')
+# biosample_tax_id_counts.unclassified.fillna(False, inplace=True)
+# print(query_duration)
+#
+# # should really add labels to all of them
+# q = """
+# select
+#     subject ,
+#     value
+# from statements
+# where
+#     predicate = 'rdfs:label' and subject = stanza
+# """
+# [all_tax_labels, query_duration] = timed_query(q, ncbitaxon_cnx)
+#
+# biosample_tax_id_counts = biosample_tax_id_counts.merge(all_tax_labels, left_on='curie',
+#                                                         right_on='subject', how='left')
+#
+# biosample_tax_id_counts = biosample_tax_id_counts[['curie', 'biosample_taxid', 'count', 'unclassified', 'value']]
+# biosample_tax_id_counts.columns = ['curie', 'biosample_taxid', 'count', 'unclassified', 'label']
+# print(biosample_tax_id_counts)
+# print(query_duration)
+# biosample_tax_id_counts.to_sql('biobiosample_tax_id_counts', biosample_cnx, if_exists='replace', index=False)
+#
+# # Almost all of the taxa that are common in th biosample collection are either unclassified/metagenomes
+# # or easily recognized cellular organisms
+# # exceptions include:
+# # 32630 = synthetic construct (other entries; other sequences; artificial sequences)
+# #     'other entries' would add 16k rows on top of the 1k 'unclassified entities'
+# #     metagenomes account for 331 of the 'unclassified entities'
+# #     there are also a small number of uncultured/unclassified microorganisms in the biosample dataset
+# # 77133 = uncultured bacterium (cellular organisms; Bacteria; environmental samples)
+# #     'cellular organisms' would add 2M rows on top of the 1k 'unclassified entities'
+# #     'cellular organisms; Bacteria; environmental samples' adds 26k
+#
+# # Get a table of scoped mixs annotations to be mapped to ontology classes.
+# biosample_col_to_map = 'env_broad_scale'
+# scoping_col = 'env_package_normalized.ep_override'
+# scoping_value = 'water'
+# # In this case, the scoping includes an inner join requirement for 'unclassified entities'
+#
+# q = 'select ' + biosample_col_to_map + """, count(*) as count
+# from
+#     biosample b
+# join env_package_normalized on
+#     b.env_package = env_package_normalized.env_package
+# inner join biobiosample_tax_id_counts stic on
+#     b.taxonomy_id = stic.biosample_taxid
+# where """ + scoping_col + " = '" + scoping_value + \
+#     "' group by " + biosample_col_to_map + """
+# order by
+#     count(*) desc"""
+# [mapping_candidates, query_duration] = timed_query(q, biosample_cnx)
+# print(mapping_candidates)
+#
+# # The Biosample format allows for pipe-deimited environmental package lists
+# # Seperate those out into their components
+# multi_frames = []
+# for row in mapping_candidates.itertuples(index=True, name='Pandas'):
+#     split_check = row.env_broad_scale
+#     if split_check is None:
+#         split_check = ''
+#     splitted = pd.Series(split_check.split("|"))
+#     splitted_count = len(splitted)
+#     repeated = [split_check] * splitted_count
+#     repeated = pd.Series(repeated)
+#     as_frame = pd.DataFrame(dict(repeated=repeated, splitted=splitted)).reset_index()
+#     multi_frames.append(as_frame)
+# concat_frame = pd.concat(multi_frames)
+# concat_frame = concat_frame[['repeated', 'splitted']]
+# mapping_candidates = mapping_candidates.merge(concat_frame, left_on='env_broad_scale', right_on='repeated', how='left')
+# print(mapping_candidates)
+#
+# # Now try to extract ontology terms that are already present
+# candidate_series_decomposition = decompose_series(mapping_candidates['splitted'], id_patterns[target_onto_prefix])
+# mapping_candidates = pd.concat([mapping_candidates, candidate_series_decomposition], axis=1)
+#
+# # And join the extracted IDs with their labels
+# ontodb = '/Users/MAM/Documents/gitrepos/semantic-sql/db/' + target_onto_prefix.lower() + '.db'
+# ontocon = sqlite3.connect(ontodb)
+# q = """
+# select
+#     subject ,
+#     value
+# from
+#     statements s
+# where
+#     predicate = 'rdfs:label'
+# """
+# [onto_labels, query_duration] = timed_query(q, ontocon)
+# mapping_candidates = mapping_candidates.merge(onto_labels, left_on='extract', right_on='subject', how='left')
+#
+# # Use cosine string distance to see if the labels match
+# # I.e. the labels claimed by the Biosample data set and the labels asserted in the ontology
+# # if they're close enough, consider the assigned ID legit
+# # how close is close enough?
+# my_cosine_obj = Cosine(1)
+# mapping_candidates.value = mapping_candidates.value.fillna('')
+# mapping_candidates['cosine'] = mapping_candidates.apply(
+#     lambda my_row: my_cosine_obj.distance(my_row['remaining_tidied'].lower(), my_row['value'].lower()), axis=1)
+#
+# # Get ready to join in the other direction
+# # I.e. trying to find ontology term IDs based on perfect label matches. Be careful not to reuse column names.
+# mapping_candidates.columns = ['env_broad_scale', 'count', 'repeated', 'splitted', 'string', 'extract',
+#                               'remaining_string', 'remaining_tidied', 'term_id', 'lab_from_id', 'lfi_cosine']
+# mapping_candidates = mapping_candidates.merge(onto_labels, left_on='remaining_tidied', right_on='value', how='left')
+# mapping_candidates.columns = ['env_broad_scale', 'count', 'repeated', 'splitted', 'string', 'extract',
+#                               'remaining_string', 'remaining_tidied', 'term_id', 'lab_from_id',
+#                               'lfi_cosine', 'term_id_from_lab', 'value']
+#
+# # Record a consensus
+# # If either merging on codes or labels was successful.
+# # cosines for first pass check on assigned IDs still haven't been filtered?
+# mapping_candidates['consensus_id'] = mapping_candidates['term_id']
+# mapping_candidates['consensus_id'][mapping_candidates['consensus_id'].isnull()] = \
+#     mapping_candidates['term_id_from_lab'][mapping_candidates['consensus_id'].isnull()]
+# mapping_candidates['consensus_lab'] = mapping_candidates['lab_from_id']
+# mapping_candidates['consensus_lab'][mapping_candidates['consensus_lab'] == ''] = \
+#     mapping_candidates['value'][mapping_candidates['consensus_lab'] == '']
+# mapping_candidates.to_sql('mapping_scratch', biosample_cnx, if_exists='replace', index=False)
+#
+# # For which Biosample annotations were not mappings by merging found?
+# # It looks like remaining_tidied is retaining too much punctuation
+# # and loosing useful digits (relative to remaining_string)?
+# # Should try harder to parse not-quite-right embedded IDs like ...
+# needs_search = mapping_candidates.remaining_tidied[mapping_candidates.consensus_id.isna()]
+# needs_search_counts = needs_search.value_counts()
+# print(needs_search_counts)
+#
+# # ----
+#
+# # Use a search engine
+# # For the mixs annotations that didn't already have cannonical IDs or labels
+# ebs_raw_list = list(needs_search_counts.index)
+# # get whiteout frame and relateds
+# ebs_wo_frame = get_whiteout_frame(ebs_raw_list, replaced_chars=chars_to_whiteout)
+# ebs_wo_list = get_wo_list(ebs_wo_frame)
+# ebs_search_res = search_get_annotations_wrapper(ebs_wo_list, bad_chars=chars_to_whiteout, cat_name=biosample_col_to_map,
+#                                                 ontoprefix=target_onto_prefix.lower(), query_fields='', rr=5)
+# my_best_acceptable = get_best_acceptable(ebs_search_res)
+# no_acceptable_mappings = get_no_acceptable_mappings(ebs_search_res, my_best_acceptable)
+# # Some broad scales look like place names
+# # Some get a good hit if 'biome' is added
+# # how to manually review and then add back in?
+# # add tp database
+# #    no acceptable
+# #    best acceptable
+# #    ebs_search_results (no acceptable + all acceptable)?
+# #    mapping_candidates -> mapping_scratch
