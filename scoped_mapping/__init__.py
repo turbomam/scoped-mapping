@@ -1,6 +1,8 @@
 from datetime import datetime
 from pkg_resources import get_distribution, DistributionNotFound
 from strsimpy.cosine import Cosine
+from tdda import rexpy
+from xml.etree import ElementTree
 import pandas as pd
 import re
 import requests as requests
@@ -8,8 +10,6 @@ import sqlite3
 import string
 import urllib
 import yaml
-from xml.etree import ElementTree
-from tdda import rexpy
 
 # import numpy as np
 # import os
@@ -37,7 +37,7 @@ retained_reordered_ols_cols = ['category', 'raw', 'query', 'label', 'iri', 'obo_
 
 ols_annotation_cols = ['iri', 'name', 'scope', 'type']
 
-merged_cols = ['category', 'raw', 'query', 'name', 'cosine_rank', 'cosine_dist', 'obo_id', 'label',
+merged_cols = ['category', 'raw', 'query', 'name', 'string_dist_rank', 'string_dist', 'obo_id', 'label',
                'search_rank', 'ontology_prefix', 'scope', 'type', 'iri', 'ontology_name']
 
 standard_replacement_chars = '._\\- '
@@ -215,27 +215,27 @@ def get_bulk_label_like(label_like_prepped):
     return all_iris_annotations_frame
 
 
-# add cosine-wise ranking
-# use search rank, cosine rank, type and scope for filtering/prioritizing mappings
+# add string-distance-wise ranking
+# use search rank, string distance rank, type and scope for filtering/prioritizing mappings
 def merge_and_compare(category_search_results_frame, bulk_label_like):
     search_annotations_merge = category_search_results_frame.merge(bulk_label_like,
                                                                    how='left', left_on='iri', right_on='iri')
-    cosine_obj = Cosine(1)
+    stringdist_obj = Cosine(1)
     search_annotations_merge['name'] = search_annotations_merge['name'].fillna('')
-    search_annotations_merge['cosine_dist'] = \
+    search_annotations_merge['string_dist'] = \
         search_annotations_merge.apply(lambda sam_row:
-                                       cosine_obj.distance(sam_row.query.strip().lower(),
+                                       stringdist_obj.distance(sam_row.query.strip().lower(),
                                                            sam_row['name'].strip().lower()), axis=1)
-    search_annotations_merge.cosine_dist = search_annotations_merge.cosine_dist.map('{:,.3f}'.format)
+    search_annotations_merge.string_dist = search_annotations_merge.string_dist.map('{:,.3f}'.format)
     all_queries = search_annotations_merge['query']
     unique_queries = list(set(all_queries))
     unique_queries.sort()
     reranked = []
     for unique_query in unique_queries:
         per_query = search_annotations_merge[search_annotations_merge['query'] == unique_query]
-        pqs = per_query.sort_values(by='cosine_dist', ascending=True)
-        cosine_ranks = list(range(1, len(pqs.index) + 1))
-        pqs['cosine_rank'] = cosine_ranks
+        pqs = per_query.sort_values(by='string_dist', ascending=True)
+        string_dist_ranks = list(range(1, len(pqs.index) + 1))
+        pqs['string_dist_rank'] = string_dist_ranks
         reranked.append(pqs)
     reranked = pd.concat(reranked)
     return reranked
@@ -271,17 +271,17 @@ def get_permissible_values(model, enum):
     return epv
 
 
-def get_best_acceptable(mappings, max_cosine=0.05):
-    mappings['cosine_dist'] = mappings['cosine_dist'].astype(float)
-    under_max_flag = mappings['cosine_dist'] <= max_cosine
+def get_best_acceptable(mappings, max_string_dist=0.05):
+    mappings['string_dist'] = mappings['string_dist'].astype(float)
+    under_max_flag = mappings['string_dist'] <= max_string_dist
     best_acceptable = mappings[under_max_flag]
     ba_raws = list(set(best_acceptable['raw']))
     ba_raws.sort()
     accepted_best = []
     for raw in ba_raws:
         working = best_acceptable[best_acceptable['raw'] == raw]
-        min_cosine_rank = working['cosine_rank'].min()
-        working = working[working['cosine_rank'] == min_cosine_rank]
+        min_string_dist_rank = working['string_dist_rank'].min()
+        working = working[working['string_dist_rank'] == min_string_dist_rank]
         min_search_rank = working['search_rank'].min()
         working = working[working['search_rank'] == min_search_rank]
         accepted_best.append(working)
@@ -417,8 +417,8 @@ def decompose_series(series_to_decompose, id_pattern):
     extracts = make_tidy_col(extracts, 'remaining_string', 'remaining_tidied')
     return extracts
 
-
-def env_package_nomralizastion(dataframe, col_to_normalize, pattern_name, id_replacement_rule):
+# removed pattern_name argument
+def env_package_nomralizastion(dataframe, col_to_normalize, id_replacement_rule):
     dataframe[['lhs', 'rhs']] = dataframe[col_to_normalize].str.split('.', expand=True)
     flag = dataframe['rhs'].apply(lambda x: x is None)
     temp = dataframe['lhs'][flag]

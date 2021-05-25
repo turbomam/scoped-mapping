@@ -1,11 +1,10 @@
-setuptools>=56.2.0
-requests>=2.25.1
-strsimpy>=0.2.0
-PyYAML>=5.4.1
-pandas>=1.2.4
-numpy>=1.20.3
-tdda>=1.0.32
-notebook
-
 # ontobio~=2.7.3
 # rexpy~=0.0.0
+notebook
+numpy>=1.20.3
+pandas>=1.2.4
+PyYAML>=5.4.1
+requests>=2.25.1
+setuptools>=56.2.0
+strsimpy>=0.2.0
+tdda>=1.0.32x
