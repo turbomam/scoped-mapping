@@ -217,10 +217,12 @@ def get_bulk_label_like(label_like_prepped):
 
 # add string-distance-wise ranking
 # use search rank, string distance rank, type and scope for filtering/prioritizing mappings
-def merge_and_compare(category_search_results_frame, bulk_label_like):
+def merge_and_compare(category_search_results_frame, bulk_label_like, string_dist_arg=3):
     search_annotations_merge = category_search_results_frame.merge(bulk_label_like,
-                                                                   how='left', left_on='iri', right_on='iri')
-    stringdist_obj = Cosine(1)
+                                                                   how='left',
+                                                                   left_on='iri',
+                                                                   right_on='iri')
+    stringdist_obj = Cosine(string_dist_arg)
     search_annotations_merge['name'] = search_annotations_merge['name'].fillna('')
     search_annotations_merge['string_dist'] = \
         search_annotations_merge.apply(lambda sam_row:
@@ -242,14 +244,14 @@ def merge_and_compare(category_search_results_frame, bulk_label_like):
 
 
 def search_get_annotations_wrapper(raw_list, bad_chars=standard_replacement_chars, cat_name=standard_cat_name,
-                                   ontoprefix='', query_fields='', rr=5):
+                                   ontoprefix='', query_fields='', rr=5, string_dist_arg=3):
     my_category_search_results_frame = get_csr_frame(raw_list, bad_chars, category_name=cat_name,
                                                      ontoprefix=ontoprefix, query_fields=query_fields,
                                                      rows_requested=rr)
     # prep_for_label_like returns unique combinations of ontologies and term IRIs
     my_label_like_prepped = prep_for_label_like(my_category_search_results_frame)
     my_bulk_label_like = get_bulk_label_like(my_label_like_prepped)
-    merged_and_compared = merge_and_compare(my_category_search_results_frame, my_bulk_label_like)
+    merged_and_compared = merge_and_compare(my_category_search_results_frame, my_bulk_label_like, string_dist_arg)
     merged_and_compared = merged_and_compared[merged_cols]
     return merged_and_compared
 
@@ -300,7 +302,7 @@ def map_from_yaml(model, selected_enum, print_enums=False, bad_chars=standard_re
     enum_permissible_values = get_permissible_values(model, selected_enum)
     searchres_annotations = search_get_annotations_wrapper(
         enum_permissible_values,
-        bad_chars=bad_chars, cat_name=cat_name, ontoprefix=ontoprefix, query_fields=query_fields)
+        bad_chars=bad_chars, cat_name=cat_name, ontoprefix=ontoprefix, query_fields=query_fields, string_dist_arg=3)
     return searchres_annotations
 
 
