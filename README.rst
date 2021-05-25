@@ -15,8 +15,8 @@ Installation
 
   python3.9 -m venv sm_venv
   source sm_venv/bin/activate
-  pip3 install -r requirements.txt
-  pip3 install -i https://test.pypi.org/simple/ scoped-mapping
+  pip install -r requirements.txt
+  pip install -i https://test.pypi.org/simple/ scoped-mapping
   make all
   
 
