@@ -43,9 +43,11 @@ Deploying
   git commit -m ...
   git push
   git tag ...
-  python3.9 -m build --sdist --wheel .
+  pip install build twine
+  python -m build --sdist --wheel .
+  ls -l dist/
   
-rm dist/scoped_mapping... (old versions)
+remove all artifacts from all builds in ``dist/`` except for the latest
 
 ::
 
