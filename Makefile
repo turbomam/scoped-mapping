@@ -51,7 +51,7 @@ semantic-sql/db/envo.db: semantic-sql
 	make db/envo.db
 	date
 
-.PHONY all: semantic-sql/db/ncbitaxon.db semantic-sql/db/envo.db
+.PHONY all: harmonized_table.db semantic-sql/db/ncbitaxon.db semantic-sql/db/envo.db
 
 clean:
 	rm -rf harmonized_table.db
