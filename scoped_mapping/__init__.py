@@ -168,8 +168,8 @@ def get_label_like(current_row):
             anything_useful.append(syn_dict)
     if term_json['obo_synonym'] is not None:
         anything_useful.extend(term_json['obo_synonym'])
-    anno_keys = list(term_json['annotation'].keys())
-    ak_lc = [one_key.lower() for one_key in anno_keys]
+    ak_lc = anno_keys = list(term_json['annotation'].keys())
+    # ak_lc = [one_key.lower() for one_key in anno_keys]
     syn_pattern = 'syn'
     syn_like_keys = [one_key for one_key in ak_lc if syn_pattern in one_key]
     if syn_like_keys is not None:
@@ -217,7 +217,7 @@ def get_bulk_label_like(label_like_prepped):
 
 # add string-distance-wise ranking
 # use search rank, string distance rank, type and scope for filtering/prioritizing mappings
-def merge_and_compare(category_search_results_frame, bulk_label_like, string_dist_arg=3):
+def merge_and_compare(category_search_results_frame, bulk_label_like, string_dist_arg=2):
     search_annotations_merge = category_search_results_frame.merge(bulk_label_like,
                                                                    how='left',
                                                                    left_on='iri',
@@ -244,7 +244,7 @@ def merge_and_compare(category_search_results_frame, bulk_label_like, string_dis
 
 
 def search_get_annotations_wrapper(raw_list, bad_chars=standard_replacement_chars, cat_name=standard_cat_name,
-                                   ontoprefix='', query_fields='', rr=5, string_dist_arg=3):
+                                   ontoprefix='', query_fields='', rr=5, string_dist_arg=2):
     my_category_search_results_frame = get_csr_frame(raw_list, bad_chars, category_name=cat_name,
                                                      ontoprefix=ontoprefix, query_fields=query_fields,
                                                      rows_requested=rr)
@@ -296,20 +296,23 @@ def get_best_acceptable(mappings, max_string_dist=0.05):
 # # but what about the performance boost of shared queries?
 
 def map_from_yaml(model, selected_enum, print_enums=False, bad_chars=standard_replacement_chars,
-                  cat_name=standard_cat_name, ontoprefix='', query_fields=''):
+                  cat_name=standard_cat_name, ontoprefix='', query_fields='', string_dist_arg=2, rr=5):
     if print_enums:
         print(get_avaialbe_enums(model))
     enum_permissible_values = get_permissible_values(model, selected_enum)
     searchres_annotations = search_get_annotations_wrapper(
         enum_permissible_values,
-        bad_chars=bad_chars, cat_name=cat_name, ontoprefix=ontoprefix, query_fields=query_fields, string_dist_arg=3)
+        bad_chars=bad_chars, cat_name=cat_name, ontoprefix=ontoprefix,
+        query_fields=query_fields, string_dist_arg=string_dist_arg, rr=rr)
     return searchres_annotations
 
 
 # def get_no_mappings
 def get_no_acceptable_mappings(all_mappings, best_acceptables):
     best_accepted_raws = set(best_acceptables['raw'])
+    # print(best_accepted_raws)
     all_raws = set(all_mappings['raw'])
+    # print(best_accepted_raws)
     failure_raws = all_raws - best_accepted_raws
     frl = list(failure_raws)
     failure_flag = all_mappings['raw'].isin(frl)
@@ -328,12 +331,17 @@ def get_sqlite_con(sqlite_file):
     return sqlite_con
 
 
-def get_package_dictionary():
+def get_package_dictionary(biosample_packages_file):
     bio_s_columns = ['Name', 'DisplayName', 'ShortName', 'EnvPackage', 'EnvPackageDisplay', 'NotAppropriateFor',
                      'Description', 'Example']
     bio_s_df = pd.DataFrame(columns=bio_s_columns)
-    bio_s_xml = requests.get('https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml', allow_redirects=True)
-    bio_s_root = ElementTree.fromstring(bio_s_xml.content)
+
+    # bio_s_xml = requests.get('https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml', allow_redirects=True)
+    # bio_s_root = ElementTree.fromstring(bio_s_xml.content)
+
+    tree = ElementTree.parse(biosample_packages_file)
+    bio_s_root = tree.getroot()
+
     for node in bio_s_root:
         rowdict = {}
         for framecol in bio_s_columns:
@@ -444,3 +452,4 @@ def flag_canonical(dataframe, incol, outcol, canonicals):
     flag = dataframe[incol].isin(canonicals)
     dataframe.loc[flag, outcol] = True
     return dataframe
+

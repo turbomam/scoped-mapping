@@ -51,9 +51,12 @@ semantic-sql/db/envo.db: semantic-sql
 	make db/envo.db
 	date
 
-.PHONY all: harmonized_table.db semantic-sql/db/ncbitaxon.db semantic-sql/db/envo.db
+# this shouldn't redownload if the file exisits
+target/biosample_packages.xml:
+	curl -o target/biosample_packages.xml https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml
+
+.PHONY all: harmonized_table.db target/biosample_packages.xml semantic-sql/db/ncbitaxon.db semantic-sql/db/envo.db
 
 clean:
 	rm -rf harmonized_table.db
 	rm -rf semantic-sql
-
