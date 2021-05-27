@@ -23,7 +23,9 @@ Installation
 Sample code
 -----------
 
-See Jupyter Notebooks  
+See `Jupyter Notebooks <notebooks>`_
+
+  
 
 
 Scoping mappings based on subsets of NCBItaxon
