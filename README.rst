@@ -23,7 +23,7 @@ Installation
 Sample code
 -----------
 
-See `Jupyter Notebooks <notebooks>`
+See Jupyter Notebooks
 
   
 
