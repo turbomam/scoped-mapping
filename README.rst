@@ -1,11 +1,11 @@
 scoped-mapping
 ==============
 
-When mapping input strings from column/field ``X`` in some datasource, consider the values in column/field ``Y`` to determine what ontology to map to.
+When mapping input strings from column/field ``X`` in some datasource to terms from OBO foundry ontologies, use the values in column/field ``Y`` to determine which ontology to map to.
 
 Note that GitHub uses a hyphen and PyPI uses an underscore
 
-Currently compatible with MacOS. Requires the riot library from Apache Jena. ``make all`` uses homebrew for installing Jena, but does not install homebrew.
+Currently tested on a 32 GB MacBook Pro running Catalina. Requires the riot library from Apache Jena. ``make all`` uses homebrew for installing Jena, but does not install homebrew. This will probably run on other *nix systems but will require a system dependednt installation of Jena.
 
 
 
