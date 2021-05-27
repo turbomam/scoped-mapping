@@ -5,7 +5,7 @@ When mapping input strings from column/field ``X`` in some datasource to terms f
 
 Note that GitHub uses a hyphen and PyPI uses an underscore
 
-Currently tested on a 32 GB MacBook Pro running Catalina. Requires the riot library from Apache Jena. ``make all`` uses homebrew for installing Jena, but does not install homebrew. This will probably run on other *nix systems but will require a system dependednt installation of Jena.
+Currently tested on a 32GB MacBook Pro running Catalina. Requires the riot library from Apache Jena. ``make all`` uses homebrew for installing Jena, but does not install homebrew. This will probably run on other 'nix systems but will require a system dependent installation of Jena.
 
 
 
@@ -23,7 +23,7 @@ Installation
 Sample code
 -----------
 
-See `Jupyter Notebooks <notebooks>`_
+See `Jupyter Notebooks <notebooks>`
 
   
 
@@ -31,7 +31,7 @@ See `Jupyter Notebooks <notebooks>`_
 Scoping mappings based on subsets of NCBItaxon
 ----------------------------------------------
 
-First download `semantic-sql` and some of its dependencies. Build an SQLite database with teh NCBItaxon content. Building requires lots of dosk space, RAM and patience. Well worth it when it comes to query time::
+First download `semantic-sql` and some of its dependencies. Build an SQLite database with the NCBItaxon content. Building requires lots of disk space, RAM and patience. Well worth it when it comes to query time::
 
     make all
 
