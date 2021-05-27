@@ -281,14 +281,16 @@ def get_best_acceptable(mappings, max_string_dist=0.05):
     ba_raws.sort()
     accepted_best = []
     for raw in ba_raws:
-        working = best_acceptable[best_acceptable['raw'] == raw]
-        min_string_dist_rank = working['string_dist_rank'].min()
-        working = working[working['string_dist_rank'] == min_string_dist_rank]
-        min_search_rank = working['search_rank'].min()
-        working = working[working['search_rank'] == min_search_rank]
-        accepted_best.append(working)
+        if len(raw) > 0:
+            working = best_acceptable[best_acceptable['raw'] == raw]
+            min_string_dist_rank = working['string_dist_rank'].min()
+            working = working[working['string_dist_rank'] == min_string_dist_rank]
+            min_search_rank = working['search_rank'].min()
+            working = working[working['search_rank'] == min_search_rank]
+            accepted_best.append(working)
     catted_best = pd.concat(accepted_best)
-    return catted_best
+    if len(catted_best.index) > 0:
+        return catted_best
 
 
 # # one category or enum at a time
