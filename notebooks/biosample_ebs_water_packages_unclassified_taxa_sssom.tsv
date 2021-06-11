@@ -1,153 +1,98 @@
 subject_category	subject_label	predicate_id	object_id	object_label	match_type	creator_id	mapping_date	subject_id
-env_broad_scale	small lake biome	skos:relatedMatch	ENVO:00000892	small lake biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:small%20lake%20biome
-env_broad_scale	Small Lake Biome	skos:relatedMatch	ENVO:00000892	small lake biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Small%20Lake%20Biome
-env_broad_scale	marine biome (ENVO:00000447)	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20biome%20%28ENVO%3A00000447%29
-env_broad_scale	marine biome	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20biome
-env_broad_scale	Marine biome	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Marine%20biome
-env_broad_scale	marine biome [ENVO:00000447]	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20biome%20%5BENVO%3A00000447%5D
-env_broad_scale	marine biome [ENVO:00000447] 	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20biome%20%5BENVO%3A00000447%5D%20
-env_broad_scale	Marine Biome [ENVO:00000447]	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Marine%20Biome%20%5BENVO%3A00000447%5D
-env_broad_scale	ENVO:00000447 marine biome	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00000447%20marine%20biome
-env_broad_scale	Marine Biome	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Marine%20Biome
-env_broad_scale	Marine Biome [ENVO:00000447]	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Marine%20Biome%20%5BENVO%3A00000447%5D
-env_broad_scale	ENVO:00000447 MARINE BIOME	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00000447%20MARINE%20BIOME
-env_broad_scale	freshwater biome	skos:relatedMatch	ENVO:00000873	freshwater biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:freshwater%20biome
-env_broad_scale	freshwater biome [ENVO:00000873]	skos:relatedMatch	ENVO:00000873	freshwater biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:freshwater%20biome%20%5BENVO%3A00000873%5D
-env_broad_scale	ocean biome	skos:relatedMatch	ENVO:01000048	ocean biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ocean%20biome
-env_broad_scale	ocean biome [ENVO:01000048]	skos:relatedMatch	ENVO:01000048	ocean biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ocean%20biome%20%5BENVO%3A01000048%5D
-env_broad_scale	ocean biome  [ENVO:01000048]	skos:relatedMatch	ENVO:01000048	ocean biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ocean%20biome%20%20%5BENVO%3A01000048%5D
-env_broad_scale	estuarine biome	skos:relatedMatch	ENVO:01000020	estuarine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:estuarine%20biome
-env_broad_scale	estuarine biome [ENVO:01000020]	skos:relatedMatch	ENVO:01000020	estuarine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:estuarine%20biome%20%5BENVO%3A01000020%5D
-env_broad_scale	Estuarine Biome	skos:relatedMatch	ENVO:01000020	estuarine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Estuarine%20Biome
-env_broad_scale	polar desert biome	skos:relatedMatch	ENVO:01000186	polar desert biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:polar%20desert%20biome
-env_broad_scale	Polar Biome	skos:relatedMatch	ENVO:01000339	polar biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Polar%20Biome
-env_broad_scale	polar biome	skos:relatedMatch	ENVO:01000339	polar biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:polar%20biome
-env_broad_scale	polar biome [ENVO_01000339]	skos:relatedMatch	ENVO:01000339	polar biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:polar%20biome%20%5BENVO_01000339%5D
-env_broad_scale	polar biome [ENVO_01000339]	skos:relatedMatch	ENVO:01000339	polar biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:polar%20biome%20%5BENVO_01000339%5D
-env_broad_scale	polar biome [ENVO_01000339]	skos:relatedMatch	ENVO:01000339	polar biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:polar%20biome%20%5BENVO_01000339%5D
-env_broad_scale	Polar biome	skos:relatedMatch	ENVO:01000339	polar biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Polar%20biome
-env_broad_scale	oceanic epipelagic zone biome [ENVO:01000035]	skos:relatedMatch	ENVO:01000035	oceanic epipelagic zone biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:oceanic%20epipelagic%20zone%20biome%20%5BENVO%3A01000035%5D
-env_broad_scale	oceanic epipelagic zone biome [ENVO:01000035]	skos:relatedMatch	ENVO:01000035	oceanic epipelagic zone biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:oceanic%20epipelagic%20zone%20biome%20%5BENVO%3A01000035%5D
-env_broad_scale	oceanic epipelagic zone biome [ENVO:01000035]	skos:relatedMatch	ENVO:01000035	oceanic epipelagic zone biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:oceanic%20epipelagic%20zone%20biome%20%5BENVO%3A01000035%5D
-env_broad_scale	freshwater	skos:relatedMatch	ENVO:00002011	fresh water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:freshwater
-env_broad_scale	Freshwater	skos:relatedMatch	ENVO:00002011	fresh water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Freshwater
-env_broad_scale	marine salt marsh biome	skos:relatedMatch	ENVO:01000022	marine salt marsh biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20salt%20marsh%20biome
-env_broad_scale	tundra biome	skos:relatedMatch	ENVO:01000180	tundra biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:tundra%20biome
-env_broad_scale	Estuary	skos:relatedMatch	ENVO:00000045	estuary	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Estuary
-env_broad_scale	aquatic biome	skos:relatedMatch	ENVO:00002030	aquatic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:aquatic%20biome
-env_broad_scale	aquatic biome [ENVO:00002030]	skos:relatedMatch	ENVO:00002030	aquatic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:aquatic%20biome%20%5BENVO%3A00002030%5D
-env_broad_scale	Aquatic biome	skos:relatedMatch	ENVO:00002030	aquatic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Aquatic%20biome
-env_broad_scale	small river biome	skos:relatedMatch	ENVO:00000890	small river biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:small%20river%20biome
-env_broad_scale	desert	skos:relatedMatch	ENVO:01001357	desert	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:desert
-env_broad_scale	water	skos:relatedMatch	CHEBI:15377	water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:water
-env_broad_scale	urban biome	skos:relatedMatch	ENVO:01000249	urban biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:urban%20biome
-env_broad_scale	sea water	skos:relatedMatch	ENVO:00002149	sea water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:sea%20water
-env_broad_scale	Sea water	skos:relatedMatch	ENVO:00002149	sea water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Sea%20water
-env_broad_scale	Sea water (ENVO:00002149)	skos:relatedMatch	ENVO:00002149	sea water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Sea%20water%20%28ENVO%3A00002149%29
-env_broad_scale	ENVO:01000048	skos:relatedMatch	ENVO:01000048	ocean biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000048
-env_broad_scale	ENVO:00002030	skos:relatedMatch	ENVO:00002030	aquatic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00002030
-env_broad_scale	ENVO:00000447	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00000447
-env_broad_scale	ENVO:01000024	skos:relatedMatch	ENVO:01000024	marine benthic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000024
-env_broad_scale	EnvO:01000023	skos:relatedMatch	ENVO:01000023	marine pelagic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:EnvO%3A01000023
-env_broad_scale	ENVO:00000039	skos:relatedMatch	ENVO:00000039	fjord	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00000039
-env_broad_scale	ENVO:01000020	skos:relatedMatch	ENVO:01000020	estuarine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000020
-env_broad_scale	ENVO 01000047	skos:relatedMatch	ENVO:01000047	mediterranean sea biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%2001000047
-env_broad_scale	ENVO 01000043	skos:relatedMatch	ENVO:01000043	neritic mesopelagic zone biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%2001000043
-env_broad_scale	ENVO:01000035	skos:relatedMatch	ENVO:01000035	oceanic epipelagic zone biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000035
-env_broad_scale	ENVO:01000023	skos:relatedMatch	ENVO:01000023	marine pelagic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000023
-env_broad_scale	ENVO:01000048; ENVO:01000035	skos:relatedMatch	ENVO:01000048	ocean biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000048%3B%20ENVO%3A01000035
-env_broad_scale	ENVO:01000049	skos:relatedMatch	ENVO:01000049	marine coral reef biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000049
-env_broad_scale	ENVO:01000050	skos:relatedMatch	ENVO:01000050	marine subtidal rocky reef biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000050
-env_broad_scale	ENVO:01000051	skos:relatedMatch	ENVO:01000051	marine black smoker biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000051
-env_broad_scale	marine pelagic biome [ENVO:01000023]	skos:relatedMatch	ENVO:01000023	marine pelagic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20pelagic%20biome%20%5BENVO%3A01000023%5D
-env_broad_scale	marine pelagic biome	skos:relatedMatch	ENVO:01000023	marine pelagic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20pelagic%20biome
-env_broad_scale	marine pelagic biome [ENVO:01000023]	skos:relatedMatch	ENVO:01000023	marine pelagic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20pelagic%20biome%20%5BENVO%3A01000023%5D
-env_broad_scale	Beach sand	skos:relatedMatch	ENVO:00002138	beach sand	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Beach%20sand
-env_broad_scale	freshwater environment	skos:relatedMatch	ENVO:01000306	freshwater environment	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:freshwater%20environment
-env_broad_scale	seawater	skos:relatedMatch	ENVO:00002149	sea water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:seawater
-env_broad_scale	Seawater	skos:relatedMatch	ENVO:00002149	sea water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Seawater
-env_broad_scale	tropical marginal sea biome [ENVO:01001230]	skos:relatedMatch	ENVO:01001230	tropical marginal sea biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:tropical%20marginal%20sea%20biome%20%5BENVO%3A01001230%5D
-env_broad_scale	marine photic zone [ENVO:00000209]	skos:relatedMatch	ENVO:00000209	marine photic zone	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20photic%20zone%20%5BENVO%3A00000209%5D
-env_broad_scale	 environment determined by a biofilm on a saline surface [ENVO:01001056]	skos:relatedMatch	ENVO:01001056	environment determined by a biofilm on a saline surface	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:%20environment%20determined%20by%20a%20biofilm%20on%20a%20saline%20surface%20%5BENVO%3A01001056%5D
-env_broad_scale	temperate mediterannean sea biome	skos:relatedMatch	ENVO:01000857	temperate mediterranean sea biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:temperate%20mediterannean%20sea%20biome
-env_broad_scale	intertidal zone	skos:relatedMatch	ENVO:00000316	intertidal zone	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:intertidal%20zone
-env_broad_scale	groundwater	skos:relatedMatch	ENVO:01001004	groundwater	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:groundwater
-env_broad_scale	Groundwater	skos:relatedMatch	ENVO:01001004	groundwater	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Groundwater
-env_broad_scale	dense settlement biome	skos:relatedMatch	ENVO:01000248	dense settlement biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:dense%20settlement%20biome
-env_broad_scale	boreal forest	skos:relatedMatch	ENVO:01000250	subpolar coniferous forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:boreal%20forest
-env_broad_scale	ocean	skos:relatedMatch	ENVO:00000015	ocean	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ocean
-env_broad_scale	Ocean	skos:relatedMatch	ENVO:00000015	ocean	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Ocean
-env_broad_scale	marine benthic biome	skos:relatedMatch	ENVO:01000024	marine benthic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20benthic%20biome
-env_broad_scale	marginal sea biome	skos:relatedMatch	ENVO:01000046	marginal sea biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marginal%20sea%20biome
-env_broad_scale	Ocean water	skos:relatedMatch	ENVO:00002149	sea water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Ocean%20water
-env_broad_scale	lake	skos:relatedMatch	ENVO:00000020	lake	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:lake
-env_broad_scale	Lake	skos:relatedMatch	ENVO:00000020	lake	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Lake
-env_broad_scale	village biome	skos:relatedMatch	ENVO:01000246	village biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:village%20biome
-env_broad_scale	fresh water	skos:relatedMatch	ENVO:00002011	fresh water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:fresh%20water
-env_broad_scale	neritic epipelagic zone biom [ENVO:01000032]	skos:relatedMatch	ENVO:01000032	neritic pelagic zone biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:neritic%20epipelagic%20zone%20biom%20%5BENVO%3A01000032%5D
-env_broad_scale	temperate forest	skos:relatedMatch	ENVO:01001805	temperate forest	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:temperate%20forest
-env_broad_scale	River	skos:relatedMatch	ENVO:00000022	river	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:River
-env_broad_scale	marine pelagic feature [ENVO:01000044]	skos:relatedMatch	ENVO:01000044	marine pelagic feature	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20pelagic%20feature%20%5BENVO%3A01000044%5D
-env_broad_scale	sea surface layer	skos:relatedMatch	ENVO:01001581	sea surface layer	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:sea%20surface%20layer
-env_broad_scale	brackish water	skos:relatedMatch	ENVO:00002019	brackish water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:brackish%20water
-env_broad_scale	marine abyssal zone biome [ENVO:01000027]	skos:relatedMatch	ENVO:01000027	marine abyssal zone biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20abyssal%20zone%20biome%20%5BENVO%3A01000027%5D
-env_broad_scale	Marine environment	skos:relatedMatch	ENVO:01000320	marine environment	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Marine%20environment
-env_broad_scale	marine environment	skos:relatedMatch	ENVO:01000320	marine environment	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20environment
-env_broad_scale	marine hydrothermal vent biome	skos:relatedMatch	ENVO:01000030	marine hydrothermal vent biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20hydrothermal%20vent%20biome
-env_broad_scale	Southern Ocean	skos:relatedMatch	GAZ:00000373	Southern Ocean	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Southern%20Ocean
-env_broad_scale	biofilm	skos:relatedMatch	ENVO:00002034	biofilm	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:biofilm
-env_broad_scale	tundra	skos:relatedMatch	ENVO:00000112	tundra	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:tundra
-env_broad_scale	Archipelago [ENVO:00000220]	skos:relatedMatch	ENVO:00000220	archipelago	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Archipelago%20%5BENVO%3A00000220%5D
-env_broad_scale	polluted river	skos:relatedMatch	ENVO:03600015	polluted river	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:polluted%20river
-env_broad_scale	Marine Brine pool basin	skos:relatedMatch	ENVO:00000369	brine pool	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Marine%20Brine%20pool%20basin
-env_broad_scale	Sediment	skos:relatedMatch	ENVO:00002007	sediment	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Sediment
-env_broad_scale	freshwater lake	skos:relatedMatch	ENVO:00000021	freshwater lake	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:freshwater%20lake
-env_broad_scale	hot springs	skos:relatedMatch	GAZ:22224982	Hot Springs	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:hot%20springs
-env_broad_scale	sea	skos:relatedMatch	ENVO:00000016	sea	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:sea
-env_broad_scale	brine pool	skos:relatedMatch	ENVO:00000369	brine pool	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:brine%20pool
-env_broad_scale	marine ultramafic hydrothermal vent biome [ENVO:01000053]	skos:relatedMatch	ENVO:01000053	marine ultramafic hydrothermal vent biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20ultramafic%20hydrothermal%20vent%20biome%20%5BENVO%3A01000053%5D
-env_broad_scale	snow	skos:relatedMatch	ENVO:01000406	snow	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:snow
-env_broad_scale	Eukaryotes	skos:relatedMatch	NCBITaxon:2759	Eukaryota	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Eukaryotes
-env_broad_scale	drinking water	skos:relatedMatch	ENVO:00003064	drinking water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:drinking%20water
-env_broad_scale	marginal sea	skos:relatedMatch	ENVO:00000016	sea	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marginal%20sea
-env_broad_scale	aquatic environment	skos:relatedMatch	ENVO:01000317	aquatic environment	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:aquatic%20environment
-env_broad_scale	aquifer	skos:relatedMatch	ENVO:00012408	aquifer	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:aquifer
-env_broad_scale	hot spring	skos:relatedMatch	ENVO:00000051	hot spring	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:hot%20spring
-env_broad_scale	Hot Spring	skos:relatedMatch	ENVO:00000051	hot spring	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Hot%20Spring
-env_broad_scale	large river biome	skos:relatedMatch	ENVO:00000887	large river biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:large%20river%20biome
-env_broad_scale	Large river biome	skos:relatedMatch	ENVO:00000887	large river biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Large%20river%20biome
-env_broad_scale	mangrove biome	skos:relatedMatch	ENVO:01000181	mangrove biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:mangrove%20biome
-env_broad_scale	research facility	skos:relatedMatch	ENVO:00000469	research facility	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:research%20facility
-env_broad_scale	ENVO:00000447 for marine biome	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00000447%20for%20marine%20biome
-env_broad_scale	"ENVO:00000447 for ""marine biome"""	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00000447%20for%20%22marine%20biome%22
-env_broad_scale	River Water	skos:relatedMatch	ENVO:01000599	river water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:River%20Water
-env_broad_scale	river water	skos:relatedMatch	ENVO:01000599	river water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:river%20water
-env_broad_scale	Arabian sea	skos:relatedMatch	GAZ:00002457	Arabian Sea	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Arabian%20sea
-env_broad_scale	ENVO:marine biome	skos:relatedMatch	ENVO:00000447	marine biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3Amarine%20biome
-env_broad_scale	Hydrothermal vent	skos:relatedMatch	ENVO:00000215	hydrothermal vent	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Hydrothermal%20vent
-env_broad_scale	hydrothermal vent	skos:relatedMatch	ENVO:00000215	hydrothermal vent	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:hydrothermal%20vent
-env_broad_scale	marine coral reef biome	skos:relatedMatch	ENVO:01000049	marine coral reef biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:marine%20coral%20reef%20biome
-env_broad_scale	sea ice	skos:relatedMatch	ENVO:00002200	sea ice	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:sea%20ice
-env_broad_scale	Atlantic Ocean	skos:relatedMatch	GAZ:00000344	Atlantic Ocean	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Atlantic%20Ocean
-env_broad_scale	Atlantic ocean	skos:relatedMatch	GAZ:00000344	Atlantic Ocean	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Atlantic%20ocean
-env_broad_scale	Caribbean Sea	skos:relatedMatch	GAZ:00002820	Caribbean Sea	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Caribbean%20Sea
-env_broad_scale	Chemocline	skos:relatedMatch	ENVO:00002270	chemocline	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Chemocline
-env_broad_scale	"ENVO:00000038, ""LAGOON"""	skos:relatedMatch	ENVO:00000038	lagoon	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00000038%2C%20%22LAGOON%22
-env_broad_scale	ENVO:00000038, LAGOON	skos:relatedMatch	ENVO:00000038	lagoon	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A00000038%2C%20LAGOON
-env_broad_scale	ENVO:01000047 MEDITTEREAN SEA BIOME	skos:relatedMatch	ENVO:01000047	mediterranean sea biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000047%20MEDITTEREAN%20SEA%20BIOME
-env_broad_scale	ENVO:01000047, MEDITERREAN SEA BIOME	skos:relatedMatch	ENVO:01000047	mediterranean sea biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000047%2C%20MEDITERREAN%20SEA%20BIOME
-env_broad_scale	ENVO:01000252 freshwater lake biome	skos:relatedMatch	ENVO:01000252	freshwater lake biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:ENVO%3A01000252%20freshwater%20lake%20biome
-env_broad_scale	Mediterranean	skos:relatedMatch	ENVO:01000207	mediterranean	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Mediterranean
-env_broad_scale	Mediterranean Sea:	skos:relatedMatch	GAZ:00002287	Mediterranean Sea	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Mediterranean%20Sea%3A
-env_broad_scale	NE Atlantic	skos:relatedMatch	GAZ:00013759	Northeast Atlantic Ocean	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:NE%20Atlantic
-env_broad_scale	Surface Water	skos:relatedMatch	ENVO:00002042	surface water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:Surface%20Water
-env_broad_scale	biofilter	skos:relatedMatch	ENVO:00002152	biofilter	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:biofilter
-env_broad_scale	coastal water	skos:relatedMatch	ENVO:00002150	coastal sea water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:coastal%20water
-env_broad_scale	concentration basin mediterranean sea biome	skos:relatedMatch	ENVO:01000004	concentration basin mediterranean sea biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:concentration%20basin%20mediterranean%20sea%20biome
-env_broad_scale	forest	skos:relatedMatch	GAZ:00454366	Forest	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:forest
-env_broad_scale	hydrothermal vents	skos:relatedMatch	ENVO:00000215	hydrothermal vent	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:hydrothermal%20vents
-env_broad_scale	hypersaline lake	skos:relatedMatch	ENVO:01001020	hypersaline lake	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:hypersaline%20lake
-env_broad_scale	microbial mats	skos:relatedMatch	ENVO:01000008	microbial mat	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:microbial%20mats
-env_broad_scale	peatland	skos:relatedMatch	ENVO:00000044	peatland	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:peatland
-env_broad_scale	terrestrial biome	skos:relatedMatch	ENVO:00000446	terrestrial biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:terrestrial%20biome
-env_broad_scale	water river	skos:relatedMatch	ENVO:01000599	river water	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-03T13:44:09	biosample_ebs:water%20river
+env_broad_scale	ENVO:cropland biome	skos:relatedMatch	ENVO:01000245	cropland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3Acropland%20biome
+env_broad_scale	cropland biome	skos:relatedMatch	ENVO:01000245	cropland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:cropland%20biome
+env_broad_scale	urban biome	skos:relatedMatch	ENVO:01000249	urban biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:urban%20biome
+env_broad_scale	tundra biome	skos:relatedMatch	ENVO:01000180	tundra biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tundra%20biome
+env_broad_scale	terrestrial biome	skos:relatedMatch	ENVO:00000446	terrestrial biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:terrestrial%20biome
+env_broad_scale	Terrestrial biome [ENVO:00000446]	skos:relatedMatch	ENVO:00000446	terrestrial biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Terrestrial%20biome%20%5BENVO%3A00000446%5D
+env_broad_scale	Terrestrial biome	skos:relatedMatch	ENVO:00000446	terrestrial biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Terrestrial%20biome
+env_broad_scale	tundra	skos:relatedMatch	ENVO:00000112	tundra	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tundra
+env_broad_scale	Tundra	skos:relatedMatch	ENVO:00000112	tundra	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Tundra
+env_broad_scale	temperate grassland biome	skos:relatedMatch	ENVO:01000193	temperate grassland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:temperate%20grassland%20biome
+env_broad_scale	soil	skos:relatedMatch	ENVO:00001998	soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:soil
+env_broad_scale	Soil	skos:relatedMatch	ENVO:00001998	soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Soil
+env_broad_scale	forest biome	skos:relatedMatch	ENVO:01000174	forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:forest%20biome
+env_broad_scale	montane grassland biome	skos:relatedMatch	ENVO:01000194	montane grassland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:montane%20grassland%20biome
+env_broad_scale	temperate forest	skos:relatedMatch	ENVO:01001805	temperate forest	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:temperate%20forest
+env_broad_scale	temperate grassland	skos:relatedMatch	ENVO:01001811	temperate grassland	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:temperate%20grassland
+env_broad_scale	freshwater biome	skos:relatedMatch	ENVO:00000873	freshwater biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:freshwater%20biome
+env_broad_scale	Temperate broadleaf and mixed forests	skos:relatedMatch	ENVO:01000389	temperate mixed broadleaf forest	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Temperate%20broadleaf%20and%20mixed%20forests
+env_broad_scale	desert	skos:relatedMatch	ENVO:01001357	desert	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:desert
+env_broad_scale	boreal forest	skos:relatedMatch	ENVO:01000250	subpolar coniferous forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:boreal%20forest
+env_broad_scale	permafrost	skos:relatedMatch	ENVO:00000134	permafrost	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:permafrost
+env_broad_scale	shrubland biome	skos:relatedMatch	ENVO:01000176	shrubland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:shrubland%20biome
+env_broad_scale	tropical shrubland biome	skos:relatedMatch	ENVO:01000214	tropical shrubland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tropical%20shrubland%20biome
+env_broad_scale	tropical moist broadleaf forest biome	skos:relatedMatch	ENVO:01000228	tropical moist broadleaf forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tropical%20moist%20broadleaf%20forest%20biome
+env_broad_scale	coniferous forest biome	skos:relatedMatch	ENVO:01000196	coniferous forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:coniferous%20forest%20biome
+env_broad_scale	polar desert biome	skos:relatedMatch	ENVO:01000186	polar desert biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:polar%20desert%20biome
+env_broad_scale	desert biome	skos:relatedMatch	ENVO:01000179	desert biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:desert%20biome
+env_broad_scale	ENVO:00002988	skos:relatedMatch	ENVO:00002988	obsolete Temperate grasslands	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3A00002988
+env_broad_scale	ENVO:00000876	skos:relatedMatch	ENVO:00000876	obsolete Temperate broadleaf and mixed forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3A00000876
+env_broad_scale	ENVO:00000446	skos:relatedMatch	ENVO:00000446	terrestrial biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3A00000446
+env_broad_scale	ENVO:00003009	skos:relatedMatch	ENVO:00003009	obsolete Subtropical Division (230)	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3A00003009
+env_broad_scale	ENVO:00000883	skos:relatedMatch	ENVO:00000883	obsolete Deserts and xeric shrubland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3A00000883
+env_broad_scale	flooded grassland biome	skos:relatedMatch	ENVO:01000195	flooded grassland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:flooded%20grassland%20biome
+env_broad_scale	marine benthic biome	skos:relatedMatch	ENVO:01000024	marine benthic biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:marine%20benthic%20biome
+env_broad_scale	large river biome	skos:relatedMatch	ENVO:00000887	large river biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:large%20river%20biome
+env_broad_scale	microbial community	skos:relatedMatch	PCO:1000004	microbial community	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:microbial%20community
+env_broad_scale	forest soil	skos:relatedMatch	ENVO:00002261	forest soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:forest%20soil
+env_broad_scale	Forest soil	skos:relatedMatch	ENVO:00002261	forest soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Forest%20soil
+env_broad_scale	polar desert	skos:relatedMatch	ENVO:01000186	polar desert biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:polar%20desert
+env_broad_scale	sand	skos:relatedMatch	ENVO:01000017	sand	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:sand
+env_broad_scale	Temperate coniferous forests	skos:relatedMatch	ENVO:01000211	temperate coniferous forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Temperate%20coniferous%20forests
+env_broad_scale	bacteria	skos:relatedMatch	NCBITaxon:2	Bacteria	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:bacteria
+env_broad_scale	grassland biome	skos:relatedMatch	ENVO:01000177	grassland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:grassland%20biome
+env_broad_scale	rangeland biome	skos:relatedMatch	ENVO:01000247	rangeland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:rangeland%20biome
+env_broad_scale	grassland	skos:relatedMatch	ENVO:01001206	grassland ecosystem	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:grassland
+env_broad_scale	Grassland	skos:relatedMatch	ENVO:01001206	grassland ecosystem	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Grassland
+env_broad_scale	orchard	skos:relatedMatch	ENVO:00000115	orchard	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:orchard
+env_broad_scale	polar biome	skos:relatedMatch	ENVO:01000339	polar biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:polar%20biome
+env_broad_scale	grassland soil	skos:relatedMatch	ENVO:00005750	grassland soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:grassland%20soil
+env_broad_scale	bulk soil	skos:relatedMatch	ENVO:00005802	bulk soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:bulk%20soil
+env_broad_scale	ENVO:taiga	skos:relatedMatch	ENVO:00000109	woodland area	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3Ataiga
+env_broad_scale	montane shrubland biome	skos:relatedMatch	ENVO:01000216	montane shrubland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:montane%20shrubland%20biome
+env_broad_scale	fusarium	skos:relatedMatch	NCBITaxon:5506	Fusarium	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:fusarium
+env_broad_scale	peatland	skos:relatedMatch	ENVO:00000044	peatland	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:peatland
+env_broad_scale	Agricultural soil	skos:relatedMatch	ENVO:00002259	agricultural soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Agricultural%20soil
+env_broad_scale	temperate woodland biome	skos:relatedMatch	ENVO:01000221	temperate woodland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:temperate%20woodland%20biome
+env_broad_scale	leaf litter	skos:relatedMatch	ENVO:01000628	plant litter	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:leaf%20litter
+env_broad_scale	ENVO:Tropical and subtropical coniferous forest biome	skos:relatedMatch	ENVO:01000209	subtropical coniferous forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3ATropical%20and%20subtropical%20coniferous%20forest%20biome
+env_broad_scale	tropical and subtropical coniferous forest biome	skos:relatedMatch	ENVO:01000209	subtropical coniferous forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tropical%20and%20subtropical%20coniferous%20forest%20biome
+env_broad_scale	ENVO:00000446 (terrestrial)	skos:relatedMatch	ENVO:00000446	terrestrial biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:ENVO%3A00000446%20%28terrestrial%29
+env_broad_scale	terrestrial	skos:relatedMatch	ENVO:00000446	terrestrial biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:terrestrial
+env_broad_scale	Terrestrial	skos:relatedMatch	ENVO:00000446	terrestrial biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Terrestrial
+env_broad_scale	sediment	skos:relatedMatch	ENVO:00002007	sediment	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:sediment
+env_broad_scale	oil-contaminated soil	skos:relatedMatch	ENVO:00002875	oil contaminated soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:oil-contaminated%20soil
+env_broad_scale	subtropical forest	skos:relatedMatch	ENVO:01001804	subtropical forest	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:subtropical%20forest
+env_broad_scale	temperate	skos:relatedMatch	ENVO:01000206	temperate	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:temperate
+env_broad_scale	Rice paddy soils	skos:relatedMatch	ENVO:00005740	paddy field soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Rice%20paddy%20soils
+env_broad_scale	coniferous forest	skos:relatedMatch	ENVO:01000433	needleleaf forest	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:coniferous%20forest
+env_broad_scale	peat soil	skos:relatedMatch	ENVO:00005774	peat soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:peat%20soil
+env_broad_scale	Deyeuxia arundinacea	skos:relatedMatch	NCBITaxon:1767996	Deyeuxia arundinacea	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Deyeuxia%20arundinacea
+env_broad_scale	Pasture	skos:relatedMatch	ENVO:00000266	pasture	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Pasture
+env_broad_scale	tropical coniferous forest biome	skos:relatedMatch	ENVO:01000210	tropical coniferous forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tropical%20coniferous%20forest%20biome
+env_broad_scale	anthropogenic environment	skos:relatedMatch	ENVO:01000313	anthropogenic environment	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:anthropogenic%20environment
+env_broad_scale	temperate coniferous forest biome	skos:relatedMatch	ENVO:01000211	temperate coniferous forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:temperate%20coniferous%20forest%20biome
+env_broad_scale	rice paddy	skos:relatedMatch	ENVO:00000296	rice field	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:rice%20paddy
+env_broad_scale	tropical broadleaf forest biome	skos:relatedMatch	ENVO:01000200	tropical broadleaf forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tropical%20broadleaf%20forest%20biome
+env_broad_scale	tropical grassland biome	skos:relatedMatch	ENVO:01000192	tropical grassland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tropical%20grassland%20biome
+env_broad_scale	Ria de Aveiro	skos:relatedMatch	GAZ:00146341	Ria de Aveiro	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Ria%20de%20Aveiro
+env_broad_scale	biome	skos:relatedMatch	ENVO:00000428	biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:biome
+env_broad_scale	dense settlement biome	skos:relatedMatch	ENVO:01000248	dense settlement biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:dense%20settlement%20biome
+env_broad_scale	habitat	skos:relatedMatch	ENVO:01000739	habitat	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:habitat
+env_broad_scale	tropical desert biome	skos:relatedMatch	ENVO:01000183	tropical desert biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:tropical%20desert%20biome
+env_broad_scale	Mediterranean forest	skos:relatedMatch	ENVO:01001791	mediterranean forest	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Mediterranean%20forest
+env_broad_scale	Rhizosphere	skos:relatedMatch	ENVO:00005801	rhizosphere	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Rhizosphere
+env_broad_scale	Temperate broadleaf and mixed forest	skos:relatedMatch	ENVO:01000389	temperate mixed broadleaf forest	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:Temperate%20broadleaf%20and%20mixed%20forest
+env_broad_scale	arable soil	skos:relatedMatch	ENVO:00005742	arable soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:arable%20soil
+env_broad_scale	area of cropland	skos:relatedMatch	ENVO:01000892	area of cropland	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:area%20of%20cropland
+env_broad_scale	beach	skos:relatedMatch	ENVO:00000091	beach	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:beach
+env_broad_scale	cold desert	skos:relatedMatch	ENVO:01000382	cold desert	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:cold%20desert
+env_broad_scale	contaminated soil	skos:relatedMatch	ENVO:00002116	contaminated soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:contaminated%20soil
+env_broad_scale	island	skos:relatedMatch	ENVO:00000098	island	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:island
+env_broad_scale	marsh	skos:relatedMatch	ENVO:00000035	marsh	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:marsh
+env_broad_scale	mixed forest biome	skos:relatedMatch	ENVO:01000198	mixed forest biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:mixed%20forest%20biome
+env_broad_scale	montane shrubland	skos:relatedMatch	ENVO:01000216	montane shrubland biome	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:montane%20shrubland
+env_broad_scale	paddy soil	skos:relatedMatch	ENVO:00005740	paddy field soil	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:paddy%20soil
+env_broad_scale	proteobacteria	skos:relatedMatch	NCBITaxon:1224	Proteobacteria	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:proteobacteria
+env_broad_scale	wastewater treatment system	skos:relatedMatch	ENVO:00002043	wastewater treatment plant	Lexical	https://github.com/turbomam/scoped-mapping	2021-06-09T18:39:46	biosample_ebs:wastewater%20treatment%20system
