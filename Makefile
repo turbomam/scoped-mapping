@@ -51,7 +51,15 @@ semantic-sql/db/envo.db: semantic-sql
 	make db/envo.db
 	date
 
-# this shouldn't redownload if the file exisits
+semantic-sql/db/po.db: semantic-sql
+	date
+	export JAVA_OPTS=-Xmx24G ; \
+	cd semantic-sql ; \
+	make db/po.db
+	date
+
+
+# this shouldn't re-download if the file exisits
 target/biosample_packages.xml:
 	curl -o target/biosample_packages.xml https://www.ncbi.nlm.nih.gov/biosample/docs/packages/?format=xml
 

@@ -3,6 +3,10 @@ local/
 semantic-sql/
 sm_venv/
 .DS_Store
+jupyter_contrib_nbextensions/
+sssom-py/
+tsv/
+
 
 ## standard GitHub python .gitignore
 
