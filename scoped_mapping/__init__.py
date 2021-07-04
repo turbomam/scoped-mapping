@@ -431,7 +431,7 @@ def decompose_series(series_to_decompose, id_pattern):
 
 # removed pattern_name argument
 def env_package_nomralizastion(dataframe, col_to_normalize, id_replacement_rule):
-    dataframe[['lhs', 'rhs']] = dataframe[col_to_normalize].str.split('.', expand=True)
+    dataframe[['lhs', 'rhs', 'remainder']] = dataframe[col_to_normalize].str.split('.', expand=True)
     flag = dataframe['rhs'].apply(lambda x: x is None)
     temp = dataframe['lhs'][flag]
     dataframe.loc[flag, 'rhs'] = temp

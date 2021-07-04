@@ -7,4 +7,6 @@ PyYAML>=5.4.1
 requests>=2.25.1
 setuptools>=56.2.0
 strsimpy>=0.2.0
-tdda>=1.0.32x
+# tdda>=1.0.32x
+tdda
+scipy
