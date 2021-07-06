@@ -289,9 +289,9 @@ def get_best_acceptable(mappings, max_string_dist=0.05):
                 min_search_rank = working['search_rank'].min()
                 working = working[working['search_rank'] == min_search_rank]
                 accepted_best.append(working)
-    catted_best = pd.concat(accepted_best)
-    if len(catted_best.index) > 0:
-        return catted_best
+        catted_best = pd.concat(accepted_best)
+        if len(catted_best.index) > 0:
+            return catted_best
 
 
 # # one category or enum at a time
