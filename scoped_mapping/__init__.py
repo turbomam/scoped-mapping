@@ -312,7 +312,9 @@ def map_from_yaml(model, selected_enum, print_enums=False, bad_chars=standard_re
 
 # def get_no_mappings
 def get_no_acceptable_mappings(all_mappings, best_acceptables):
-    if(len(best_acceptables.index) > 0):
+    if best_acceptables is None:
+        return all_mappings
+    else:
         best_accepted_raws = set(best_acceptables['raw'])
         # print(best_accepted_raws)
         all_raws = set(all_mappings['raw'])
@@ -322,8 +324,6 @@ def get_no_acceptable_mappings(all_mappings, best_acceptables):
         failure_flag = all_mappings['raw'].isin(frl)
         failures = all_mappings[failure_flag]
         return failures
-    else:
-        return best_acceptables
 
 
 def rewrite_yaml(model, enum, best_acceptable):
