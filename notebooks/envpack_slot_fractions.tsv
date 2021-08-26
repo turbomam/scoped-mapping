@@ -1,0 +1,1591 @@
+env_package	slot	value	val_count	fraction
+air	env_broad_scale	air [ENVO:00002005]	189	0.43249427917620137
+air	env_broad_scale	cropland biome [ENVO:01000245]	48	0.10983981693363844
+air	env_broad_scale	forest [ENVO:00000111]	2	0.004576659038901602
+air	env_broad_scale	temperate grassland biome [ENVO:01000193]	6	0.013729977116704805
+air	env_broad_scale	temperate woodland biome [ENVO:01000221]	9	0.020594965675057208
+air	env_broad_scale	terrestrial biome [ENVO:00000446]	59	0.13501144164759726
+air	env_broad_scale	tropical savanna biome [ENVO:01000188]	11	0.02517162471395881
+air	env_broad_scale	unmapped [unmapped]	23	0.05263157894736842
+air	env_broad_scale	urban biome [ENVO:01000249]	90	0.20594965675057209
+air	env_local_scale	air [ENVO:00002005]	14	0.032036613272311214
+air	env_local_scale	building [ENVO:00000073]	1	0.002288329519450801
+air	env_local_scale	city [ENVO:00000856]	84	0.19221967963386727
+air	env_local_scale	hospital [ENVO:00002173]	6	0.013729977116704805
+air	env_local_scale	university campus [ENVO:00000467]	59	0.13501144164759726
+air	env_local_scale	unmapped [unmapped]	273	0.6247139588100686
+air	env_medium	air [ENVO:00002005]	305	0.6963470319634704
+air	env_medium	air filter [ENVO:00003968]	15	0.03424657534246575
+air	env_medium	unmapped [unmapped]	59	0.13470319634703196
+air	env_medium	water [CHEBI:15377]	59	0.13470319634703196
+air	ploidy	unmapped [unmapped]	2	1.0
+built	env_broad_scale	anthropogenic terrestrial biome [ENVO:01000219]	776	0.05348035837353549
+built	env_broad_scale	biofilm [ENVO:00002034]	29	0.001998621640248105
+built	env_broad_scale	buffer [CHEBI:35225]	106	0.007305306685044797
+built	env_broad_scale	dense settlement biome [ENVO:01000248]	132	0.009097174362508615
+built	env_broad_scale	freshwater biome [ENVO:00000873]	11	0.0007580978635423845
+built	env_broad_scale	unmapped [unmapped]	151	0.010406616126809097
+built	env_broad_scale	urban biome [ENVO:01000249]	12931	0.8911784975878705
+built	env_broad_scale	village biome [ENVO:01000246]	370	0.025499655410062026
+built	env_broad_scale	water [CHEBI:15377]	4	0.0002756719503790489
+built	env_local_scale	Surface [FMA:50594]	10	0.0006891798759476223
+built	env_local_scale	air filter [ENVO:00003968]	116	0.00799448656099242
+built	env_local_scale	anaerobic bioreactor [ENVO:00002124]	11	0.0007580978635423845
+built	env_local_scale	anthropogenic environmental material [ENVO:0010001]	553	0.03811164713990352
+built	env_local_scale	bed base [ENVO:01000592]	26	0.001791867677463818
+built	env_local_scale	biofilter [ENVO:00002152]	918	0.06326671261199172
+built	env_local_scale	building [ENVO:00000073]	2128	0.14665747760165404
+built	env_local_scale	composting toilet [ENVO:01000550]	26	0.001791867677463818
+built	env_local_scale	hospital [ENVO:00002173]	3564	0.2456237077877326
+built	env_local_scale	indoor kitchen [ENVO:01000421]	26	0.001791867677463818
+built	env_local_scale	light [EFO:0000568]	48	0.0033080634045485873
+built	env_local_scale	living room [ENVO:01000423]	26	0.001791867677463818
+built	env_local_scale	low brightness [PATO:0000327]	58	0.00399724328049621
+built	env_local_scale	military training area [ENVO:00000561]	1326	0.09138525155065472
+built	env_local_scale	research facility [ENVO:00000469]	1936	0.13342522398345968
+built	env_local_scale	sea water [ENVO:00002149]	33	0.0022742935906271537
+built	env_local_scale	university campus [ENVO:00000467]	2196	0.15134390075809787
+built	env_local_scale	unmapped [unmapped]	1498	0.10323914541695382
+built	env_local_scale	zoological garden [ENVO:00010625]	11	0.0007580978635423845
+built	env_medium	Cement [FMA:55630]	33	0.002272257797975625
+built	env_medium	Feces [FMA:64183]	12	0.0008262755629002272
+built	env_medium	Gossypium hirsutum [NCBITaxon:3635]	14	0.0009639881567169318
+built	env_medium	SART-1 family protein DOT2 (Arabidopsis thaliana) [PR:Q9LFE0]	137	0.009433312676444261
+built	env_medium	Surface [FMA:50594]	943	0.0649314879845762
+built	env_medium	air [ENVO:00002005]	482	0.03318873510982579
+built	env_medium	anthropogenic environmental material [ENVO:0010001]	3957	0.27246436686634995
+built	env_medium	biological product [ENVO:02000043]	11	0.000757419265991875
+built	env_medium	ceiling [ENVO:01000471]	742	0.05109137230599738
+built	env_medium	cloth [ENVO:02000058]	27	0.0018591200165255113
+built	env_medium	concrete [ENVO:01000458]	19	0.0013082696412586932
+built	env_medium	dust [ENVO:00002008]	2677	0.18432830682365903
+built	env_medium	food-grade textile surface [FOODON:03500045]	21	0.0014459822350753977
+built	env_medium	glass [ENVO:01000480]	31	0.0021345452041589205
+built	env_medium	gypsum [CHEBI:48838]	138	0.009502168973352614
+built	env_medium	plastic [ENVO:06105101]	72	0.004957653377401363
+built	env_medium	polymer [CHEBI:60027]	79	0.005439647455759829
+built	env_medium	sand [ENVO:01000017]	918	0.06321008056186739
+built	env_medium	sea water [ENVO:00002149]	4	0.00027542518763340907
+built	env_medium	soil [ENVO:00001998]	49	0.0033739585485092613
+built	env_medium	sterile water [ENVO:00005791]	4	0.00027542518763340907
+built	env_medium	surface layer [ENVO:00010504]	1588	0.1093437994904634
+built	env_medium	tile [ENVO:01000514]	13	0.0008951318598085794
+built	env_medium	unmapped [unmapped]	2287	0.15747435102940163
+built	env_medium	water [CHEBI:15377]	147	0.010121875645527783
+built	env_medium	wood [ENVO:00002040]	118	0.008125043035185568
+built	host_body_product	Mucus [FMA:66938]	1	0.004484304932735426
+built	host_body_product	unmapped [unmapped]	222	0.9955156950672646
+built	samp_collect_device	unmapped [unmapped]	779	1.0
+host-associated	chem_administration	actin patches distal protein 1 (yeast) [PR:P38281]	47	0.22705314009661837
+host-associated	chem_administration	control [EFO:0001461]	47	0.22705314009661837
+host-associated	chem_administration	unmapped [unmapped]	64	0.30917874396135264
+host-associated	chem_administration	vancomycin [CHEBI:28001]	49	0.23671497584541062
+host-associated	env_broad_scale	Bos taurus x Bison bison [NCBITaxon:297284]	18	0.000244548604035052
+host-associated	env_broad_scale	Cecum [FMA:14541]	9	0.000122274302017526
+host-associated	env_broad_scale	Cervus nippon [NCBITaxon:9863]	27	0.00036682290605257795
+host-associated	env_broad_scale	Feces [FMA:64183]	2	2.7172067115005773e-05
+host-associated	env_broad_scale	Gut [FMA:45615]	9	0.000122274302017526
+host-associated	env_broad_scale	Mus musculus [NCBITaxon:10090]	18	0.000244548604035052
+host-associated	env_broad_scale	Serpentes [NCBITaxon:8570]	28	0.0003804089396100808
+host-associated	env_broad_scale	Small lake biome [ENVO:00000892]	30	0.0004075810067250866
+host-associated	env_broad_scale	amenity lake [ENVO:00000451]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	anatomical entity environment [ENVO:2100000]	48	0.0006521296107601385
+host-associated	env_broad_scale	anthropogenic terrestrial biome [ENVO:01000219]	2128	0.028911079410366143
+host-associated	env_broad_scale	aquatic biome [ENVO:00002030]	32	0.00043475307384009237
+host-associated	env_broad_scale	artificial harbor [ENVO:00000464]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	backwater [ENVO:00000472]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	biome [ENVO:00000428]	8	0.00010868826846002309
+host-associated	env_broad_scale	blank sample [NCBITaxon:2582415]	9	0.000122274302017526
+host-associated	env_broad_scale	broadleaf forest biome [ENVO:01000197]	12	0.00016303240269003463
+host-associated	env_broad_scale	clarified rumen fluid [MICRO:0000520]	7	9.51022349025202e-05
+host-associated	env_broad_scale	coast [ENVO:01000687]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	coastal water body [ENVO:02000049]	47	0.0006385435772026357
+host-associated	env_broad_scale	coral reef [ENVO:00000150]	20	0.00027172067115005776
+host-associated	env_broad_scale	cropland biome [ENVO:01000245]	3	4.075810067250866e-05
+host-associated	env_broad_scale	dense settlement biome [ENVO:01000248]	2570	0.03491610624278242
+host-associated	env_broad_scale	diet [EFO:0002755]	90	0.0012227430201752598
+host-associated	env_broad_scale	drinking water reservoir [ENVO:00000449]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	ecological corridor [ENVO:01000930]	3	4.075810067250866e-05
+host-associated	env_broad_scale	estuarine biome [ENVO:01000020]	1030	0.013993614564227973
+host-associated	env_broad_scale	farm [ENVO:00000078]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	feces [ENVO:00002003]	2	2.7172067115005773e-05
+host-associated	env_broad_scale	flood control dam [ENVO:00000471]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	forest [ENVO:00000111]	288	0.003912777664560832
+host-associated	env_broad_scale	forest biome [ENVO:01000174]	88	0.0011955709530602542
+host-associated	env_broad_scale	fresh water [ENVO:00002011]	6	8.151620134501732e-05
+host-associated	env_broad_scale	freshwater biome [ENVO:00000873]	292	0.003967121798790843
+host-associated	env_broad_scale	freshwater lake biome [ENVO:01000252]	6	8.151620134501732e-05
+host-associated	env_broad_scale	grassland biome [ENVO:01000177]	14402	0.19566605529515657
+host-associated	env_broad_scale	gut metagenome [NCBITaxon:749906]	18	0.000244548604035052
+host-associated	env_broad_scale	habitat [ENVO:01000739]	6	8.151620134501732e-05
+host-associated	env_broad_scale	harbor [ENVO:00000463]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	hydroelectric dam [ENVO:00000468]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	hydroelectric reservoir [ENVO:00000448]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	intertidal zone [ENVO:00000316]	586	0.007961415664696691
+host-associated	env_broad_scale	intestine environment [ENVO:2100002]	354	0.004809455879356022
+host-associated	env_broad_scale	irrigation dam [ENVO:00000470]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	irrigation reservoir [ENVO:00000450]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	large river biome [ENVO:00000887]	1999	0.02715848108144827
+host-associated	env_broad_scale	liman [ENVO:00000453]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	marine abyssal zone biome [ENVO:01000027] | polar biome [ENVO:01000339]	2	2.7172067115005773e-05
+host-associated	env_broad_scale	marine bathyal zone biome [ENVO:01000026]	36	0.000489097208070104
+host-associated	env_broad_scale	marine benthic biome [ENVO:01000024]	2647	0.03596223082671014
+host-associated	env_broad_scale	marine benthic biome [ENVO:01000024] | archipelago [ENVO:00000220]	63	0.0008559201141226819
+host-associated	env_broad_scale	marine biome [ENVO:00000447]	3652	0.049616194552000545
+host-associated	env_broad_scale	marine coral reef biome [ENVO:01000049]	140	0.0019020446980504042
+host-associated	env_broad_scale	marine hydrothermal vent biome [ENVO:01000030]	39	0.0005298553087426126
+host-associated	env_broad_scale	marine hydrothermal vent biome [ENVO:01000030] | marine bathyal zone biome [ENVO:01000026]	37	0.0005026832416276068
+host-associated	env_broad_scale	marine neritic benthic zone biome [ENVO:01000025]	13	0.00017661843624753752
+host-associated	env_broad_scale	marine reef biome [ENVO:01000029]	30	0.0004075810067250866
+host-associated	env_broad_scale	marine subtidal rocky reef biome [ENVO:01000050]	6	8.151620134501732e-05
+host-associated	env_broad_scale	mediterranean shrubland biome [ENVO:01000217]	608	0.008260308402961755
+host-associated	env_broad_scale	microbiome [EFO:0004982]	256	0.003478024590720739
+host-associated	env_broad_scale	mixed forest biome [ENVO:01000198]	119	0.0016167379933428436
+host-associated	env_broad_scale	montane grassland biome [ENVO:01000194]	2	2.7172067115005773e-05
+host-associated	env_broad_scale	mouse gut metagenome [NCBITaxon:410661]	176	0.0023911419061205083
+host-associated	env_broad_scale	natural harbor [ENVO:00000465]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	neritic epipelagic zone biome [ENVO:01000042]	48	0.0006521296107601385
+host-associated	env_broad_scale	obsolete marine hydrographic feature [ENVO:00000466]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	ocean [ENVO:00000015]	10	0.00013586033557502888
+host-associated	env_broad_scale	ocean biome [ENVO:01000048]	1163	0.01580055702737586
+host-associated	env_broad_scale	outlet glacier [ENVO:00000459]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	penplain [ENVO:00000460]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	phosphatidylinositol 3-kinase 1 (Dictyostelium discoideum) [PR:P54673]	61	0.0008287480470076761
+host-associated	env_broad_scale	plateau glacier [ENVO:00000457]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	polar desert biome [ENVO:01000186]	2	2.7172067115005773e-05
+host-associated	env_broad_scale	polygenetic volcanic field [ENVO:00000462]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	pseudocrater [ENVO:00000461]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	rangeland biome [ENVO:01000247]	809	0.010991101148019836
+host-associated	env_broad_scale	research facility [ENVO:00000469]	558	0.007581006725086611
+host-associated	env_broad_scale	respiratory airway [UBERON:0001005]	29	0.00039399497316758373
+host-associated	env_broad_scale	ribbon lake [ENVO:00000452]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	rumen [UBERON:0007365]	17	0.00023096257047754907
+host-associated	env_broad_scale	saline water aquarium [ENVO:00002197]	54	0.0007336458121051559
+host-associated	env_broad_scale	savanna soil [ENVO:00005746]	14	0.0001902044698050404
+host-associated	env_broad_scale	shrubland biome [ENVO:01000176]	1311	0.017811289993886283
+host-associated	env_broad_scale	skin epidermis [UBERON:0001003]	202	0.002744378778615583
+host-associated	env_broad_scale	subtropical desert biome [ENVO:01000184]	3	4.075810067250866e-05
+host-associated	env_broad_scale	tarn [ENVO:00000455]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	temperate biome [ENVO:01001831]	2250	0.030568575504381496
+host-associated	env_broad_scale	temperate forest [ENVO:01001805]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	temperate mixed forest biome [ENVO:01000212]	121	0.0016439100604578494
+host-associated	env_broad_scale	temperate shrubland biome [ENVO:01000215]	23	0.0003124787718225664
+host-associated	env_broad_scale	terrestrial biome [ENVO:00000446]	1594	0.021656137490659602
+host-associated	env_broad_scale	tidewater glacier [ENVO:00000456]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	tropical broadleaf forest biome [ENVO:01000200]	789	0.010719380476869779
+host-associated	env_broad_scale	tropical dry broadleaf forest biome [ENVO:01000227]	60	0.0008151620134501732
+host-associated	env_broad_scale	tropical grassland biome [ENVO:01000192]	757	0.010284627403029685
+host-associated	env_broad_scale	tropical moist broadleaf forest biome [ENVO:01000228]	303	0.004116568167923375
+host-associated	env_broad_scale	tropical shrubland biome [ENVO:01000214]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	turlough [ENVO:00000454]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	university campus [ENVO:00000467]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	unmapped [unmapped]	7164	0.09733034440595069
+host-associated	env_broad_scale	urban biome [ENVO:01000249]	23603	0.32067115005774066
+host-associated	env_broad_scale	valley glacier [ENVO:00000458]	1	1.3586033557502887e-05
+host-associated	env_broad_scale	village biome [ENVO:01000246]	572	0.0077712111948916515
+host-associated	env_broad_scale	woodland biome [ENVO:01000175]	37	0.0005026832416276068
+host-associated	env_broad_scale	zoological garden [ENVO:00010625]	2	2.7172067115005773e-05
+host-associated	env_local_scale	Anatomical entity [FMA:62955]	9	0.000122274302017526
+host-associated	env_local_scale	Bathymodiolus-dominated oceanic mussel reef [ENVO:01001385]	39	0.0005298553087426126
+host-associated	env_local_scale	Bathymodiolus-dominated oceanic mussel reef [ENVO:01001385] | Bathymodiolus-dominated oceanic mussel bed [ENVO:01001390]	37	0.0005026832416276068
+host-associated	env_local_scale	Brain [FMA:50801]	35	0.00047551117451260106
+host-associated	env_local_scale	DNA [CHEBI:16991]	1	1.3586033557502887e-05
+host-associated	env_local_scale	Feces [FMA:64183]	2	2.7172067115005773e-05
+host-associated	env_local_scale	Gut [FMA:45615]	485	0.0065892262753889
+host-associated	env_local_scale	Heart [FMA:7088]	29	0.00039399497316758373
+host-associated	env_local_scale	Liver [FMA:7197]	36	0.000489097208070104
+host-associated	env_local_scale	Prostate [FMA:9600]	21	0.0002853067047075606
+host-associated	env_local_scale	Spleen [FMA:7196]	24	0.00032606480538006926
+host-associated	env_local_scale	Uterus [FMA:17558]	13	0.00017661843624753752
+host-associated	env_local_scale	abattoir [ENVO:01000925]	1	1.3586033557502887e-05
+host-associated	env_local_scale	abyssal plain [ENVO:00000244]	2	2.7172067115005773e-05
+host-associated	env_local_scale	agricultural feature [ENVO:00000077]	575	0.00781196929556416
+host-associated	env_local_scale	anaerobic [MICRO:0000495]	683	0.009279260919774471
+host-associated	env_local_scale	anaerobic bioreactor [ENVO:00002124]	9	0.000122274302017526
+host-associated	env_local_scale	animal aquaculture process [ENVO:01001254] | unmapped [unmapped]	107	0.001453705590652809
+host-associated	env_local_scale	animal cage [ENVO:01000922]	638	0.008667889409686842
+host-associated	env_local_scale	animal habitation [ENVO:00005803]	94	0.0012770871544052714
+host-associated	env_local_scale	animal house [ENVO:00003040]	798	0.010841654778887305
+host-associated	env_local_scale	bay [ENVO:00000032]	14	0.0001902044698050404
+host-associated	env_local_scale	biofilm [ENVO:00002034]	18	0.000244548604035052
+host-associated	env_local_scale	blank sample [NCBITaxon:2582415]	9	0.000122274302017526
+host-associated	env_local_scale	campground [ENVO:01000935]	1	1.3586033557502887e-05
+host-associated	env_local_scale	canopy [ENVO:01001242]	30	0.0004075810067250866
+host-associated	env_local_scale	chopped meat [MICRO:0000611]	241	0.0032742340873581958
+host-associated	env_local_scale	coast [ENVO:01000687]	586	0.007961415664696691
+host-associated	env_local_scale	continental subsurface zone [ENVO:01000942]	1	1.3586033557502887e-05
+host-associated	env_local_scale	control [EFO:0001461]	6	8.151620134501732e-05
+host-associated	env_local_scale	coral reef [ENVO:00000150]	165	0.0022416955369879764
+host-associated	env_local_scale	day care building [ENVO:01000927]	1	1.3586033557502887e-05
+host-associated	env_local_scale	dedicated campground [ENVO:01000936]	1	1.3586033557502887e-05
+host-associated	env_local_scale	digestive tract [UBERON:0001555]	61	0.0008287480470076761
+host-associated	env_local_scale	ecological corridor [ENVO:01000930]	1	1.3586033557502887e-05
+host-associated	env_local_scale	ecotone [ENVO:01000947]	1	1.3586033557502887e-05
+host-associated	env_local_scale	environmental system determined by an organism [ENVO:01001000]	5	6.793016778751444e-05
+host-associated	env_local_scale	feces [ENVO:00002003]	2	2.7172067115005773e-05
+host-associated	env_local_scale	field [ENVO:01000352]	3	4.075810067250866e-05
+host-associated	env_local_scale	fish farm [ENVO:00000294]	47	0.0006385435772026357
+host-associated	env_local_scale	fish processing building [ENVO:01000928]	1	1.3586033557502887e-05
+host-associated	env_local_scale	fissure water [ENVO:01000940]	1	1.3586033557502887e-05
+host-associated	env_local_scale	fjord [ENVO:00000039]	1	1.3586033557502887e-05
+host-associated	env_local_scale	flood plain [ENVO:00000255]	5	6.793016778751444e-05
+host-associated	env_local_scale	forest [ENVO:00000111]	311	0.0042252564363833975
+host-associated	env_local_scale	hospital [ENVO:00002173]	1118	0.015189185517288227
+host-associated	env_local_scale	hot tub [ENVO:01000938]	1	1.3586033557502887e-05
+host-associated	env_local_scale	impromptu campground [ENVO:01000937]	1	1.3586033557502887e-05
+host-associated	env_local_scale	intestine environment [ENVO:2100002]	163	0.0022145234698729708
+host-associated	env_local_scale	kelp forest [ENVO:01000058]	1956	0.026574281638475646
+host-associated	env_local_scale	knackery [ENVO:01000926]	1	1.3586033557502887e-05
+host-associated	env_local_scale	lake [ENVO:00000020]	1	1.3586033557502887e-05
+host-associated	env_local_scale	lumen [UO:0000118]	5	6.793016778751444e-05
+host-associated	env_local_scale	marine benthic feature [ENVO:01000105]	81	0.0011004687181577339
+host-associated	env_local_scale	marine coral reef deep fore reef [ENVO:01000149]	22	0.00029889273826506354
+host-associated	env_local_scale	mesoscopic physical object [ENVO:00002004]	47	0.0006385435772026357
+host-associated	env_local_scale	microbial feature [ENVO:01000007]	78	0.0010597106174852252
+host-associated	env_local_scale	microbial feature [ENVO:01000007] | cultured cell population [OBI:0100060]	48	0.0006521296107601385
+host-associated	env_local_scale	microplastic particle [ENVO:01000944]	1	1.3586033557502887e-05
+host-associated	env_local_scale	migration path [ENVO:01000931]	1	1.3586033557502887e-05
+host-associated	env_local_scale	mushroom environment [ENVO:01000929]	1	1.3586033557502887e-05
+host-associated	env_local_scale	nest of bird [ENVO:00005805]	1178	0.0160043475307384
+host-associated	env_local_scale	nursing home [ENVO:01000932]	1	1.3586033557502887e-05
+host-associated	env_local_scale	obsolete animal-associated habitat [ENVO:00006776]	53	0.000720059778547653
+host-associated	env_local_scale	obsolete cultured habitat [ENVO:02000006]	4	5.4344134230011546e-05
+host-associated	env_local_scale	obsolete insecta-associated habitat [ENVO:00009004]	6	8.151620134501732e-05
+host-associated	env_local_scale	obsolete livestock-associated habitat [ENVO:02000005]	150	0.002037905033625433
+host-associated	env_local_scale	obsolete mammalia-associated habitat [ENVO:00009002]	185	0.0025134162081380342
+host-associated	env_local_scale	obsolete organic feature [ENVO:01000159]	1490	0.0202431900006793
+host-associated	env_local_scale	obsolete organism-associated habitat [ENVO:00002032]	14	0.0001902044698050404
+host-associated	env_local_scale	ocean [ENVO:00000015]	8	0.00010868826846002309
+host-associated	env_local_scale	organic feature [ENVO:01000159]	11	0.00014944636913253177
+host-associated	env_local_scale	organic object formed through microbial activity [ENVO:01000007]	4	5.4344134230011546e-05
+host-associated	env_local_scale	petting zoo [ENVO:01000923]	1	1.3586033557502887e-05
+host-associated	env_local_scale	planetary subsurface zone [ENVO:01000941]	1	1.3586033557502887e-05
+host-associated	env_local_scale	plumbing drain [ENVO:01000924]	1	1.3586033557502887e-05
+host-associated	env_local_scale	polar tree-line ecotone [ENVO:01000948]	1	1.3586033557502887e-05
+host-associated	env_local_scale	primary microplastic particle [ENVO:01000945]	1	1.3586033557502887e-05
+host-associated	env_local_scale	reef [ENVO:00000130]	769	0.01044765980571972
+host-associated	env_local_scale	research facility [ENVO:00000469]	367	0.00498607431560356
+host-associated	env_local_scale	residential building [ENVO:01000933]	1	1.3586033557502887e-05
+host-associated	env_local_scale	restaurant [ENVO:01000934]	1	1.3586033557502887e-05
+host-associated	env_local_scale	rumen [UBERON:0007365]	16	0.00021737653692004618
+host-associated	env_local_scale	sea [ENVO:00000016]	1	1.3586033557502887e-05
+host-associated	env_local_scale	sea coast [ENVO:00000303]	1	1.3586033557502887e-05
+host-associated	env_local_scale	secondary microplastic particle [ENVO:01000946]	1	1.3586033557502887e-05
+host-associated	env_local_scale	shallow marine sediment [ENVO:03000034]	63	0.0008559201141226819
+host-associated	env_local_scale	supragingival dental plaque [UBERON:0016485]	2	2.7172067115005773e-05
+host-associated	env_local_scale	time crystal [ENVO:01000939]	1	1.3586033557502887e-05
+host-associated	env_local_scale	unidentified [NCBITaxon:32644]	267	0.003627470959853271
+host-associated	env_local_scale	unmapped [unmapped]	60271	0.8188438285442565
+host-associated	env_local_scale	vegetated hill [ENVO:01000943]	1	1.3586033557502887e-05
+host-associated	env_local_scale	venom gland [UBERON:0011579]	46	0.0006249575436451328
+host-associated	env_local_scale	woodland [ENVO:00000109]	2	2.7172067115005773e-05
+host-associated	env_local_scale	zoological garden [ENVO:00010625]	11	0.00014944636913253177
+host-associated	env_medium	Bathymodiolus gill tissue material [ENVO:01001393]	39	0.0007167931775992943
+host-associated	env_medium	Brain [FMA:50801]	35	0.0006432759286147512
+host-associated	env_medium	Cecum [FMA:14541]	9	0.00016541381021522173
+host-associated	env_medium	Chyme [FMA:62961]	8	0.00014703449796908599
+host-associated	env_medium	DNA [CHEBI:16991]	2	3.6758624492271496e-05
+host-associated	env_medium	Feces [FMA:64183]	23083	0.42424966457755153
+host-associated	env_medium	Gut [FMA:45615]	28	0.000514620742891801
+host-associated	env_medium	Heart [FMA:7088]	29	0.0005330000551379367
+host-associated	env_medium	Intestine [FMA:7199]	115	0.0021136209083056114
+host-associated	env_medium	Liver [FMA:7197]	36	0.0006616552408608869
+host-associated	env_medium	Lymphoid tissue [FMA:55220]	32	0.0005881379918763439
+host-associated	env_medium	Mucus [FMA:66938]	2737	0.05030417761767355
+host-associated	env_medium	Peritoneal fluid [FMA:16515]	24	0.000441103493907258
+host-associated	env_medium	Prostate [FMA:9600]	21	0.00038596555716885077
+host-associated	env_medium	Saliva [FMA:59862]	1089	0.02001507103604183
+host-associated	env_medium	Sebum [FMA:61304]	1189	0.021853002260655407
+host-associated	env_medium	Spleen [FMA:7196]	24	0.000441103493907258
+host-associated	env_medium	Stomach [FMA:7148]	61	0.0011211380470142807
+host-associated	env_medium	Uterus [FMA:17558]	13	0.00023893105919976475
+host-associated	env_medium	air [ENVO:00002005]	12	0.000220551746953629
+host-associated	env_medium	algae [FOODON:03411301]	586	0.01077027697623555
+host-associated	env_medium	algal material [ENVO:01001189]	48	0.000882206987814516
+host-associated	env_medium	anaerobic sludge [ENVO:00002129]	9	0.00016541381021522173
+host-associated	env_medium	animal feed [ENVO:02000047]	3	5.513793673840725e-05
+host-associated	env_medium	animal manure [ENVO:00003031]	16	0.00029406899593817197
+host-associated	env_medium	anthropogenic environmental material [ENVO:0010001]	123	0.0022606554062746973
+host-associated	env_medium	aqueous humour [MA:0001236]	18	0.00033082762043044347
+host-associated	env_medium	biofilm [ENVO:00002034]	1726	0.031722692936830305
+host-associated	env_medium	biofilm material [ENVO:01000156]	18	0.00033082762043044347
+host-associated	env_medium	blank sample [NCBITaxon:2582415]	9	0.00016541381021522173
+host-associated	env_medium	blood [MA:0000059]	18	0.00033082762043044347
+host-associated	env_medium	blood plasma [UBERON:0001969]	26	0.0004778621183995295
+host-associated	env_medium	bodily fluid [UBERON:0006314]	450	0.008270690510761087
+host-associated	env_medium	bovine milk [ENVO:00003068]	1507	0.027697623554926575
+host-associated	env_medium	breast milk [ENVO:02000031]	70	0.0012865518572295024
+host-associated	env_medium	cell culture [OBI:0001876]	4	7.351724898454299e-05
+host-associated	env_medium	chicken breast [FOODON:00002703]	199	0.003657483136981014
+host-associated	env_medium	clarified rumen fluid [MICRO:0000520]	81	0.0014887242919369957
+host-associated	env_medium	clinical samples <bacteria,NCBI:txid226901> [NCBITaxon:226901]	47	0.0008638276755683803
+host-associated	env_medium	coastal sea water [ENVO:00002150]	63	0.0011578966715065522
+host-associated	env_medium	control [EFO:0001461]	21	0.00038596555716885077
+host-associated	env_medium	dental plaque [UBERON:0016482]	2	3.6758624492271496e-05
+host-associated	env_medium	egg [UBERON:0007379]	1196	0.021981657446378356
+host-associated	env_medium	excreta [UBERON:0000174]	258	0.004741862559503023
+host-associated	env_medium	fecal material [ENVO:00002003]	1640	0.030142072083662628
+host-associated	env_medium	feces [ENVO:00002003]	100	0.001837931224613575
+host-associated	env_medium	gill tissue material [ENVO:01001391]	37	0.0006800345531070227
+host-associated	env_medium	holothurian digestive tract contents [ENVO:01001188]	2	3.6758624492271496e-05
+host-associated	env_medium	intestine environment [ENVO:2100002]	3775	0.06938190372916246
+host-associated	env_medium	lumen [UO:0000118]	38	0.0006984138653531585
+host-associated	env_medium	material entity in digestive tract [UBERON:0035118]	107	0.0019665864103365254
+host-associated	env_medium	microbial mat material [ENVO:01000157]	48	0.000882206987814516
+host-associated	env_medium	obsolete Polar Domain (100) [ENVO:00003000]	5	9.189656123067875e-05
+host-associated	env_medium	organic material [ENVO:01000155]	5009	0.09206197504089397
+host-associated	env_medium	organic waste material [ENVO:00002873]	6	0.0001102758734768145
+host-associated	env_medium	rumen [UBERON:0007365]	27	0.0004962414306456652
+host-associated	env_medium	sea water [ENVO:00002149]	93	0.0017092760388906247
+host-associated	env_medium	shallow marine sediment [ENVO:03000034]	19	0.00034920693267657927
+host-associated	env_medium	skin of external ear [UBERON:0001459]	37	0.0006800345531070227
+host-associated	env_medium	soil [ENVO:00001998]	266	0.004888897057472109
+host-associated	env_medium	sputum [MA:0002536]	30	0.0005513793673840724
+host-associated	env_medium	sterile water [ENVO:00005791]	2	3.6758624492271496e-05
+host-associated	env_medium	tissue [MA:0003002]	1	1.8379312246135748e-05
+host-associated	env_medium	unmapped [unmapped]	8007	0.14716315315480893
+host-associated	env_medium	venom [CHEBI:78505]	46	0.0008454483633222445
+host-associated	env_medium	water [CHEBI:15377]	28	0.000514620742891801
+host-associated	env_medium	wood [ENVO:00002040]	2	3.6758624492271496e-05
+host-associated	experimental_factor	diet [EFO:0002755]	3	0.0024509803921568627
+host-associated	experimental_factor	genotype [EFO:0000513]	37	0.03022875816993464
+host-associated	experimental_factor	specimen [OBI:0100051]	150	0.12254901960784313
+host-associated	experimental_factor	unidentified [NCBITaxon:32644]	7	0.005718954248366013
+host-associated	experimental_factor	uninfected [EFO:0001460]	107	0.08741830065359477
+host-associated	experimental_factor	unmapped [unmapped]	920	0.7516339869281046
+host-associated	host_body_product	Body of pancreas [FMA:14518]	24	0.0007438631291842301
+host-associated	host_body_product	Body of uterus [FMA:17739]	40	0.001239771881973717
+host-associated	host_body_product	Cecum [FMA:14541]	58	0.0017976692288618895
+host-associated	host_body_product	Chyme [FMA:62961]	5	0.0001549714852467146
+host-associated	host_body_product	Colon [FMA:14543]	56	0.0017356806347632037
+host-associated	host_body_product	Esophagus [FMA:7131]	23	0.0007128688321348872
+host-associated	host_body_product	Feces [FMA:64183]	23547	0.7298227126208777
+host-associated	host_body_product	Intestinal mucosa [FMA:15695]	36	0.0011157946937763452
+host-associated	host_body_product	Liver parenchyma [FMA:17540]	40	0.001239771881973717
+host-associated	host_body_product	Lumen of gut [FMA:45677]	1701	0.05272129928093231
+host-associated	host_body_product	Lumen of ileum [FMA:14591]	26	0.000805851723282916
+host-associated	host_body_product	Lung parenchyma [FMA:27360]	40	0.001239771881973717
+host-associated	host_body_product	Mucus [FMA:66938]	1981	0.06139970245474833
+host-associated	host_body_product	Ovary [FMA:7209]	16	0.0004959087527894868
+host-associated	host_body_product	Parenchyma of spleen [FMA:16029]	32	0.0009918175055789735
+host-associated	host_body_product	Saliva [FMA:59862]	608	0.018844532606000497
+host-associated	host_body_product	Sebum [FMA:61304]	585	0.01813166377386561
+host-associated	host_body_product	Spleen [FMA:7196]	108	0.0033473840813290356
+host-associated	host_body_product	Tooth [FMA:12516]	35	0.0010848003967270023
+host-associated	host_body_product	Tracheobronchial tree [FMA:7393]	32	0.0009918175055789735
+host-associated	host_body_product	Vagina [FMA:19949]	16	0.0004959087527894868
+host-associated	host_body_product	Wall of esophagus [FMA:12611]	32	0.0009918175055789735
+host-associated	host_body_product	Wall of intestine [FMA:15949]	159	0.004928093230845525
+host-associated	host_body_product	Wall of large intestine [FMA:14619]	48	0.0014877262583684603
+host-associated	host_body_product	Wall of small intestine [FMA:14615]	48	0.0014877262583684603
+host-associated	host_body_product	Wall of stomach [FMA:14582]	24	0.0007438631291842301
+host-associated	host_body_product	adrenal tissue [UBERON:0018303]	16	0.0004959087527894868
+host-associated	host_body_product	anatomical wall [UBERON:0000060]	32	0.0009918175055789735
+host-associated	host_body_product	blood [MA:0000059]	8	0.0002479543763947434
+host-associated	host_body_product	blood plasma [UBERON:0001969]	26	0.000805851723282916
+host-associated	host_body_product	cecum mucosa [UBERON:0000314]	228	0.007066699727250186
+host-associated	host_body_product	clarified rumen fluid [MICRO:0000520]	96	0.0029754525167369206
+host-associated	host_body_product	colon mucosa [MA:0003194]	206	0.006384825192164642
+host-associated	host_body_product	digestive gland [UBERON:0006925]	10	0.0003099429704934292
+host-associated	host_body_product	digestive tract [UBERON:0001555]	21	0.0006508802380362014
+host-associated	host_body_product	duodenum mucosa [MA:0003207]	179	0.005547979171832383
+host-associated	host_body_product	echinoderm pyloric cecum [UBERON:0008248]	267	0.00827547731217456
+host-associated	host_body_product	esophagus mucosa [UBERON:0002469]	115	0.003564344160674436
+host-associated	host_body_product	excreta [UBERON:0000174]	55	0.0017046863377138607
+host-associated	host_body_product	ileum mucosa [MA:0003216]	206	0.006384825192164642
+host-associated	host_body_product	jejunum mucosa [MA:0003214]	180	0.005578973468881726
+host-associated	host_body_product	kidney mesenchyme [UBERON:0003918]	32	0.0009918175055789735
+host-associated	host_body_product	lumen of colon [UBERON:0007159]	26	0.000805851723282916
+host-associated	host_body_product	mesenteric lymph node [UBERON:0002509]	108	0.0033473840813290356
+host-associated	host_body_product	multicellular organism [UBERON:0000468]	466	0.014443342424993802
+host-associated	host_body_product	organism substance [UBERON:0000463]	91	0.002820481031490206
+host-associated	host_body_product	parenchyma of central nervous system [UBERON:0005158]	32	0.0009918175055789735
+host-associated	host_body_product	small intestine [UBERON:0002108]	56	0.0017356806347632037
+host-associated	host_body_product	stomach mucosa [MA:0002683]	89	0.00275849243739152
+host-associated	host_body_product	tissue [MA:0003002]	48	0.0014877262583684603
+host-associated	host_body_product	unmapped [unmapped]	255	0.007903545747582445
+host-associated	host_body_product	wall of small intestine [UBERON:0001168]	96	0.0029754525167369206
+host-associated	host_disease	Healthy [HP:0032322]	156	0.2694300518134715
+host-associated	host_disease	arylsulfatase D [PR:000004323]	65	0.11226252158894647
+host-associated	host_disease	unidentified [NCBITaxon:32644]	4	0.0069084628670120895
+host-associated	host_disease	uninfected [EFO:0001460]	20	0.03454231433506045
+host-associated	host_disease	unmapped [unmapped]	334	0.5768566493955095
+host-associated	host_phenotype	unmapped [unmapped]	16	1.0
+host-associated	ploidy	diploid [PATO:0001394]	1	1.0
+host-associated	samp_collect_device	cotton swab [OBI:0002821]	47	0.027976190476190477
+host-associated	samp_collect_device	unmapped [unmapped]	1633	0.9720238095238095
+human-associated	env_broad_scale	Homo sapiens [NCBITaxon:9606]	287	0.040790221716884595
+human-associated	env_broad_scale	Human body [FMA:20394]	63	0.008953951108584423
+human-associated	env_broad_scale	air [ENVO:00002005]	1	0.0001421262080727686
+human-associated	env_broad_scale	blood [MA:0000059]	59	0.008385446276293349
+human-associated	env_broad_scale	dense settlement biome [ENVO:01000248]	433	0.06154064809550881
+human-associated	env_broad_scale	microbiome [EFO:0004982]	46	0.006537805571347356
+human-associated	env_broad_scale	subtropical grassland biome [ENVO:01000191]	12	0.0017055144968732233
+human-associated	env_broad_scale	subtropical savanna biome [ENVO:01000187]	6	0.0008527572484366117
+human-associated	env_broad_scale	subtropical shrubland biome [ENVO:01000213]	6	0.0008527572484366117
+human-associated	env_broad_scale	subtropical woodland biome [ENVO:01000222]	6	0.0008527572484366117
+human-associated	env_broad_scale	temperate grassland biome [ENVO:01000193]	24	0.0034110289937464467
+human-associated	env_broad_scale	temperate woodland biome [ENVO:01000221]	36	0.00511654349061967
+human-associated	env_broad_scale	terrestrial biome [ENVO:00000446]	726	0.10318362706083002
+human-associated	env_broad_scale	unmapped [unmapped]	937	0.1331722569641842
+human-associated	env_broad_scale	urban biome [ENVO:01000249]	4156	0.5906765207504264
+human-associated	env_broad_scale	village biome [ENVO:01000246]	238	0.03382603752131893
+human-associated	env_local_scale	Anatomical entity [FMA:62955]	3	0.00045078888054094667
+human-associated	env_local_scale	Homo sapiens [NCBITaxon:9606]	115	0.01728024042073629
+human-associated	env_local_scale	Lung [FMA:7195]	63	0.009466566491359879
+human-associated	env_local_scale	Placenta [FMA:63934]	16	0.002404207362885049
+human-associated	env_local_scale	city [ENVO:00000856]	1	0.00015026296018031557
+human-associated	env_local_scale	microbial feature [ENVO:01000007]	110	0.01652892561983471
+human-associated	env_local_scale	normal [PATO:0000461]	28	0.0042073628850488355
+human-associated	env_local_scale	obsolete human-associated habitat [ENVO:00009003]	196	0.02945154019534185
+human-associated	env_local_scale	plasma [MA:0002501]	59	0.008865514650638617
+human-associated	env_local_scale	sputum [MA:0002536]	84	0.012622088655146507
+human-associated	env_local_scale	unmapped [unmapped]	5980	0.898572501878287
+human-associated	env_medium	Bile [FMA:62971]	126	0.018150388936905792
+human-associated	env_medium	Feces [FMA:64183]	73	0.010515701526937482
+human-associated	env_medium	Milk [FMA:62100]	148	0.021319504465571883
+human-associated	env_medium	Mucus [FMA:66938]	1828	0.26332469029098243
+human-associated	env_medium	Placenta [FMA:63934]	16	0.0023048112935753384
+human-associated	env_medium	Saliva [FMA:59862]	24	0.003457216940363008
+human-associated	env_medium	Sebum [FMA:61304]	83	0.011956208585422068
+human-associated	env_medium	Urine [FMA:12274]	2010	0.2895419187554019
+human-associated	env_medium	air [ENVO:00002005]	19	0.0027369634111207145
+human-associated	env_medium	anthropogenic environmental material [ENVO:0010001]	113	0.01627772976087583
+human-associated	env_medium	blood [MA:0000059]	460	0.06626332469029098
+human-associated	env_medium	bodily fluid [UBERON:0006314]	412	0.059348890809564965
+human-associated	env_medium	breast milk [ENVO:02000031]	2	0.0002881014116969173
+human-associated	env_medium	bronchoalveolar lavage [BTO:0000155]	21	0.003025064822817632
+human-associated	env_medium	cerebrospinal fluid material [ENVO:02000029]	1	0.00014405070584845865
+human-associated	env_medium	control [EFO:0001461]	8	0.0011524056467876692
+human-associated	env_medium	ear wax [ENVO:02000028]	56	0.008066839527513685
+human-associated	env_medium	lavage [OBI:0600044]	42	0.006050129645635264
+human-associated	env_medium	organic material [ENVO:01000155]	14	0.002016709881878421
+human-associated	env_medium	oronasal secretion material [ENVO:02000035]	382	0.05502736963411121
+human-associated	env_medium	plasma [MA:0002501]	6	0.000864304235090752
+human-associated	env_medium	respiratory airway [UBERON:0001005]	392	0.05646787669259579
+human-associated	env_medium	sputum [MA:0002536]	237	0.0341400172860847
+human-associated	env_medium	supragingival dental plaque [UBERON:0016485]	1	0.00014405070584845865
+human-associated	env_medium	tears [ENVO:02000034]	54	0.007778738115816767
+human-associated	env_medium	tissue [MA:0003002]	18	0.0025929127052722557
+human-associated	env_medium	unmapped [unmapped]	396	0.05704407951598963
+human-associated	host_body_product	Bile [FMA:62971]	126	0.02703862660944206
+human-associated	host_body_product	Feces [FMA:64183]	73	0.015665236051502145
+human-associated	host_body_product	Milk [FMA:62100]	148	0.03175965665236052
+human-associated	host_body_product	Mucus [FMA:66938]	1257	0.26974248927038624
+human-associated	host_body_product	Urine [FMA:12274]	1899	0.4075107296137339
+human-associated	host_body_product	blood [MA:0000059]	58	0.012446351931330472
+human-associated	host_body_product	blood plasma [UBERON:0001969]	401	0.08605150214592275
+human-associated	host_body_product	bodily fluid [UBERON:0006314]	364	0.07811158798283262
+human-associated	host_body_product	oronasal secretion material [ENVO:02000035]	106	0.022746781115879827
+human-associated	host_body_product	sputum [MA:0002536]	220	0.04721030042918455
+human-associated	host_body_product	unmapped [unmapped]	8	0.0017167381974248926
+human-associated	host_disease	Bacteremia [HP:0031864]	17	0.08808290155440414
+human-associated	host_disease	Pneumonia [HP:0002090]	29	0.15025906735751296
+human-associated	host_disease	cystic fibrosis [MONDO:0009061]	84	0.43523316062176165
+human-associated	host_disease	unmapped [unmapped]	63	0.32642487046632124
+human-associated	ploidy	diploid [PATO:0001394]	2	0.08695652173913043
+human-associated	ploidy	normal [PATO:0000461]	6	0.2608695652173913
+human-associated	ploidy	tyrosine-protein kinase Yes [PR:000017528]	15	0.6521739130434783
+human-associated	samp_collect_device	unmapped [unmapped]	276	1.0
+human-gut	chem_administration	efavirenz [CHEBI:119486]	56	0.3393939393939394
+human-gut	chem_administration	unmapped [unmapped]	109	0.6606060606060606
+human-gut	env_broad_scale	Gut [FMA:45615]	36	0.0006499133448873484
+human-gut	env_broad_scale	Homo sapiens [NCBITaxon:9606]	421	0.007600375505488157
+human-gut	env_broad_scale	Human body [FMA:20394]	59	0.0010651357596764876
+human-gut	env_broad_scale	anthropogenic terrestrial biome [ENVO:01000219]	738	0.013323223570190642
+human-gut	env_broad_scale	cultivated environment [ENVO:01000311]	27	0.00048743500866551127
+human-gut	env_broad_scale	dense settlement biome [ENVO:01000248]	22372	0.40388503755054883
+human-gut	env_broad_scale	gut metagenome [NCBITaxon:749906]	140	0.0025274407856730216
+human-gut	env_broad_scale	human metagenome [NCBITaxon:646099]	91	0.0016428365106874638
+human-gut	env_broad_scale	intestine environment [ENVO:2100002]	37	0.0006679664933564414
+human-gut	env_broad_scale	microbiome [EFO:0004982]	104	0.001877527440785673
+human-gut	env_broad_scale	obsolete human-associated habitat [ENVO:00009003]	3	5.4159445407279026e-05
+human-gut	env_broad_scale	terrestrial biome [ENVO:00000446]	1086	0.01960571923743501
+human-gut	env_broad_scale	unmapped [unmapped]	7057	0.12740106874638937
+human-gut	env_broad_scale	urban biome [ENVO:01000249]	20285	0.3662081166955517
+human-gut	env_broad_scale	village biome [ENVO:01000246]	2936	0.05300404390525708
+human-gut	env_local_scale	Feces [FMA:64183]	78	0.0014131458801362416
+human-gut	env_local_scale	Gut [FMA:45615]	431	0.0078085368504964125
+human-gut	env_local_scale	Homo sapiens [NCBITaxon:9606]	94	0.0017030219581129068
+human-gut	env_local_scale	Intestine [FMA:7199]	26	0.00047104862671208057
+human-gut	env_local_scale	Organ [FMA:67498]	27	0.0004891658815856222
+human-gut	env_local_scale	agricultural ecosystem [ENVO:00000077]	40	0.0007246901949416625
+human-gut	env_local_scale	biopsy [OBI:0002650]	31	0.0005616349010797884
+human-gut	env_local_scale	city [ENVO:00000856]	7	0.00012682078411479093
+human-gut	env_local_scale	control [EFO:0001461]	1	1.8117254873541563e-05
+human-gut	env_local_scale	epithelium [MA:0003060]	32	0.00057975215595333
+human-gut	env_local_scale	excreta [UBERON:0000174]	184	0.003333574896731647
+human-gut	env_local_scale	gut metagenome [NCBITaxon:749906]	116	0.002101601565330821
+human-gut	env_local_scale	habitat [ENVO:01000739]	1696	0.030726864265526486
+human-gut	env_local_scale	hospital [ENVO:00002173]	46	0.0008333937241829118
+human-gut	env_local_scale	human dwelling [ENVO:01000744]	330	0.005978694108268715
+human-gut	env_local_scale	microbial feature [ENVO:01000007]	37	0.0006703384303210377
+human-gut	env_local_scale	obsolete human-associated habitat [ENVO:00009003]	326	0.005906225088774549
+human-gut	env_local_scale	research facility [ENVO:00000469]	29	0.0005254003913327053
+human-gut	env_local_scale	ulcerative colitis [EFO:0000729]	20	0.00036234509747083124
+human-gut	env_local_scale	unmapped [unmapped]	51645	0.935665627944054
+human-gut	env_medium	Feces [FMA:64183]	49397	0.9116192374414055
+human-gut	env_medium	Gut [FMA:45615]	59	0.0010888421363451815
+human-gut	env_medium	Intestinal mucosa [FMA:15695]	26	0.0004798287380504189
+human-gut	env_medium	Mucus [FMA:66938]	79	0.0014579411656147345
+human-gut	env_medium	anthropogenic environmental material [ENVO:0010001]	12	0.00022145941756173182
+human-gut	env_medium	biopsy [OBI:0002650]	63	0.001162661942199092
+human-gut	env_medium	feces [ENVO:00002003]	1462	0.026981139039604324
+human-gut	env_medium	intestine environment [ENVO:2100002]	280	0.005167386409773742
+human-gut	env_medium	organic material [ENVO:01000155]	161	0.0029712471856199016
+human-gut	env_medium	tissue [MA:0003002]	1	1.845495146347765e-05
+human-gut	env_medium	unmapped [unmapped]	2645	0.04881334662089839
+human-gut	env_medium	water [CHEBI:15377]	1	1.845495146347765e-05
+human-gut	experimental_factor	galactoside alpha-(1,2)-fucosyltransferase 2 (human) [PR:Q10981]	47	1.0
+human-gut	host_body_product	Feces [FMA:64183]	12802	0.8878563007143353
+human-gut	host_body_product	Lumen of gut [FMA:45677]	279	0.019349469450031208
+human-gut	host_body_product	Mucosa [FMA:85355]	10	0.0006935293709688606
+human-gut	host_body_product	excreta [UBERON:0000174]	161	0.011165822872598655
+human-gut	host_body_product	meconium [UBERON:0007109]	20	0.0013870587419377212
+human-gut	host_body_product	unmapped [unmapped]	1147	0.07954781885012831
+human-gut	host_disease	Healthy [HP:0032322]	86	0.05190102595051298
+human-gut	host_disease	cancer [EFO:0000311]	11	0.006638503319251659
+human-gut	host_disease	gastritis [EFO:0000217]	10	0.006035003017501509
+human-gut	host_disease	parieto-occipital sulcus [UBERON:0002695]	52	0.03138201569100785
+human-gut	host_disease	psoriatic arthritis [EFO:0003778]	16	0.009656004828002414
+human-gut	host_disease	unidentified [NCBITaxon:32644]	978	0.5902232951116475
+human-gut	host_disease	uninfected [EFO:0001460]	84	0.05069402534701267
+human-gut	host_disease	unmapped [unmapped]	420	0.25347012673506336
+human-gut	host_phenotype	unmapped [unmapped]	4	1.0
+human-gut	samp_collect_device	biopsy [OBI:0002650]	26	0.018030513176144243
+human-gut	samp_collect_device	unmapped [unmapped]	1416	0.9819694868238558
+human-oral	env_broad_scale	Bone [FMA:30317]	3	0.0003023279250226746
+human-oral	env_broad_scale	Dentine [FMA:55628]	17	0.0017131915751284893
+human-oral	env_broad_scale	Homo sapiens [NCBITaxon:9606]	350	0.03527159125264537
+human-oral	env_broad_scale	Saliva [FMA:59862]	24	0.0024186234001813967
+human-oral	env_broad_scale	dense settlement biome [ENVO:01000248]	1514	0.1525748261614431
+human-oral	env_broad_scale	microbiome [EFO:0004982]	159	0.016023380026201753
+human-oral	env_broad_scale	specimen [OBI:0100051]	69	0.006953542275521515
+human-oral	env_broad_scale	terrestrial biome [ENVO:00000446]	413	0.041620477678121534
+human-oral	env_broad_scale	tropical savanna biome [ENVO:01000188]	103	0.010379925425778494
+human-oral	env_broad_scale	tundra biome [ENVO:01000180]	102	0.010279149450770936
+human-oral	env_broad_scale	unmapped [unmapped]	1031	0.1039000302327925
+human-oral	env_broad_scale	urban biome [ENVO:01000249]	5880	0.5925627330444422
+human-oral	env_broad_scale	village biome [ENVO:01000246]	258	0.026000201551950014
+human-oral	env_local_scale	Homo sapiens [NCBITaxon:9606]	16	0.001612415600120931
+human-oral	env_local_scale	Oral cavity [FMA:20292]	27	0.0027209513252040712
+human-oral	env_local_scale	Saliva [FMA:59862]	112	0.011286909200846518
+human-oral	env_local_scale	biofilm [ENVO:00002034]	491	0.04948100372871107
+human-oral	env_local_scale	land [ENVO:01001785]	6	0.0006046558500453492
+human-oral	env_local_scale	organic feature [ENVO:01000159]	14	0.0014108636501058147
+human-oral	env_local_scale	root caries [EFO:1001163]	21	0.002116295475158722
+human-oral	env_local_scale	unmapped [unmapped]	9236	0.9307669051698075
+human-oral	env_medium	Mucus [FMA:66938]	136	0.013544467682501744
+human-oral	env_medium	Saliva [FMA:59862]	8176	0.8142615277362812
+human-oral	env_medium	Tooth [FMA:12516]	11	0.0010955084154964645
+human-oral	env_medium	biofilm [ENVO:00002034]	61	0.006075092122298576
+human-oral	env_medium	biofilm material [ENVO:01000156]	77	0.007668558908475251
+human-oral	env_medium	biological product [ENVO:02000043]	220	0.02191016830992929
+human-oral	env_medium	dental plaque [UBERON:0016482]	95	0.009461209042924012
+human-oral	env_medium	organic material [ENVO:01000155]	287	0.02858281047704412
+human-oral	env_medium	soil [ENVO:00001998]	41	0.004083258639577731
+human-oral	env_medium	subgingival dental plaque [UBERON:0016484]	14	0.0013942834379045911
+human-oral	env_medium	supragingival dental plaque [UBERON:0016485]	323	0.03216811074594164
+human-oral	env_medium	unmapped [unmapped]	600	0.05975500448162534
+human-oral	host_body_product	Mucus [FMA:66938]	52	0.01075713694662805
+human-oral	host_body_product	Saliva [FMA:59862]	4722	0.9768307819611088
+human-oral	host_body_product	unmapped [unmapped]	60	0.012412081092263137
+human-oral	host_disease	acute lymphoblastic leukemia [DOID:9952]	13	0.027083333333333334
+human-oral	host_disease	gingivitis [MONDO:0002508]	18	0.0375
+human-oral	host_disease	hemochromatosis type 1 [DOID:0111029]	77	0.16041666666666668
+human-oral	host_disease	periodontitis [EFO:0000649]	41	0.08541666666666667
+human-oral	host_disease	unmapped [unmapped]	331	0.6895833333333333
+human-oral	samp_collect_device	unmapped [unmapped]	133	1.0
+human-skin	env_broad_scale	anthropogenic terrestrial biome [ENVO:01000219]	143	0.010034383552031437
+human-skin	env_broad_scale	dense settlement biome [ENVO:01000248]	1321	0.09269524945617852
+human-skin	env_broad_scale	subtropical grassland biome [ENVO:01000191]	12	0.0008420461721984422
+human-skin	env_broad_scale	subtropical savanna biome [ENVO:01000187]	6	0.0004210230860992211
+human-skin	env_broad_scale	subtropical shrubland biome [ENVO:01000213]	6	0.0004210230860992211
+human-skin	env_broad_scale	subtropical woodland biome [ENVO:01000222]	6	0.0004210230860992211
+human-skin	env_broad_scale	temperate grassland biome [ENVO:01000193]	24	0.0016840923443968844
+human-skin	env_broad_scale	temperate woodland biome [ENVO:01000221]	36	0.0025261385165953267
+human-skin	env_broad_scale	unmapped [unmapped]	135	0.009473019437232475
+human-skin	env_broad_scale	urban biome [ENVO:01000249]	12087	0.848151006946881
+human-skin	env_broad_scale	village biome [ENVO:01000246]	475	0.033330994316188335
+human-skin	env_local_scale	microbiome [EFO:0004982]	9	0.0006315346291488317
+human-skin	env_local_scale	research facility [ENVO:00000469]	5	0.0003508525717493509
+human-skin	env_local_scale	trunk [UBERON:0002100]	59	0.004140060346642341
+human-skin	env_local_scale	unmapped [unmapped]	14178	0.9948775524524595
+human-skin	env_medium	Mucus [FMA:66938]	113	0.00779848171152519
+human-skin	env_medium	Sebum [FMA:61304]	14155	0.97688060731539
+human-skin	env_medium	Skin [FMA:7163]	59	0.004071773636991028
+human-skin	env_medium	unmapped [unmapped]	163	0.011249137336093859
+human-skin	host_body_product	Sebum [FMA:61304]	7830	0.987389659520807
+human-skin	host_body_product	Skin [FMA:7163]	100	0.012610340479192938
+human-vaginal	env_broad_scale	dense settlement biome [ENVO:01000248]	64	0.05734767025089606
+human-vaginal	env_broad_scale	human metagenome [NCBITaxon:646099]	8	0.007168458781362007
+human-vaginal	env_broad_scale	terrestrial biome [ENVO:00000446]	28	0.025089605734767026
+human-vaginal	env_broad_scale	unmapped [unmapped]	1	0.0008960573476702509
+human-vaginal	env_broad_scale	urban biome [ENVO:01000249]	1012	0.9068100358422939
+human-vaginal	env_broad_scale	village biome [ENVO:01000246]	3	0.002688172043010753
+human-vaginal	env_local_scale	unmapped [unmapped]	1116	1.0
+human-vaginal	env_medium	Mucus [FMA:66938]	1082	0.966934763181412
+human-vaginal	env_medium	unmapped [unmapped]	37	0.03306523681858802
+human-vaginal	host_body_product	Mucus [FMA:66938]	978	1.0
+microbial	env_broad_scale	Small lake biome [ENVO:00000892]	87	0.028618421052631578
+microbial	env_broad_scale	activated sludge [ENVO:00002046]	1	0.0003289473684210526
+microbial	env_broad_scale	beach sand [ENVO:00002138]	56	0.018421052631578946
+microbial	env_broad_scale	biome [ENVO:00000428]	18	0.0059210526315789476
+microbial	env_broad_scale	bioreactor [OBI:0001046]	3	0.000986842105263158
+microbial	env_broad_scale	coal mine [ENVO:00002169]	7	0.002302631578947368
+microbial	env_broad_scale	cold seep [ENVO:01000263]	1	0.0003289473684210526
+microbial	env_broad_scale	estuarine biome [ENVO:01000020]	15	0.004934210526315789
+microbial	env_broad_scale	estuary [ENVO:00000045]	26	0.008552631578947369
+microbial	env_broad_scale	forest biome [ENVO:01000174]	13	0.0042763157894736845
+microbial	env_broad_scale	fresh water [ENVO:00002011]	23	0.007565789473684211
+microbial	env_broad_scale	freshwater biome [ENVO:00000873]	186	0.06118421052631579
+microbial	env_broad_scale	groundwater [ENVO:01001004]	2	0.0006578947368421052
+microbial	env_broad_scale	lake [ENVO:00000020]	2	0.0006578947368421052
+microbial	env_broad_scale	marine benthic biome [ENVO:01000024]	119	0.03914473684210526
+microbial	env_broad_scale	marine biome [ENVO:00000447]	76	0.025
+microbial	env_broad_scale	marine coral reef biome [ENVO:01000049]	18	0.0059210526315789476
+microbial	env_broad_scale	mediterranean sea biome [ENVO:01000047]	9	0.0029605263157894738
+microbial	env_broad_scale	microbial mat [ENVO:01000008]	14	0.004605263157894736
+microbial	env_broad_scale	ocean [ENVO:00000015]	4	0.0013157894736842105
+microbial	env_broad_scale	permafrost [ENVO:00000134]	1	0.0003289473684210526
+microbial	env_broad_scale	polar desert biome [ENVO:01000186]	8	0.002631578947368421
+microbial	env_broad_scale	rangeland biome [ENVO:01000247]	405	0.13322368421052633
+microbial	env_broad_scale	river [ENVO:00000022]	3	0.000986842105263158
+microbial	env_broad_scale	rumen [UBERON:0007365]	29	0.009539473684210526
+microbial	env_broad_scale	sea water [ENVO:00002149]	1	0.0003289473684210526
+microbial	env_broad_scale	sludge [ENVO:00002044]	4	0.0013157894736842105
+microbial	env_broad_scale	soil [ENVO:00001998]	3	0.000986842105263158
+microbial	env_broad_scale	tundra biome [ENVO:01000180]	36	0.011842105263157895
+microbial	env_broad_scale	unmapped [unmapped]	546	0.17960526315789474
+microbial	env_broad_scale	urban biome [ENVO:01000249]	1295	0.42598684210526316
+microbial	env_broad_scale	village [ENVO:01000773]	27	0.008881578947368421
+microbial	env_broad_scale	water [CHEBI:15377]	2	0.0006578947368421052
+microbial	env_local_scale	Gut [FMA:45615]	1	0.0003289473684210526
+microbial	env_local_scale	active layer in a cryosphere [ENVO:01001610]	1	0.0003289473684210526
+microbial	env_local_scale	beach sand [ENVO:00002138]	56	0.018421052631578946
+microbial	env_local_scale	biofilm [ENVO:00002034]	21	0.006907894736842105
+microbial	env_local_scale	brackish water [ENVO:00002019]	18	0.0059210526315789476
+microbial	env_local_scale	building [ENVO:00000073]	14	0.004605263157894736
+microbial	env_local_scale	coral reef [ENVO:00000150]	66	0.021710526315789475
+microbial	env_local_scale	dry lake [ENVO:00000277]	36	0.011842105263157895
+microbial	env_local_scale	estuary [ENVO:00000045]	1	0.0003289473684210526
+microbial	env_local_scale	freshwater lake [ENVO:00000021]	12	0.003947368421052632
+microbial	env_local_scale	glacial feature [ENVO:00000131]	32	0.010526315789473684
+microbial	env_local_scale	harbor [ENVO:00000463]	2	0.0006578947368421052
+microbial	env_local_scale	hot spring [ENVO:00000051]	400	0.13157894736842105
+microbial	env_local_scale	hydrothermal vent [ENVO:00000215]	77	0.02532894736842105
+microbial	env_local_scale	intertidal zone [ENVO:00000316]	37	0.012171052631578947
+microbial	env_local_scale	lake [ENVO:00000020]	23	0.007565789473684211
+microbial	env_local_scale	mesenteric lymph node [UBERON:0002509]	7	0.002302631578947368
+microbial	env_local_scale	microbial feature [ENVO:01000007]	30	0.009868421052631578
+microbial	env_local_scale	microbial mat [ENVO:01000008]	4	0.0013157894736842105
+microbial	env_local_scale	organic feature [ENVO:01000159]	18	0.0059210526315789476
+microbial	env_local_scale	research facility [ENVO:00000469]	1281	0.42138157894736844
+microbial	env_local_scale	rumen [UBERON:0007365]	2	0.0006578947368421052
+microbial	env_local_scale	saline lake [ENVO:00000019]	8	0.002631578947368421
+microbial	env_local_scale	saline marsh [ENVO:00000054]	9	0.0029605263157894738
+microbial	env_local_scale	sediment [ENVO:00002007]	6	0.001973684210526316
+microbial	env_local_scale	soil [ENVO:00001998]	5	0.001644736842105263
+microbial	env_local_scale	stromatolite mat [ENVO:00002157]	19	0.00625
+microbial	env_local_scale	transcriptome [EFO:0004421]	11	0.003618421052631579
+microbial	env_local_scale	unidentified [NCBITaxon:32644]	1	0.0003289473684210526
+microbial	env_local_scale	unmapped [unmapped]	828	0.2723684210526316
+microbial	env_local_scale	water [CHEBI:15377]	14	0.004605263157894736
+microbial	env_medium	DNA [CHEBI:16991]	25	0.008620689655172414
+microbial	env_medium	Feces [FMA:64183]	159	0.05482758620689655
+microbial	env_medium	Milk [FMA:62100]	10	0.0034482758620689655
+microbial	env_medium	air [ENVO:00002005]	1	0.0003448275862068965
+microbial	env_medium	anaerobic mud [ENVO:00002133]	3	0.0010344827586206897
+microbial	env_medium	beer [ENVO:01000015]	14	0.004827586206896552
+microbial	env_medium	biofilm [ENVO:00002034]	1314	0.4531034482758621
+microbial	env_medium	biofilm material [ENVO:01000156]	69	0.02379310344827586
+microbial	env_medium	granular sediment [ENVO:01000117]	32	0.011034482758620689
+microbial	env_medium	metagenome [NCBITaxon:256318]	22	0.007586206896551724
+microbial	env_medium	microbial mat [ENVO:01000008]	681	0.23482758620689656
+microbial	env_medium	microbial mat material [ENVO:01000157]	3	0.0010344827586206897
+microbial	env_medium	organic material [ENVO:01000155]	26	0.00896551724137931
+microbial	env_medium	rumen [UBERON:0007365]	2	0.000689655172413793
+microbial	env_medium	saline water [ENVO:00002010]	9	0.003103448275862069
+microbial	env_medium	sand [ENVO:01000017]	56	0.019310344827586208
+microbial	env_medium	sea water [ENVO:00002149]	13	0.004482758620689655
+microbial	env_medium	sediment [ENVO:00002007]	68	0.023448275862068966
+microbial	env_medium	sludge [ENVO:00002044]	5	0.0017241379310344827
+microbial	env_medium	soil [ENVO:00001998]	11	0.003793103448275862
+microbial	env_medium	stromatolite mat [ENVO:00002157]	18	0.006206896551724138
+microbial	env_medium	unidentified [NCBITaxon:32644]	1	0.0003448275862068965
+microbial	env_medium	unmapped [unmapped]	303	0.10448275862068966
+microbial	env_medium	waste water [ENVO:00002001]	3	0.0010344827586206897
+microbial	env_medium	water [CHEBI:15377]	49	0.01689655172413793
+microbial	env_medium	water column [ENVO:06105011]	3	0.0010344827586206897
+microbial	experimental_factor	biofilm [ENVO:00002034]	6	0.2
+microbial	experimental_factor	unmapped [unmapped]	24	0.8
+microbial	ploidy	unmapped [unmapped]	2	1.0
+microbial	samp_collect_device	unmapped [unmapped]	24	1.0
+miscellaneous	chem_administration	unmapped [unmapped]	18	1.0
+miscellaneous	env_broad_scale	Small lake biome [ENVO:00000892]	57	0.003689081612840593
+miscellaneous	env_broad_scale	anthropogenic terrestrial biome [ENVO:01000219]	21	0.0013591353310465342
+miscellaneous	env_broad_scale	aquatic biome [ENVO:00002030]	28	0.0018121804413953788
+miscellaneous	env_broad_scale	ascidian [FOODON:03414467]	32	0.0020710633615947187
+miscellaneous	env_broad_scale	biofilm [ENVO:00002034]	12	0.0007766487605980196
+miscellaneous	env_broad_scale	bioreactor [OBI:0001046]	2	0.00012944146009966992
+miscellaneous	env_broad_scale	coastal water body [ENVO:02000049]	5	0.0003236036502491748
+miscellaneous	env_broad_scale	coral reef [ENVO:00000150]	1	6.472073004983496e-05
+miscellaneous	env_broad_scale	cropland biome [ENVO:01000245]	778	0.0503527279787716
+miscellaneous	env_broad_scale	dense settlement biome [ENVO:01000248]	44	0.002847712122192738
+miscellaneous	env_broad_scale	desert biome [ENVO:01000179]	14	0.0009060902206976894
+miscellaneous	env_broad_scale	environmental material [ENVO:00010483]	10	0.0006472073004983496
+miscellaneous	env_broad_scale	fecal material [ENVO:00002003]	47	0.003041874312342243
+miscellaneous	env_broad_scale	food product [FOODON:00001002]	22	0.001423856061096369
+miscellaneous	env_broad_scale	freshwater biome [ENVO:00000873]	1	6.472073004983496e-05
+miscellaneous	env_broad_scale	hydrothermal vent [ENVO:00000215]	1	6.472073004983496e-05
+miscellaneous	env_broad_scale	marine biome [ENVO:00000447]	76	0.004918775483787457
+miscellaneous	env_broad_scale	microbiome [EFO:0004982]	33	0.002135784091644554
+miscellaneous	env_broad_scale	obsolete Tropical/Subtropical Desert Division (320) [ENVO:00003019]	9	0.0005824865704485147
+miscellaneous	env_broad_scale	rangeland biome [ENVO:01000247]	14	0.0009060902206976894
+miscellaneous	env_broad_scale	subtropical grassland biome [ENVO:01000191]	2	0.00012944146009966992
+miscellaneous	env_broad_scale	subtropical woodland biome [ENVO:01000222]	2	0.00012944146009966992
+miscellaneous	env_broad_scale	temperate forest [ENVO:01001805]	1	6.472073004983496e-05
+miscellaneous	env_broad_scale	temperate grassland [ENVO:01001811]	4	0.00025888292019933984
+miscellaneous	env_broad_scale	temperate grassland biome [ENVO:01000193]	21	0.0013591353310465342
+miscellaneous	env_broad_scale	temperate woodland biome [ENVO:01000221]	25	0.001618018251245874
+miscellaneous	env_broad_scale	terrestrial biome [ENVO:00000446]	191	0.012361659439518478
+miscellaneous	env_broad_scale	unmapped [unmapped]	968	0.06264966668824025
+miscellaneous	env_broad_scale	urban biome [ENVO:01000249]	13026	0.8430522296291502
+miscellaneous	env_broad_scale	village biome [ENVO:01000246]	4	0.00025888292019933984
+miscellaneous	env_local_scale	Feces [FMA:64183]	116	0.007503234152652005
+miscellaneous	env_local_scale	Genome [FMA:84116]	20	0.00129366106080207
+miscellaneous	env_local_scale	Surface [FMA:50594]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	anaerobic [MICRO:0000495]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	anaerobic bioreactor [ENVO:00002124]	17	0.0010996119016817593
+miscellaneous	env_local_scale	anthropogenic environmental material [ENVO:0010001]	26	0.0016817593790426908
+miscellaneous	env_local_scale	archeological site [ENVO:00000564]	9	0.0005821474773609315
+miscellaneous	env_local_scale	biofilm [ENVO:00002034]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	bioreactor [OBI:0001046]	10	0.000646830530401035
+miscellaneous	env_local_scale	biotic mesoscopic physical object [ENVO:01000009]	10	0.000646830530401035
+miscellaneous	env_local_scale	building [ENVO:00000073]	411	0.026584734799482534
+miscellaneous	env_local_scale	canopy [ENVO:01001242]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	coal mine [ENVO:00002169]	14	0.0009055627425614489
+miscellaneous	env_local_scale	coastal inlet [ENVO:00000137]	215	0.01390685640362225
+miscellaneous	env_local_scale	coastal water body [ENVO:02000049]	5	0.0003234152652005175
+miscellaneous	env_local_scale	control [EFO:0001461]	33	0.0021345407503234153
+miscellaneous	env_local_scale	estuary [ENVO:00000045]	2	0.000129366106080207
+miscellaneous	env_local_scale	fermented food product [ENVO:01000013]	36	0.002328589909443726
+miscellaneous	env_local_scale	fish farm [ENVO:00000294]	6	0.00038809831824062095
+miscellaneous	env_local_scale	forest [ENVO:00000111]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	garden soil [ENVO:00002263]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	glacier [ENVO:00000133]	6	0.00038809831824062095
+miscellaneous	env_local_scale	hot spring [ENVO:00000051]	14	0.0009055627425614489
+miscellaneous	env_local_scale	kelp forest [ENVO:01000058]	7	0.00045278137128072445
+miscellaneous	env_local_scale	lake [ENVO:00000020]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	manufactured product [ENVO:00003074]	14	0.0009055627425614489
+miscellaneous	env_local_scale	mine [ENVO:00000076]	16	0.001034928848641656
+miscellaneous	env_local_scale	ocean [ENVO:00000015]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	oil reservoir [ENVO:00002185]	15	0.0009702457956015524
+miscellaneous	env_local_scale	organic feature [ENVO:01000159]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	plant derived beverage [FOODON:00001253]	262	0.016946959896507116
+miscellaneous	env_local_scale	research facility [ENVO:00000469]	11585	0.749353169469599
+miscellaneous	env_local_scale	sea ice [ENVO:00002200]	64	0.004139715394566624
+miscellaneous	env_local_scale	stream [ENVO:00000023]	1	6.46830530401035e-05
+miscellaneous	env_local_scale	surface water [ENVO:00002042]	54	0.0034928848641655884
+miscellaneous	env_local_scale	university campus [ENVO:00000467]	9	0.0005821474773609315
+miscellaneous	env_local_scale	unmapped [unmapped]	1668	0.10789133247089262
+miscellaneous	env_local_scale	vineyard [ENVO:00000116]	778	0.05032341526520052
+miscellaneous	env_local_scale	water [CHEBI:15377]	28	0.0018111254851228978
+miscellaneous	env_medium	Bone [FMA:30317]	16	0.001090438219859606
+miscellaneous	env_medium	Feces [FMA:64183]	314	0.02139985006474477
+miscellaneous	env_medium	Urine [FMA:12274]	1	6.815238874122537e-05
+miscellaneous	env_medium	air filter [ENVO:00003968]	15	0.0010222858311183807
+miscellaneous	env_medium	anaerobic digester sludge [ENVO:00003965]	2	0.00013630477748245075
+miscellaneous	env_medium	animal feed [ENVO:02000047]	6	0.0004089143324473523
+miscellaneous	env_medium	anthropogenic environmental material [ENVO:0010001]	885	0.06031486403598446
+miscellaneous	env_medium	biofilm [ENVO:00002034]	369	0.025148231445512165
+miscellaneous	env_medium	biological product [ENVO:02000043]	90	0.006133714986710284
+miscellaneous	env_medium	bitter cheese [ENVO:00003969]	134	0.0091324200913242
+miscellaneous	env_medium	blue cheese [ENVO:00003887]	164	0.011176991753560963
+miscellaneous	env_medium	brackish water [ENVO:00002019]	1	6.815238874122537e-05
+miscellaneous	env_medium	cell culture [OBI:0001876]	1270	0.08655353370135624
+miscellaneous	env_medium	cheese product [ENVO:00002189]	623	0.04245893818578341
+miscellaneous	env_medium	coastal sea water [ENVO:00002150]	1	6.815238874122537e-05
+miscellaneous	env_medium	cod fillet [FOODON:00002709]	20	0.0013630477748245075
+miscellaneous	env_medium	contaminated water [ENVO:00002186]	2	0.00013630477748245075
+miscellaneous	env_medium	dust [ENVO:00002008]	20	0.0013630477748245075
+miscellaneous	env_medium	environmental material [ENVO:00010483]	9	0.0006133714986710284
+miscellaneous	env_medium	feces [ENVO:00002003]	47	0.0032031622708375927
+miscellaneous	env_medium	fermented food product [ENVO:01000013]	46	0.0031350098820963675
+miscellaneous	env_medium	food product [FOODON:00001002]	10	0.0006815238874122538
+miscellaneous	env_medium	ground beef [ENVO:02000067]	228	0.015538744632999387
+miscellaneous	env_medium	groundwater [ENVO:01001004]	6	0.0004089143324473523
+miscellaneous	env_medium	honey [UBERON:0036016]	20	0.0013630477748245075
+miscellaneous	env_medium	mine tailing [ENVO:00000003]	12	0.0008178286648947046
+miscellaneous	env_medium	organic material [ENVO:01000155]	267	0.018196687793907176
+miscellaneous	env_medium	petroleum [ENVO:00002984]	14	0.0009541334423771553
+miscellaneous	env_medium	plant food product [FOODON:00001015]	78	0.00531588632181558
+miscellaneous	env_medium	poultry sausage [FOODON:03306506]	20	0.0013630477748245075
+miscellaneous	env_medium	research facility [ENVO:00000469]	79	0.005384038710556805
+miscellaneous	env_medium	rock [ENVO:00001995]	10	0.0006815238874122538
+miscellaneous	env_medium	rumen [UBERON:0007365]	1	6.815238874122537e-05
+miscellaneous	env_medium	sea ice [ENVO:00002200]	1	6.815238874122537e-05
+miscellaneous	env_medium	sea water [ENVO:00002149]	7	0.00047706672118857766
+miscellaneous	env_medium	sediment [ENVO:00002007]	10	0.0006815238874122538
+miscellaneous	env_medium	sludge [ENVO:00002044]	19	0.0012948953860832822
+miscellaneous	env_medium	soil [ENVO:00001998]	2	0.00013630477748245075
+miscellaneous	env_medium	sterile water [ENVO:00005791]	8819	0.6010359163088667
+miscellaneous	env_medium	unidentified [NCBITaxon:32644]	18	0.0012267429973420569
+miscellaneous	env_medium	unmapped [unmapped]	637	0.04341307162816057
+miscellaneous	env_medium	water [CHEBI:15377]	92	0.006270019764192735
+miscellaneous	env_medium	wine [ENVO:01000014]	288	0.01962788795747291
+miscellaneous	growth_med	unmapped [unmapped]	1	1.0
+miscellaneous	host_body_product	Feces [FMA:64183]	190	0.10951008645533142
+miscellaneous	host_body_product	Sebum [FMA:61304]	1	0.0005763688760806917
+miscellaneous	host_body_product	multicellular organism [UBERON:0000468]	7	0.004034582132564841
+miscellaneous	host_body_product	unmapped [unmapped]	1537	0.885878962536023
+miscellaneous	ploidy	diploid [PATO:0001394]	21	0.9545454545454546
+miscellaneous	ploidy	unmapped [unmapped]	1	0.045454545454545456
+miscellaneous	samp_collect_device	bottle [FOODON:03490214]	14	0.03317535545023697
+miscellaneous	samp_collect_device	cotton swab [OBI:0002821]	48	0.11374407582938388
+miscellaneous	samp_collect_device	unmapped [unmapped]	360	0.8530805687203792
+plant-associated	env_broad_scale	Archaea [NCBITaxon:2157]	1	0.0002760143527463428
+plant-associated	env_broad_scale	agricultural field [ENVO:00000114]	223	0.06155120066243445
+plant-associated	env_broad_scale	cropland biome [ENVO:01000245]	825	0.22771184101573283
+plant-associated	env_broad_scale	cultivated environment [ENVO:01000311]	1	0.0002760143527463428
+plant-associated	env_broad_scale	forest [ENVO:00000111]	1	0.0002760143527463428
+plant-associated	env_broad_scale	fresh water [ENVO:00002011]	50	0.01380071763731714
+plant-associated	env_broad_scale	freshwater biome [ENVO:00000873]	57	0.01573281810654154
+plant-associated	env_broad_scale	grassland [ENVO:00000106]	1	0.0002760143527463428
+plant-associated	env_broad_scale	leaf [PO:0025034]	219	0.06044714325144908
+plant-associated	env_broad_scale	marine benthic biome [ENVO:01000024]	3	0.0008280430582390284
+plant-associated	env_broad_scale	marine biome [ENVO:00000447]	3	0.0008280430582390284
+plant-associated	env_broad_scale	marine environment [ENVO:01000320]	7	0.0019321004692243997
+plant-associated	env_broad_scale	research facility [ENVO:00000469]	3	0.0008280430582390284
+plant-associated	env_broad_scale	rhizosphere [ENVO:00005801]	905	0.24979298923544024
+plant-associated	env_broad_scale	soil [ENVO:00001998]	23	0.006348330113165885
+plant-associated	env_broad_scale	subpolar coniferous forest biome [ENVO:01000250]	12	0.0033121722329561135
+plant-associated	env_broad_scale	temperate [ENVO:01000206]	108	0.029809550096605023
+plant-associated	env_broad_scale	temperate broadleaf forest [ENVO:01001794]	198	0.054650841843775874
+plant-associated	env_broad_scale	temperate grassland [ENVO:01001811]	16	0.004416229643941485
+plant-associated	env_broad_scale	temperate grassland biome [ENVO:01000193]	6	0.0016560861164780568
+plant-associated	env_broad_scale	temperate woodland biome [ENVO:01000221]	69	0.019044990339497653
+plant-associated	env_broad_scale	terrestrial biome [ENVO:00000446]	157	0.04333425338117582
+plant-associated	env_broad_scale	tropical woodland biome [ENVO:01000220]	10	0.002760143527463428
+plant-associated	env_broad_scale	unmapped [unmapped]	675	0.1863096881037814
+plant-associated	env_broad_scale	urban biome [ENVO:01000249]	40	0.011040574109853712
+plant-associated	env_broad_scale	vineyard [ENVO:00000116]	10	0.002760143527463428
+plant-associated	env_local_scale	agar [CHEBI:2509]	270	0.07454445057979017
+plant-associated	env_local_scale	bulk soil [ENVO:00005802]	9	0.002484815019326339
+plant-associated	env_local_scale	field [ENVO:01000352]	76	0.020982882385422418
+plant-associated	env_local_scale	forest [ENVO:00000111]	64	0.0176697956929873
+plant-associated	env_local_scale	garden [ENVO:00000011]	108	0.02981778023191607
+plant-associated	env_local_scale	mountain [ENVO:00000081]	4	0.0011043622308117063
+plant-associated	env_local_scale	needleleaf forest [ENVO:01000433]	99	0.027332965212589728
+plant-associated	env_local_scale	normal [PATO:0000461]	89	0.024572059635560462
+plant-associated	env_local_scale	organic feature [ENVO:01000159]	7	0.001932633903920486
+plant-associated	env_local_scale	pool [EFO:0000663]	50	0.013804527885146328
+plant-associated	env_local_scale	prairie [ENVO:00000260]	85	0.023467697404748758
+plant-associated	env_local_scale	research facility [ENVO:00000469]	12	0.0033130866924351186
+plant-associated	env_local_scale	rhizosphere [ENVO:00005801]	32	0.00883489784649365
+plant-associated	env_local_scale	rice field [ENVO:00000296]	310	0.08558807288790723
+plant-associated	env_local_scale	root [PO:0009005]	558	0.154058531198233
+plant-associated	env_local_scale	stream [ENVO:00000023]	55	0.015184980673660961
+plant-associated	env_local_scale	unmapped [unmapped]	1728	0.4770844837106571
+plant-associated	env_local_scale	vineyard [ENVO:00000116]	57	0.015737161789066815
+plant-associated	env_local_scale	wetland [ENVO:00000043]	9	0.002484815019326339
+plant-associated	env_medium	DNA [CHEBI:16991]	219	0.06044714325144908
+plant-associated	env_medium	agar [CHEBI:2509]	904	0.2495169748826939
+plant-associated	env_medium	air [ENVO:00002005]	114	0.03146563621308308
+plant-associated	env_medium	animal feed [ENVO:02000047]	3	0.0008280430582390284
+plant-associated	env_medium	biofilm [ENVO:00002034]	19	0.005244272702180514
+plant-associated	env_medium	eutrophic water [ENVO:00002224]	50	0.01380071763731714
+plant-associated	env_medium	leaf [PO:0025034]	19	0.005244272702180514
+plant-associated	env_medium	organic material [ENVO:01000155]	659	0.18189345845983992
+plant-associated	env_medium	rhizosphere [ENVO:00005801]	319	0.08804857852608336
+plant-associated	env_medium	rock [ENVO:00001995]	3	0.0008280430582390284
+plant-associated	env_medium	root [PO:0009005]	115	0.03174165056582942
+plant-associated	env_medium	sea grass bed [ENVO:01000059]	3	0.0008280430582390284
+plant-associated	env_medium	soil [ENVO:00001998]	180	0.04968258349434171
+plant-associated	env_medium	unmapped [unmapped]	700	0.19321004692243995
+plant-associated	env_medium	water [CHEBI:15377]	18	0.0049682583494341705
+plant-associated	env_medium	wood [ENVO:00002040]	298	0.08225227711841016
+plant-associated	experimental_factor	unmapped [unmapped]	7	1.0
+plant-associated	growth_med	unmapped [unmapped]	1	1.0
+plant-associated	host_body_product	Feces [FMA:64183]	3	0.014354066985645933
+plant-associated	host_body_product	multicellular organism [UBERON:0000468]	3	0.014354066985645933
+plant-associated	host_body_product	unmapped [unmapped]	203	0.9712918660287081
+plant-associated	plant_body_site	leaf [PO:0025034]	2	0.07692307692307693
+plant-associated	plant_body_site	unmapped [unmapped]	24	0.9230769230769231
+plant-associated	ploidy	diploid [PATO:0001394]	241	0.9198473282442748
+plant-associated	ploidy	haploid [PATO:0001375]	6	0.022900763358778626
+plant-associated	ploidy	unmapped [unmapped]	15	0.05725190839694656
+sediment	env_broad_scale	Archaea [NCBITaxon:2157]	18	0.002429477662302605
+sediment	env_broad_scale	Bacteria [NCBITaxon:2]	2	0.00026994196247806724
+sediment	env_broad_scale	Small lake biome [ENVO:00000892]	124	0.016736401673640166
+sediment	env_broad_scale	activated sludge [ENVO:00002046]	10	0.0013497098123903361
+sediment	env_broad_scale	aquatic biome [ENVO:00002030]	53	0.007153462005668782
+sediment	env_broad_scale	cold seep [ENVO:01000263]	1	0.00013497098123903362
+sediment	env_broad_scale	deep marine sediment [ENVO:00002113]	41	0.005533810230800378
+sediment	env_broad_scale	estuarine biome [ENVO:01000020]	238	0.03212309353489
+sediment	env_broad_scale	estuary [ENVO:00000045]	68	0.009178026724254286
+sediment	env_broad_scale	forest biome [ENVO:01000174]	23	0.003104332568497773
+sediment	env_broad_scale	fresh water [ENVO:00002011]	16	0.002159535699824538
+sediment	env_broad_scale	freshwater biome [ENVO:00000873]	191	0.02577945741665542
+sediment	env_broad_scale	freshwater lake biome [ENVO:01000252]	41	0.005533810230800378
+sediment	env_broad_scale	grassland biome [ENVO:01000177]	7	0.0009447968686732353
+sediment	env_broad_scale	hydrothermal vent [ENVO:00000215]	1	0.00013497098123903362
+sediment	env_broad_scale	intertidal zone [ENVO:00000316]	30	0.004049129437171008
+sediment	env_broad_scale	lake sediment [ENVO:00000546]	2	0.00026994196247806724
+sediment	env_broad_scale	large river biome [ENVO:00000887]	22	0.0029693615872587393
+sediment	env_broad_scale	marine abyssal zone biome [ENVO:01000027]	3978	0.5369145633688757
+sediment	env_broad_scale	marine abyssal zone biome [ENVO:01000027] | marine ultramafic hydrothermal vent biome [ENVO:01000053]	11	0.0014846807936293696
+sediment	env_broad_scale	marine abyssal zone biome [ENVO:01000027] | polar biome [ENVO:01000339]	14	0.0018895937373464705
+sediment	env_broad_scale	marine bathyal zone biome [ENVO:01000026]	66	0.008908084761776219
+sediment	env_broad_scale	marine benthic biome [ENVO:01000024]	491	0.0662707517883655
+sediment	env_broad_scale	marine biome [ENVO:00000447]	599	0.08084761776218113
+sediment	env_broad_scale	marine cold seep biome [ENVO:01000127]	2	0.00026994196247806724
+sediment	env_broad_scale	marine environment [ENVO:01000320]	1	0.00013497098123903362
+sediment	env_broad_scale	marine hydrothermal vent biome [ENVO:01000030]	2	0.00026994196247806724
+sediment	env_broad_scale	marine neritic benthic zone biome [ENVO:01000025]	18	0.002429477662302605
+sediment	env_broad_scale	marine pelagic feature [ENVO:01000044]	7	0.0009447968686732353
+sediment	env_broad_scale	marine salt marsh biome [ENVO:01000022]	52	0.007018491024429747
+sediment	env_broad_scale	marine sediment [ENVO:03000033]	54	0.007288432986907815
+sediment	env_broad_scale	metagenome [NCBITaxon:256318]	4	0.0005398839249561345
+sediment	env_broad_scale	microbiome [EFO:0004982]	1	0.00013497098123903362
+sediment	env_broad_scale	obsolete Tropical and subtropical grasslands, savannas, and shrubland biome [ENVO:00000881]	137	0.018491024429747604
+sediment	env_broad_scale	polar desert biome [ENVO:01000186]	1	0.00013497098123903362
+sediment	env_broad_scale	saline marsh [ENVO:00000054]	12	0.0016196517748684033
+sediment	env_broad_scale	sand [ENVO:01000017]	27	0.0036442164934539075
+sediment	env_broad_scale	sediment [ENVO:00002007]	68	0.009178026724254286
+sediment	env_broad_scale	sediment surface [ENVO:01001192]	6	0.0008098258874342017
+sediment	env_broad_scale	small river biome [ENVO:00000890]	26	0.0035092455122148736
+sediment	env_broad_scale	subpolar coniferous forest biome [ENVO:01000250]	14	0.0018895937373464705
+sediment	env_broad_scale	subtropical desert biome [ENVO:01000184]	59	0.007963287893102983
+sediment	env_broad_scale	temperate forest [ENVO:01001805]	17	0.0022945066810635714
+sediment	env_broad_scale	temperate shrubland biome [ENVO:01000215]	4	0.0005398839249561345
+sediment	env_broad_scale	temperate woodland biome [ENVO:01000221]	4	0.0005398839249561345
+sediment	env_broad_scale	tundra [ENVO:00000112]	4	0.0005398839249561345
+sediment	env_broad_scale	unmapped [unmapped]	769	0.10379268457281685
+sediment	env_broad_scale	urban biome [ENVO:01000249]	73	0.009852881630449454
+sediment	env_local_scale	Middle East respiratory syndrome-related coronavirus [NCBITaxon:1335626]	18	0.0024284943335132216
+sediment	env_local_scale	abyssal plain [ENVO:00000244]	29	0.003912574203993524
+sediment	env_local_scale	abyssal plain [ENVO:00000244] | sediment surface [ENVO:01001192]	14	0.0018888289260658392
+sediment	env_local_scale	active sulphate-reducing enrichment culturing unit [ENVO:01001826]	8	0.0010793308148947653
+sediment	env_local_scale	aquifer [ENVO:00012408]	4	0.0005396654074473826
+sediment	env_local_scale	bay [ENVO:00000032]	2	0.0002698327037236913
+sediment	env_local_scale	beach [ENVO:00000091]	8	0.0010793308148947653
+sediment	env_local_scale	cave [ENVO:00000067]	27	0.0036427415002698326
+sediment	env_local_scale	clay sediment [ENVO:01000120]	1	0.00013491635186184566
+sediment	env_local_scale	coast [ENVO:01000687]	39	0.0052617377226119805
+sediment	env_local_scale	coastal water body [ENVO:02000049]	16	0.0021586616297895305
+sediment	env_local_scale	cold seep [ENVO:01000263]	1	0.00013491635186184566
+sediment	env_local_scale	contaminated sediment [ENVO:00002114]	61	0.008229897463572585
+sediment	env_local_scale	continental shelf [ENVO:00000223]	60	0.008094981111710739
+sediment	env_local_scale	deep marine sediment [ENVO:00002113]	40	0.005396654074473826
+sediment	env_local_scale	deep marine sediment [ENVO:00002113] | abyssal feature [ENVO:00000190]	9	0.0012142471667566108
+sediment	env_local_scale	enrichment culture [NCBITaxon:1566338]	55	0.007420399352401511
+sediment	env_local_scale	environmental zone [ENVO:01000408]	1	0.00013491635186184566
+sediment	env_local_scale	estuarine mud [ENVO:00002160]	193	0.02603885590933621
+sediment	env_local_scale	estuary [ENVO:00000045]	9	0.0012142471667566108
+sediment	env_local_scale	fjord [ENVO:00000039]	1	0.00013491635186184566
+sediment	env_local_scale	forest [ENVO:00000111]	1	0.00013491635186184566
+sediment	env_local_scale	fresh water [ENVO:00002011]	44	0.0059363194819212085
+sediment	env_local_scale	freshwater lake [ENVO:00000021]	5	0.0006745817593092283
+sediment	env_local_scale	hydrographic feature [ENVO:00000012]	36	0.004856988667026443
+sediment	env_local_scale	hydrothermal vent [ENVO:00000215]	1	0.00013491635186184566
+sediment	env_local_scale	intertidal zone [ENVO:00000316]	140	0.018888289260658393
+sediment	env_local_scale	lagoon [ENVO:00000038]	31	0.004182406907717215
+sediment	env_local_scale	lake [ENVO:00000020]	116	0.015650296815974095
+sediment	env_local_scale	lake sediment [ENVO:00000546]	41	0.005531570426335672
+sediment	env_local_scale	large river biome [ENVO:00000887]	32	0.004317323259579061
+sediment	env_local_scale	marine bathyal zone biome [ENVO:01000026]	1	0.00013491635186184566
+sediment	env_local_scale	marine benthic feature [ENVO:01000105]	277	0.03737182946573125
+sediment	env_local_scale	marine environmental zone [ENVO:01001201]	1	0.00013491635186184566
+sediment	env_local_scale	marine hydrothermal vent [ENVO:01000122]	1	0.00013491635186184566
+sediment	env_local_scale	marine mud [ENVO:00005795]	7	0.0009444144630329196
+sediment	env_local_scale	marine oligotrophic desert [ENVO:01000073]	3917	0.5284673502428494
+sediment	env_local_scale	marine sediment [ENVO:03000033]	109	0.014705882352941176
+sediment	env_local_scale	marsh [ENVO:00000035]	6	0.0008094981111710739
+sediment	env_local_scale	microbial feature [ENVO:01000007]	41	0.005531570426335672
+sediment	env_local_scale	mid-ocean ridge [ENVO:00000406] | rift valley [ENVO:00000302]	9	0.0012142471667566108
+sediment	env_local_scale	mine drainage [ENVO:00001996]	12	0.0016189962223421479
+sediment	env_local_scale	mud [ENVO:01000001]	5	0.0006745817593092283
+sediment	env_local_scale	obsolete alkaline habitat [ENVO:00002022]	137	0.018483540205072854
+sediment	env_local_scale	ocean [ENVO:00000015]	2	0.0002698327037236913
+sediment	env_local_scale	ocean floor [ENVO:00000426]	17	0.0022935779816513763
+sediment	env_local_scale	oil seep [ENVO:00002063]	3	0.00040474905558553697
+sediment	env_local_scale	oil spill [ENVO:00002061]	1	0.00013491635186184566
+sediment	env_local_scale	organic feature [ENVO:01000159]	2	0.0002698327037236913
+sediment	env_local_scale	plant matter fall [ENVO:01000138]	18	0.0024284943335132216
+sediment	env_local_scale	polymetallic nodule [ENVO:01000112]	3	0.00040474905558553697
+sediment	env_local_scale	pond bed [ENVO:00000512]	20	0.002698327037236913
+sediment	env_local_scale	reef [ENVO:00000130]	62	0.00836481381543443
+sediment	env_local_scale	research facility [ENVO:00000469]	86	0.011602806260118727
+sediment	env_local_scale	river [ENVO:00000022]	110	0.014840798704803022
+sediment	env_local_scale	saline marsh [ENVO:00000054]	4	0.0005396654074473826
+sediment	env_local_scale	saline pan [ENVO:00000279]	76	0.01025364274150027
+sediment	env_local_scale	sand [ENVO:01000017]	29	0.003912574203993524
+sediment	env_local_scale	sea [ENVO:00000016]	2	0.0002698327037236913
+sediment	env_local_scale	sea beach [ENVO:00000092]	1	0.00013491635186184566
+sediment	env_local_scale	sea floor [ENVO:00000482]	24	0.0032379924446842958
+sediment	env_local_scale	sea water [ENVO:00002149]	3	0.00040474905558553697
+sediment	env_local_scale	seamount [ENVO:00000264] | mid-ocean ridge [ENVO:00000406]	44	0.0059363194819212085
+sediment	env_local_scale	sediment [ENVO:00002007]	89	0.012007555315704263
+sediment	env_local_scale	sediment surface [ENVO:01001192]	24	0.0032379924446842958
+sediment	env_local_scale	seep [ENVO:01000262]	12	0.0016189962223421479
+sediment	env_local_scale	shallow marine sediment [ENVO:03000034]	17	0.0022935779816513763
+sediment	env_local_scale	shallow marine sediment [ENVO:03000034] | sea grass bed [ENVO:01000059]	1	0.00013491635186184566
+sediment	env_local_scale	siliceous ooze [ENVO:02000044]	14	0.0018888289260658392
+sediment	env_local_scale	sinkhole [ENVO:00000195]	2	0.0002698327037236913
+sediment	env_local_scale	stream [ENVO:00000023]	65	0.008769562871019968
+sediment	env_local_scale	temperate [ENVO:01000206]	8	0.0010793308148947653
+sediment	env_local_scale	tributary [ENVO:00000495]	10	0.0013491635186184566
+sediment	env_local_scale	unmapped [unmapped]	1093	0.1474635725849973
+sediment	env_local_scale	woodland [ENVO:00000109]	4	0.0005396654074473826
+sediment	env_medium	Feces [FMA:64183]	27	0.003666983566481054
+sediment	env_medium	activated sludge [ENVO:00002046]	10	0.0013581420616596495
+sediment	env_medium	biofilm [ENVO:00002034]	10	0.0013581420616596495
+sediment	env_medium	clay sediment [ENVO:01000120]	62	0.008420480782289828
+sediment	env_medium	contaminated sediment [ENVO:00002114]	106	0.014396305853592285
+sediment	env_medium	deep marine sediment [ENVO:00002113]	194	0.026347955996197204
+sediment	env_medium	enrichment culture [NCBITaxon:1566338]	36	0.0048893114219747385
+sediment	env_medium	genomic DNA [EFO:0008479]	12	0.0016297704739915795
+sediment	env_medium	grassland soil [ENVO:00005750]	8	0.0010865136493277197
+sediment	env_medium	lake sediment [ENVO:00000546]	159	0.021594458780388428
+sediment	env_medium	marine hydrothermal vent chimney [ENVO:01000129]	1	0.00013581420616596497
+sediment	env_medium	marine sediment [ENVO:03000033]	903	0.12264022816786636
+sediment	env_medium	metamorphic rock [ENVO:00002017]	22	0.0029879125356512292
+sediment	env_medium	microbial mat [ENVO:01000008]	12	0.0016297704739915795
+sediment	env_medium	mud [ENVO:01000001]	3917	0.5319842455520848
+sediment	env_medium	rock [ENVO:00001995]	32	0.004346054597310879
+sediment	env_medium	saline lake sediment [ENVO:00002209]	86	0.011680021730272987
+sediment	env_medium	sand [ENVO:01000017]	27	0.003666983566481054
+sediment	env_medium	sediment [ENVO:00002007]	1265	0.17180497079994567
+sediment	env_medium	sediment permeated by freshwater [ENVO:01001028]	27	0.003666983566481054
+sediment	env_medium	sediment surface [ENVO:01001192]	1	0.00013581420616596497
+sediment	env_medium	shallow marine sediment [ENVO:03000034]	1	0.00013581420616596497
+sediment	env_medium	soil [ENVO:00001998]	109	0.014803748472090181
+sediment	env_medium	stream sediment [ENVO:00002127]	109	0.014803748472090181
+sediment	env_medium	thermophilic sediment [ENVO:01000132]	9	0.0012223278554936846
+sediment	env_medium	unmapped [unmapped]	203	0.027570283851690885
+sediment	env_medium	water [CHEBI:15377]	15	0.0020372130924894744
+sediment	experimental_factor	gene [SO:0000704] | marine metagenome [NCBITaxon:408172] | uncultured microorganism [NCBITaxon:358574] | uncultured organism [NCBITaxon:155900] | ecotype [EFO:0000434] | biological replicate [EFO:0002091] | technical replicate [EFO:0002090] | interspecies interaction between organisms [GO:0044419]	3917	0.999234693877551
+sediment	experimental_factor	unmapped [unmapped]	3	0.0007653061224489796
+sediment	host_body_product	unmapped [unmapped]	48	1.0
+sediment	samp_collect_device	syringe [OBI:0000422]	12	0.002965892239248641
+sediment	samp_collect_device	unmapped [unmapped]	4034	0.9970341077607514
+soil	env_broad_scale	Bacteria [NCBITaxon:2]	58	0.003593333746360201
+soil	env_broad_scale	Fusarium [NCBITaxon:5506]	21	0.0013010346323028314
+soil	env_broad_scale	Gossypium hirsutum [NCBITaxon:3635]	72	0.004460690167895421
+soil	env_broad_scale	Healthy [HP:0032322]	2	0.00012390806021931726
+soil	env_broad_scale	agricultural soil [ENVO:00002259]	20	0.0012390806021931728
+soil	env_broad_scale	anthropogenic terrestrial biome [ENVO:01000219]	10	0.0006195403010965864
+soil	env_broad_scale	aquatic biome [ENVO:00002030]	25	0.0015488507527414658
+soil	env_broad_scale	arable soil [ENVO:00005742]	1	6.195403010965863e-05
+soil	env_broad_scale	area of cropland [ENVO:01000892]	1	6.195403010965863e-05
+soil	env_broad_scale	beach [ENVO:00000091]	1	6.195403010965863e-05
+soil	env_broad_scale	biome [ENVO:00000428]	3	0.0001858620903289759
+soil	env_broad_scale	bulk soil [ENVO:00005802]	25	0.0015488507527414658
+soil	env_broad_scale	coniferous forest biome [ENVO:01000196]	120	0.007434483613159036
+soil	env_broad_scale	cropland biome [ENVO:01000245]	6406	0.3968775168824732
+soil	env_broad_scale	dense settlement biome [ENVO:01000248]	3	0.0001858620903289759
+soil	env_broad_scale	desert [ENVO:00000097]	157	0.009726782727216405
+soil	env_broad_scale	desert biome [ENVO:01000179]	143	0.008859426305681185
+soil	env_broad_scale	flooded grassland biome [ENVO:01000195]	108	0.006691035251843132
+soil	env_broad_scale	forest [ENVO:00000111]	456	0.028251037730004338
+soil	env_broad_scale	forest biome [ENVO:01000174]	275	0.017037358280156123
+soil	env_broad_scale	forest soil [ENVO:00002261]	175	0.01084195526919026
+soil	env_broad_scale	freshwater biome [ENVO:00000873]	193	0.011957127811164116
+soil	env_broad_scale	grassland [ENVO:00000106]	49	0.003035747475373273
+soil	env_broad_scale	grassland biome [ENVO:01000177]	58	0.003593333746360201
+soil	env_broad_scale	grassland soil [ENVO:00005750]	26	0.0016108047828511244
+soil	env_broad_scale	habitat [ENVO:01000739]	3	0.0001858620903289759
+soil	env_broad_scale	large river biome [ENVO:00000887]	95	0.0058856328604175705
+soil	env_broad_scale	marine benthic biome [ENVO:01000024]	96	0.005947586890527229
+soil	env_broad_scale	marine salt marsh biome [ENVO:01000022]	24	0.0014868967226318072
+soil	env_broad_scale	marsh [ENVO:00000035]	1	6.195403010965863e-05
+soil	env_broad_scale	microbial community [PCO:1000004]	90	0.005575862709869277
+soil	env_broad_scale	mixed forest biome [ENVO:01000198]	1	6.195403010965863e-05
+soil	env_broad_scale	montane grassland biome [ENVO:01000194]	230	0.014249426925221485
+soil	env_broad_scale	montane shrubland biome [ENVO:01000216]	23	0.0014249426925221486
+soil	env_broad_scale	needleleaf forest [ENVO:01000433]	9	0.0005575862709869277
+soil	env_broad_scale	obsolete Deserts and xeric shrubland biome [ENVO:00000883]	2	0.00012390806021931726
+soil	env_broad_scale	obsolete Subtropical Division (230) [ENVO:00003009]	5	0.0003097701505482932
+soil	env_broad_scale	obsolete Temperate broadleaf and mixed forest biome [ENVO:00000876]	40	0.0024781612043863455
+soil	env_broad_scale	obsolete Temperate grasslands [ENVO:00002988]	112	0.006938851372281767
+soil	env_broad_scale	oil contaminated soil [ENVO:00002875]	13	0.0008054023914255622
+soil	env_broad_scale	orchard [ENVO:00000115]	32	0.0019825289635090762
+soil	env_broad_scale	paddy field soil [ENVO:00005740]	11	0.000681494331206245
+soil	env_broad_scale	pasture [ENVO:00000266]	6	0.0003717241806579518
+soil	env_broad_scale	peat soil [ENVO:00005774]	8	0.0004956322408772691
+soil	env_broad_scale	peatland [ENVO:00000044]	21	0.0013010346323028314
+soil	env_broad_scale	permafrost [ENVO:00000134]	149	0.009231150486339136
+soil	env_broad_scale	plant litter [ENVO:01000628]	18	0.0011151725419738553
+soil	env_broad_scale	polar biome [ENVO:01000339]	30	0.001858620903289759
+soil	env_broad_scale	polar desert biome [ENVO:01000186]	119	0.007372529583049377
+soil	env_broad_scale	rangeland biome [ENVO:01000247]	40	0.0024781612043863455
+soil	env_broad_scale	rhizosphere [ENVO:00005801]	1	6.195403010965863e-05
+soil	env_broad_scale	sand [ENVO:01000017]	81	0.005018276438882349
+soil	env_broad_scale	sediment [ENVO:00002007]	14	0.0008673564215352209
+soil	env_broad_scale	shrubland biome [ENVO:01000176]	128	0.007930115854036305
+soil	env_broad_scale	soil [ENVO:00001998]	356	0.022055634719038472
+soil	env_broad_scale	subpolar coniferous forest biome [ENVO:01000250]	205	0.01270057617248002
+soil	env_broad_scale	subtropical forest [ENVO:01001804]	13	0.0008054023914255622
+soil	env_broad_scale	temperate [ENVO:01000206]	12	0.0007434483613159036
+soil	env_broad_scale	temperate coniferous forest biome [ENVO:01000211]	27	0.001672758812960783
+soil	env_broad_scale	temperate forest [ENVO:01001805]	211	0.013072300353137972
+soil	env_broad_scale	temperate grassland [ENVO:01001811]	306	0.01895793321355554
+soil	env_broad_scale	temperate grassland biome [ENVO:01000193]	325	0.020135059785639054
+soil	env_broad_scale	temperate shrubland biome [ENVO:01000215]	23	0.0014249426925221486
+soil	env_broad_scale	temperate woodland biome [ENVO:01000221]	31	0.0019205749333994176
+soil	env_broad_scale	terrestrial biome [ENVO:00000446]	517	0.03203023356669352
+soil	env_broad_scale	tropical broadleaf forest biome [ENVO:01000200]	4	0.00024781612043863453
+soil	env_broad_scale	tropical desert biome [ENVO:01000183]	22	0.00136298866241249
+soil	env_broad_scale	tropical grassland biome [ENVO:01000192]	4	0.00024781612043863453
+soil	env_broad_scale	tropical moist broadleaf forest biome [ENVO:01000228]	123	0.0076203457034880115
+soil	env_broad_scale	tropical shrubland biome [ENVO:01000214]	127	0.007868161823926646
+soil	env_broad_scale	tundra [ENVO:00000112]	347	0.021498048448051546
+soil	env_broad_scale	tundra biome [ENVO:01000180]	531	0.03289758998822873
+soil	env_broad_scale	unmapped [unmapped]	2136	0.13233380831423083
+soil	env_broad_scale	urban biome [ENVO:01000249]	1011	0.06263552444086488
+soil	env_local_scale	Ribonucleic Acid [FMA:67095]	33	0.002046004092008184
+soil	env_local_scale	active layer in a cryosphere [ENVO:01001610]	146	0.009052018104036209
+soil	env_local_scale	agricultural feature [ENVO:00000077]	172	0.010664021328042656
+soil	env_local_scale	agricultural field [ENVO:00000114]	11	0.000682001364002728
+soil	env_local_scale	agricultural soil [ENVO:00002259]	276	0.01711203422406845
+soil	env_local_scale	alluvial paddy field soil [ENVO:00005759]	320	0.01984003968007936
+soil	env_local_scale	alluvial plain [ENVO:00000258]	12	0.000744001488002976
+soil	env_local_scale	anthropogenic contamination feature [ENVO:00002204]	10	0.00062000124000248
+soil	env_local_scale	arable soil [ENVO:00005742]	8	0.000496000992001984
+soil	env_local_scale	area of cropland [ENVO:01000892]	20	0.00124000248000496
+soil	env_local_scale	area of deciduous forest [ENVO:01000816]	12	0.000744001488002976
+soil	env_local_scale	area of evergreen forest [ENVO:01000843]	18	0.001116002232004464
+soil	env_local_scale	area of gramanoid or herbaceous vegetation [ENVO:01000888]	39	0.002418004836009672
+soil	env_local_scale	area of mixed forest [ENVO:01000855]	21	0.001302002604005208
+soil	env_local_scale	area of pastureland or hayfields [ENVO:01000891]	28	0.001736003472006944
+soil	env_local_scale	beach [ENVO:00000091]	1	6.2000124000248e-05
+soil	env_local_scale	bulk soil [ENVO:00005802]	1	6.2000124000248e-05
+soil	env_local_scale	coast [ENVO:01000687]	72	0.004464008928017856
+soil	env_local_scale	coffee plantation [ENVO:00000163]	62	0.003844007688015376
+soil	env_local_scale	cryosol [ENVO:00002236]	48	0.002976005952011904
+soil	env_local_scale	dam [ENVO:00000074]	95	0.00589001178002356
+soil	env_local_scale	desert [ENVO:00000097]	20	0.00124000248000496
+soil	env_local_scale	desert oasis [ENVO:00000156]	2	0.000124000248000496
+soil	env_local_scale	desert sand [ENVO:00005800]	4	0.000248000496000992
+soil	env_local_scale	dry lake [ENVO:00000277]	56	0.003472006944013888
+soil	env_local_scale	dry soil [ENVO:00005748]	20	0.00124000248000496
+soil	env_local_scale	environmental zone [ENVO:01000408]	8	0.000496000992001984
+soil	env_local_scale	farm [ENVO:00000078]	45	0.00279000558001116
+soil	env_local_scale	farm soil [ENVO:00005749]	52	0.003224006448012896
+soil	env_local_scale	fen [ENVO:00000232]	110	0.00682001364002728
+soil	env_local_scale	field [ENVO:01000352]	246	0.015252030504061008
+soil	env_local_scale	field soil [ENVO:00005755]	976	0.06051212102424205
+soil	env_local_scale	fluvisol [ENVO:00002273]	12	0.000744001488002976
+soil	env_local_scale	forest [ENVO:00000111]	419	0.025978051956103913
+soil	env_local_scale	forest soil [ENVO:00002261]	690	0.04278008556017112
+soil	env_local_scale	freshwater wetland [ENVO:00000243]	192	0.011904023808047616
+soil	env_local_scale	garden [ENVO:00000011]	1	6.2000124000248e-05
+soil	env_local_scale	garden soil [ENVO:00002263]	152	0.009424018848037697
+soil	env_local_scale	glacier [ENVO:00000133]	19	0.001178002356004712
+soil	env_local_scale	grassland [ENVO:00000106]	192	0.011904023808047616
+soil	env_local_scale	grassland soil [ENVO:00005750]	379	0.023498046996093994
+soil	env_local_scale	gravel field [ENVO:00000548]	10	0.00062000124000248
+soil	env_local_scale	high tide zone [ENVO:00000318]	96	0.005952011904023808
+soil	env_local_scale	lake [ENVO:00000020]	4	0.000248000496000992
+soil	env_local_scale	land [ENVO:01001785]	28	0.001736003472006944
+soil	env_local_scale	luvisol [ENVO:00002248]	20	0.00124000248000496
+soil	env_local_scale	marsh [ENVO:00000035]	1	6.2000124000248e-05
+soil	env_local_scale	metagenome [NCBITaxon:256318]	9	0.000558001116002232
+soil	env_local_scale	microbial feature [ENVO:01000007]	4	0.000248000496000992
+soil	env_local_scale	mineral [CHEBI:46662]	34	0.002108004216008432
+soil	env_local_scale	mountain [ENVO:00000081]	34	0.002108004216008432
+soil	env_local_scale	national park [ENVO:00000367]	26	0.001612003224006448
+soil	env_local_scale	obsolete canopy [ENVO:00000047]	2	0.000124000248000496
+soil	env_local_scale	obsolete lava field [ENVO:00000095]	6	0.000372000744001488
+soil	env_local_scale	ocean [ENVO:00000015]	14	0.000868001736003472
+soil	env_local_scale	oil contaminated soil [ENVO:00002875]	98	0.006076012152024304
+soil	env_local_scale	oil palm plantation [ENVO:00000120]	15	0.00093000186000372
+soil	env_local_scale	oil spill [ENVO:00002061]	1	6.2000124000248e-05
+soil	env_local_scale	paddy field [ENVO:00000297]	15	0.00093000186000372
+soil	env_local_scale	palsa [ENVO:00000489]	25	0.0015500031000062
+soil	env_local_scale	pasture [ENVO:00000266]	24	0.001488002976005952
+soil	env_local_scale	peatland [ENVO:00000044]	34	0.002108004216008432
+soil	env_local_scale	permafrost [ENVO:00000134]	57	0.003534007068014136
+soil	env_local_scale	plain [ENVO:00000086]	20	0.00124000248000496
+soil	env_local_scale	planted forest [ENVO:00000119]	23	0.001426002852005704
+soil	env_local_scale	pond [ENVO:00000033]	1	6.2000124000248e-05
+soil	env_local_scale	prairie [ENVO:00000260]	29	0.001798003596007192
+soil	env_local_scale	regolith [ENVO:01000747]	30	0.00186000372000744
+soil	env_local_scale	research facility [ENVO:00000469]	153	0.009486018972037944
+soil	env_local_scale	rhizosphere [ENVO:00005801]	108	0.006696013392026784
+soil	env_local_scale	rice field [ENVO:00000296]	11	0.000682001364002728
+soil	env_local_scale	rocky reef [ENVO:00000130]	21	0.001302002604005208
+soil	env_local_scale	saline marsh [ENVO:00000054]	24	0.001488002976005952
+soil	env_local_scale	sand [ENVO:01000017]	81	0.005022010044020088
+soil	env_local_scale	sediment [ENVO:00002007]	24	0.001488002976005952
+soil	env_local_scale	sedimentary stratum [ENVO:01000282]	18	0.001116002232004464
+soil	env_local_scale	slope [ENVO:00002000]	74	0.004588009176018352
+soil	env_local_scale	sludge [ENVO:00002044]	1	6.2000124000248e-05
+soil	env_local_scale	snowpack [ENVO:03000116]	88	0.005456010912021824
+soil	env_local_scale	soil [ENVO:00001998]	355	0.022010044020088042
+soil	env_local_scale	soil biocrust [ENVO:01000910]	84	0.005208010416020832
+soil	env_local_scale	sphagnum bog [ENVO:00002268]	108	0.006696013392026784
+soil	env_local_scale	steppe soil [ENVO:00005777]	218	0.013516027032054064
+soil	env_local_scale	subpolar coniferous forest biome [ENVO:01000250]	61	0.003782007564015128
+soil	env_local_scale	subtropical forest [ENVO:01001804]	62	0.003844007688015376
+soil	env_local_scale	surface soil [ENVO:02000059]	6	0.000372000744001488
+soil	env_local_scale	tropical soil [ENVO:00005778]	38	0.002356004712009424
+soil	env_local_scale	tundra [ENVO:00000112]	458	0.028396056792113586
+soil	env_local_scale	unidentified [NCBITaxon:32644]	3	0.000186000372000744
+soil	env_local_scale	unmapped [unmapped]	7824	0.48508897017794034
+soil	env_local_scale	vineyard [ENVO:00000116]	239	0.014818029636059273
+soil	env_local_scale	volcanic feature [ENVO:00000094]	21	0.001302002604005208
+soil	env_local_scale	volcano [ENVO:00000247]	127	0.007874015748031496
+soil	env_local_scale	wetland [ENVO:00000043]	193	0.011966023932047863
+soil	env_local_scale	wood [ENVO:00002040]	54	0.003348006696013392
+soil	env_local_scale	woodland [ENVO:00000109]	15	0.00093000186000372
+soil	env_medium	Bacteria [NCBITaxon:2]	39	0.0024330900243309003
+soil	env_medium	DNA [CHEBI:16991]	99	0.006176305446378439
+soil	env_medium	Genome [FMA:84116]	12	0.0007486430844095078
+soil	env_medium	PEAT [EFO:0008859]	36	0.0022459292532285235
+soil	env_medium	Ribonucleic Acid [FMA:67095]	6	0.0003743215422047539
+soil	env_medium	agricultural soil [ENVO:00002259]	131	0.008172687004803792
+soil	env_medium	algal material [ENVO:01001189]	18	0.0011229646266142617
+soil	env_medium	alpine soil [ENVO:00005741]	29	0.001809220787322977
+soil	env_medium	andosol [ENVO:00002232]	6	0.0003743215422047539
+soil	env_medium	arable soil [ENVO:00005742]	13	0.0008110300081103001
+soil	env_medium	arenosol [ENVO:00002229]	20	0.0012477384740158463
+soil	env_medium	bulk soil [ENVO:00005802]	127	0.007923139310000623
+soil	env_medium	desert sand [ENVO:00005800]	9	0.0005614823133071309
+soil	env_medium	ferralsol [ENVO:00002246]	10	0.0006238692370079231
+soil	env_medium	forest soil [ENVO:00002261]	3	0.00018716077110237696
+soil	env_medium	grassland soil [ENVO:00005750]	15	0.0009358038555118847
+soil	env_medium	gravel [ENVO:01000018]	19	0.001185351550315054
+soil	env_medium	gypsisol [ENVO:00002245]	2	0.00012477384740158462
+soil	env_medium	histosol [ENVO:00002243]	78	0.004866180048661801
+soil	env_medium	humus [ENVO:01000000]	26	0.0016220600162206002
+soil	env_medium	leafy wood soil [ENVO:00005783]	164	0.01023145548692994
+soil	env_medium	mine tailing [ENVO:00000003]	90	0.005614823133071308
+soil	env_medium	mountain forest soil [ENVO:00005769]	33	0.002058768482126146
+soil	env_medium	oil contaminated soil [ENVO:00002875]	4	0.00024954769480316924
+soil	env_medium	paddy field soil [ENVO:00005740]	27	0.0016844469399213925
+soil	env_medium	peat soil [ENVO:00005774]	249	0.015534344001497287
+soil	env_medium	rhizosphere [ENVO:00005801]	239	0.014910474764489362
+soil	env_medium	rock [ENVO:00001995]	16	0.000998190779212677
+soil	env_medium	sand [ENVO:01000017]	201	0.012539771663859256
+soil	env_medium	sea water [ENVO:00002149]	6	0.0003743215422047539
+soil	env_medium	sediment [ENVO:00002007]	121	0.00754881776779587
+soil	env_medium	soil [ENVO:00001998]	13249	0.8265643521117974
+soil	env_medium	spruce forest soil [ENVO:00005784]	34	0.0021211554058269385
+soil	env_medium	surface soil [ENVO:02000059]	156	0.009732360097323601
+soil	env_medium	unmapped [unmapped]	645	0.040239565787011045
+soil	env_medium	upland soil [ENVO:00005786]	66	0.004117536964252292
+soil	env_medium	volcanic soil [ENVO:01001841]	21	0.0013101253977166386
+soil	env_medium	water [CHEBI:15377]	10	0.0006238692370079231
+soil	experimental_factor	salinity [PATO:0085001]	24	0.047058823529411764
+soil	experimental_factor	unmapped [unmapped]	486	0.9529411764705882
+soil	host_body_product	unmapped [unmapped]	259	1.0
+soil	samp_collect_device	unmapped [unmapped]	781	1.0
+wastewater	env_broad_scale	Bacteria [NCBITaxon:2]	6	0.005042016806722689
+wastewater	env_broad_scale	activated sludge [ENVO:00002046]	69	0.05798319327731093
+wastewater	env_broad_scale	aquatic biome [ENVO:00002030]	331	0.2781512605042017
+wastewater	env_broad_scale	biofilm [ENVO:00002034]	4	0.0033613445378151263
+wastewater	env_broad_scale	freshwater biome [ENVO:00000873]	53	0.04453781512605042
+wastewater	env_broad_scale	freshwater lake [ENVO:00000021]	20	0.01680672268907563
+wastewater	env_broad_scale	river [ENVO:00000022]	2	0.0016806722689075631
+wastewater	env_broad_scale	sludge [ENVO:00002044]	148	0.12436974789915967
+wastewater	env_broad_scale	terrestrial biome [ENVO:00000446]	73	0.06134453781512605
+wastewater	env_broad_scale	unmapped [unmapped]	266	0.2235294117647059
+wastewater	env_broad_scale	urban biome [ENVO:01000249]	173	0.1453781512605042
+wastewater	env_broad_scale	wastewater treatment plant [ENVO:00002043]	45	0.037815126050420166
+wastewater	env_local_scale	activated sludge [ENVO:00002046]	25	0.02100840336134454
+wastewater	env_local_scale	anaerobic [MICRO:0000495]	4	0.0033613445378151263
+wastewater	env_local_scale	anaerobic bioreactor [ENVO:00002124]	4	0.0033613445378151263
+wastewater	env_local_scale	bioreactor [OBI:0001046]	22	0.018487394957983194
+wastewater	env_local_scale	environmental zone [ENVO:01000408]	2	0.0016806722689075631
+wastewater	env_local_scale	lake [ENVO:00000020]	4	0.0033613445378151263
+wastewater	env_local_scale	mine tailing [ENVO:00000003]	14	0.011764705882352941
+wastewater	env_local_scale	organic feature [ENVO:01000159]	72	0.06050420168067227
+wastewater	env_local_scale	research facility [ENVO:00000469]	140	0.11764705882352941
+wastewater	env_local_scale	river [ENVO:00000022]	2	0.0016806722689075631
+wastewater	env_local_scale	sludge [ENVO:00002044]	63	0.052941176470588235
+wastewater	env_local_scale	soil [ENVO:00001998]	1	0.0008403361344537816
+wastewater	env_local_scale	unmapped [unmapped]	440	0.3697478991596639
+wastewater	env_local_scale	waste water [ENVO:00002001]	12	0.010084033613445379
+wastewater	env_local_scale	wastewater treatment plant [ENVO:00002043]	381	0.32016806722689073
+wastewater	env_local_scale	water [CHEBI:15377]	4	0.0033613445378151263
+wastewater	env_medium	DNA [CHEBI:16991]	12	0.010084033613445379
+wastewater	env_medium	activated sludge [ENVO:00002046]	78	0.06554621848739496
+wastewater	env_medium	anaerobic digester sludge [ENVO:00003965]	75	0.06302521008403361
+wastewater	env_medium	anaerobic sludge [ENVO:00002129]	8	0.0067226890756302525
+wastewater	env_medium	anthropogenic environmental material [ENVO:0010001]	2	0.0016806722689075631
+wastewater	env_medium	biofilm [ENVO:00002034]	40	0.03361344537815126
+wastewater	env_medium	biosolids [ENVO:00002059]	17	0.014285714285714285
+wastewater	env_medium	organic material [ENVO:01000155]	66	0.05546218487394958
+wastewater	env_medium	sludge [ENVO:00002044]	140	0.11764705882352941
+wastewater	env_medium	soil [ENVO:00001998]	2	0.0016806722689075631
+wastewater	env_medium	unmapped [unmapped]	245	0.20588235294117646
+wastewater	env_medium	waste water [ENVO:00002001]	38	0.031932773109243695
+wastewater	env_medium	water [CHEBI:15377]	459	0.38571428571428573
+wastewater	env_medium	water column [ENVO:06105011]	8	0.0067226890756302525
+wastewater	experimental_factor	compound based treatment [EFO:0000369]	39	1.0
+wastewater	samp_collect_device	unmapped [unmapped]	6	1.0
+water	env_broad_scale	Large lake biome [ENVO:00000891]	1198	0.060796752093377315
+water	env_broad_scale	Small lake biome [ENVO:00000892]	3293	0.16711494544531844
+water	env_broad_scale	aquatic biome [ENVO:00002030]	299	0.015173813752854605
+water	env_broad_scale	aquifer [ENVO:00012408]	5	0.0002537427048972342
+water	env_broad_scale	bay [ENVO:00000032]	1	5.074854097944684e-05
+water	env_broad_scale	beach sand [ENVO:00002138]	92	0.00466886577010911
+water	env_broad_scale	biofilm [ENVO:00002034]	13	0.000659731032732809
+water	env_broad_scale	biofilter [ENVO:00002152]	1	5.074854097944684e-05
+water	env_broad_scale	brackish water [ENVO:00002019]	16	0.0008119766556711495
+water	env_broad_scale	coastal sea water [ENVO:00002150]	1	5.074854097944684e-05
+water	env_broad_scale	coastal wetland ecosystem [ENVO:00000230]	2	0.00010149708195889369
+water	env_broad_scale	cropland biome [ENVO:01000245]	10	0.0005074854097944684
+water	env_broad_scale	dense settlement biome [ENVO:01000248]	48	0.0024359299670134484
+water	env_broad_scale	desert [ENVO:00000097]	132	0.006698807409286983
+water	env_broad_scale	estuarine biome [ENVO:01000020]	425	0.021568129916264906
+water	env_broad_scale	estuary [ENVO:00000045]	154	0.007815275310834813
+water	env_broad_scale	fjord [ENVO:00000039]	6	0.00030449124587668104
+water	env_broad_scale	forest [ENVO:00000111]	1	5.074854097944684e-05
+water	env_broad_scale	fresh water [ENVO:00002011]	213	0.010809439228622177
+water	env_broad_scale	freshwater biome [ENVO:00000873]	1068	0.054199441766049225
+water	env_broad_scale	freshwater environment [ENVO:01000306]	105	0.0053285968028419185
+water	env_broad_scale	freshwater lake [ENVO:00000021]	9	0.00045673686881502157
+water	env_broad_scale	freshwater lake biome [ENVO:01000252]	7	0.00035523978685612787
+water	env_broad_scale	groundwater [ENVO:01001004]	97	0.0049226084750063435
+water	env_broad_scale	hot spring [ENVO:00000051]	6	0.00030449124587668104
+water	env_broad_scale	hydrothermal vent [ENVO:00000215]	4	0.00020299416391778737
+water	env_broad_scale	intertidal zone [ENVO:00000316]	53	0.0026896726719106826
+water	env_broad_scale	lagoon [ENVO:00000038]	5	0.0002537427048972342
+water	env_broad_scale	lake [ENVO:00000020]	37	0.001877696016239533
+water	env_broad_scale	large river biome [ENVO:00000887]	5	0.0002537427048972342
+water	env_broad_scale	marginal sea biome [ENVO:01000046]	41	0.0020806901801573205
+water	env_broad_scale	marine abyssal zone biome [ENVO:01000027] | polar biome [ENVO:01000339]	16	0.0008119766556711495
+water	env_broad_scale	marine benthic biome [ENVO:01000024]	76	0.00385688911443796
+water	env_broad_scale	marine biome [ENVO:00000447]	3724	0.18898756660746002
+water	env_broad_scale	marine biome [ENVO:00000447] | archipelago [ENVO:00000220]	12	0.0006089824917533621
+water	env_broad_scale	marine biome [ENVO:00000447] | environment determined by a biofilm on a saline surface [ENVO:01001056]	60	0.0030449124587668104
+water	env_broad_scale	marine black smoker biome [ENVO:01000051]	1	5.074854097944684e-05
+water	env_broad_scale	marine coral reef biome [ENVO:01000049]	3	0.00015224562293834052
+water	env_broad_scale	marine environment [ENVO:01000320]	28	0.0014209591474245115
+water	env_broad_scale	marine hydrothermal vent biome [ENVO:01000030]	14	0.0007104795737122557
+water	env_broad_scale	marine metagenome [NCBITaxon:408172]	2	0.00010149708195889369
+water	env_broad_scale	marine pelagic biome [ENVO:01000023]	244	0.012382643998985029
+water	env_broad_scale	marine pelagic feature [ENVO:01000044]	23	0.0011672164425272774
+water	env_broad_scale	marine photic zone [ENVO:00000209]	65	0.0032986551636640447
+water	env_broad_scale	marine salt marsh biome [ENVO:01000022]	190	0.0096422227860949
+water	env_broad_scale	marine subtidal rocky reef biome [ENVO:01000050]	1	5.074854097944684e-05
+water	env_broad_scale	marine ultramafic hydrothermal vent biome [ENVO:01000053]	8	0.00040598832783557474
+water	env_broad_scale	mediterranean sea biome [ENVO:01000047]	8	0.00040598832783557474
+water	env_broad_scale	neritic epipelagic zone biome [ENVO:01000042]	26	0.001319462065465618
+water	env_broad_scale	neritic pelagic zone biome [ENVO:01000032]	25	0.001268713524486171
+water	env_broad_scale	ocean [ENVO:00000015]	83	0.004212128901294088
+water	env_broad_scale	ocean biome [ENVO:01000048]	1498	0.07602131438721137
+water	env_broad_scale	oceanic abyssopelagic zone biome [ENVO:01000038]	5	0.0002537427048972342
+water	env_broad_scale	oceanic bathypelagic zone biome [ENVO:01000037]	3	0.00015224562293834052
+water	env_broad_scale	oceanic epipelagic zone biome [ENVO:01000035]	325	0.016493275818320222
+water	env_broad_scale	oceanic epipelagic zone biome [ENVO:01000035] | marine pelagic biome [ENVO:01000023] | polar biome [ENVO:01000339]	16	0.0008119766556711495
+water	env_broad_scale	oceanic epipelagic zone biome [ENVO:01000035] | polar biome [ENVO:01000339]	21	0.0010657193605683837
+water	env_broad_scale	oceanic mesopelagic zone biome [ENVO:01000036]	12	0.0006089824917533621
+water	env_broad_scale	peatland [ENVO:00000044]	1	5.074854097944684e-05
+water	env_broad_scale	polar biome [ENVO:01000339]	359	0.018218726211621416
+water	env_broad_scale	polar desert biome [ENVO:01000186]	278	0.014108094392286222
+water	env_broad_scale	polluted river [ENVO:03600015]	12	0.0006089824917533621
+water	env_broad_scale	research facility [ENVO:00000469]	4	0.00020299416391778737
+water	env_broad_scale	river [ENVO:00000022]	23	0.0011672164425272774
+water	env_broad_scale	sea [ENVO:00000016]	64	0.003247906622684598
+water	env_broad_scale	sea coast [ENVO:00000303]	1	5.074854097944684e-05
+water	env_broad_scale	sea ice [ENVO:00002200]	4	0.00020299416391778737
+water	env_broad_scale	sea surface layer [ENVO:01001581]	21	0.0010657193605683837
+water	env_broad_scale	sea water [ENVO:00002149]	226	0.011469170261354985
+water	env_broad_scale	sediment [ENVO:00002007]	9	0.00045673686881502157
+water	env_broad_scale	small river biome [ENVO:00000890]	133	0.00674955595026643
+water	env_broad_scale	snow [ENVO:01000406]	8	0.00040598832783557474
+water	env_broad_scale	subpolar coniferous forest biome [ENVO:01000250]	46	0.002334432885054555
+water	env_broad_scale	surface water [ENVO:00002042]	1	5.074854097944684e-05
+water	env_broad_scale	temperate forest [ENVO:01001805]	24	0.0012179649835067242
+water	env_broad_scale	temperate marginal sea biome [ENVO:01000856]	295	0.014970819588936818
+water	env_broad_scale	temperate marine upwelling biome [ENVO:01000860]	1	5.074854097944684e-05
+water	env_broad_scale	temperate mediterranean sea biome [ENVO:01000857]	60	0.0030449124587668104
+water	env_broad_scale	terrestrial biome [ENVO:00000446]	1	5.074854097944684e-05
+water	env_broad_scale	tropical marginal sea biome [ENVO:01001230]	69	0.0035016493275818322
+water	env_broad_scale	tundra [ENVO:00000112]	13	0.000659731032732809
+water	env_broad_scale	tundra biome [ENVO:01000180]	164	0.008322760720629282
+water	env_broad_scale	unmapped [unmapped]	3660	0.18573965998477543
+water	env_broad_scale	urban biome [ENVO:01000249]	220	0.011164679015478305
+water	env_broad_scale	village biome [ENVO:01000246]	33	0.0016747018523217457
+water	env_broad_scale	water [CHEBI:15377]	139	0.007054047196143111
+water	env_local_scale	Surface [FMA:50594]	2	0.00010145589205093085
+water	env_local_scale	abyssal plain [ENVO:00000244]	14	0.000710191244356516
+water	env_local_scale	abyssal plain [ENVO:00000244] | sediment surface [ENVO:01001192]	2	0.00010145589205093085
+water	env_local_scale	animal aquaculture process [ENVO:01001254] | unmapped [unmapped]	18	0.0009131030284583778
+water	env_local_scale	aquifer [ENVO:00012408]	41	0.0020798457870440826
+water	env_local_scale	area of open water [ENVO:01000666]	90	0.004565515142291888
+water	env_local_scale	bay [ENVO:00000032]	15	0.0007609191903819814
+water	env_local_scale	beach [ENVO:00000091]	1	5.072794602546543e-05
+water	env_local_scale	biofilter [ENVO:00002152]	78	0.0039567797899863035
+water	env_local_scale	brackish estuary [ENVO:00002137]	269	0.013645817480850201
+water	env_local_scale	brackish water [ENVO:00002019]	20	0.0010145589205093086
+water	env_local_scale	coast [ENVO:01000687]	68	0.003449500329731649
+water	env_local_scale	coastal sea water [ENVO:00002150]	215	0.010906508395475066
+water	env_local_scale	coastal shrimp pond [ENVO:01001256]	69	0.0035002282757571144
+water	env_local_scale	coastal water body [ENVO:02000049]	70	0.0035509562217825802
+water	env_local_scale	contaminated water [ENVO:00002186]	95	0.004819154872419216
+water	env_local_scale	continental shelf [ENVO:00000223]	14	0.000710191244356516
+water	env_local_scale	coral reef [ENVO:00000150]	11	0.0005580074062801197
+water	env_local_scale	deep chlorophyll maximum layer [ENVO:01000326]	97	0.004920610764470147
+water	env_local_scale	dry lake [ENVO:00000277]	89	0.004514787196266423
+water	env_local_scale	environmental zone [ENVO:01000408]	5	0.00025363973012732714
+water	env_local_scale	estuarine water [ENVO:01000301]	153	0.00776137574189621
+water	env_local_scale	estuary [ENVO:00000045]	78	0.0039567797899863035
+water	env_local_scale	fish farm [ENVO:00000294]	1	5.072794602546543e-05
+water	env_local_scale	fjord [ENVO:00000039]	506	0.025668340688885505
+water	env_local_scale	flood plain [ENVO:00000255]	15	0.0007609191903819814
+water	env_local_scale	fresh water [ENVO:00002011]	11	0.0005580074062801197
+water	env_local_scale	freshwater lake [ENVO:00000021]	2887	0.14645158017551868
+water	env_local_scale	glass [ENVO:01000480]	6	0.00030436767615279255
+water	env_local_scale	groundwater [ENVO:01001004]	5	0.00025363973012732714
+water	env_local_scale	harbor [ENVO:00000463]	7	0.000355095622178258
+water	env_local_scale	high tide zone [ENVO:00000318]	18	0.0009131030284583778
+water	env_local_scale	hot spring [ENVO:00000051]	2	0.00010145589205093085
+water	env_local_scale	hydrothermal vent [ENVO:00000215]	29	0.0014711104347384975
+water	env_local_scale	intertidal zone [ENVO:00000316]	226	0.011464515801755186
+water	env_local_scale	kelp forest [ENVO:01000058]	81	0.0041089636280627
+water	env_local_scale	lagoon [ENVO:00000038]	11	0.0005580074062801197
+water	env_local_scale	lake [ENVO:00000020]	168	0.008522294932278192
+water	env_local_scale	large river biome [ENVO:00000887]	36	0.0018262060569167555
+water	env_local_scale	marine benthic feature [ENVO:01000105]	31	0.0015725663267894283
+water	env_local_scale	marine biome [ENVO:00000447]	2	0.00010145589205093085
+water	env_local_scale	marine hydrothermal plume [ENVO:01000130]	6	0.00030436767615279255
+water	env_local_scale	marine hydrothermal vent [ENVO:01000122]	14	0.000710191244356516
+water	env_local_scale	marine layer [ENVO:01000295]	47	0.002384213463196875
+water	env_local_scale	marine mesopelagic zone [ENVO:00000213]	145	0.007355552173692487
+water	env_local_scale	marine oxygen minimum zone [ENVO:01000065]	38	0.0019276619489676863
+water	env_local_scale	marine pelagic feature [ENVO:01000044]	321	0.016283670674174404
+water	env_local_scale	marine pelagic zone [ENVO:00000208] | marine abyssalpelagic zone [ENVO:00000212]	6	0.00030436767615279255
+water	env_local_scale	marine pelagic zone [ENVO:00000208] | marine bathypelagic zone [ENVO:00000211]	2	0.00010145589205093085
+water	env_local_scale	marine photic zone [ENVO:00000209]	56	0.002840764977426064
+water	env_local_scale	marine water body [ENVO:00001999]	170	0.008623750824329124
+water	env_local_scale	marine wind mixed layer [ENVO:01000061]	14	0.000710191244356516
+water	env_local_scale	marine wind mixed layer [ENVO:01000061] | marine photic zone [ENVO:00000209] | water surface [ENVO:01001191]	7	0.000355095622178258
+water	env_local_scale	marsh [ENVO:00000035]	6	0.00030436767615279255
+water	env_local_scale	melt pond [ENVO:03000040]	9	0.0004565515142291889
+water	env_local_scale	microbial community [PCO:1000004]	559	0.028356921828235175
+water	env_local_scale	microbial feature [ENVO:01000007]	703	0.035661746055902194
+water	env_local_scale	microbial feature [ENVO:01000007] | marine photic zone [ENVO:00000209]	154	0.007812103687921676
+water	env_local_scale	mid-ocean ridge [ENVO:00000406]	7	0.000355095622178258
+water	env_local_scale	obsolete dry river [ENVO:00000018]	1	5.072794602546543e-05
+water	env_local_scale	obsolete environmental feature [ENVO:00002297]	49	0.002485669355247806
+water	env_local_scale	obsolete food product [ENVO:00002002]	1	5.072794602546543e-05
+water	env_local_scale	obsolete marine feature [ENVO:01000031]	69	0.0035002282757571144
+water	env_local_scale	obsolete marine habitat [ENVO:00000569]	4	0.0002029117841018617
+water	env_local_scale	obsolete ocean water [ENVO:00002151]	4	0.0002029117841018617
+water	env_local_scale	ocean [ENVO:00000015]	294	0.014914016131486836
+water	env_local_scale	oceanic bathypelagic zone biome [ENVO:01000037]	25	0.0012681986506366358
+water	env_local_scale	oceanic epipelagic zone biome [ENVO:01000035]	8	0.0004058235682037234
+water	env_local_scale	oceanic mesopelagic zone biome [ENVO:01000036]	47	0.002384213463196875
+water	env_local_scale	oceanic pelagic zone biome [ENVO:01000033]	137	0.006949728605488764
+water	env_local_scale	oceanic pelagic zone biome [ENVO:01000033] | oceanic gyre [ENVO:01000074]	197	0.00999340536701669
+water	env_local_scale	oil reservoir [ENVO:00002185]	7	0.000355095622178258
+water	env_local_scale	oil spill [ENVO:00002061]	37	0.001876934002942221
+water	env_local_scale	oligotrophic water [ENVO:00002223]	16	0.0008116471364074468
+water	env_local_scale	organic feature [ENVO:01000159]	12	0.0006087353523055851
+water	env_local_scale	palsa [ENVO:00000489]	4	0.0002029117841018617
+water	env_local_scale	pelagic isothermal surface [ENVO:01000080]	4	0.0002029117841018617
+water	env_local_scale	plastic [ENVO:06105101]	54	0.0027393090853751333
+water	env_local_scale	pond [ENVO:00000033]	49	0.002485669355247806
+water	env_local_scale	population of organisms [PCO:0000001]	6	0.00030436767615279255
+water	env_local_scale	reef [ENVO:00000130]	18	0.0009131030284583778
+water	env_local_scale	research facility [ENVO:00000469]	106	0.005377162278699336
+water	env_local_scale	research station [ENVO:00003919]	48	0.0024349414092223404
+water	env_local_scale	rice field [ENVO:00000296]	10	0.0005072794602546543
+water	env_local_scale	river [ENVO:00000022]	151	0.0076599198498452795
+water	env_local_scale	saline hydrographic feature [ENVO:00000017]	1	5.072794602546543e-05
+water	env_local_scale	saline lake [ENVO:00000019]	184	0.009333942068685638
+water	env_local_scale	saline marsh [ENVO:00000054]	189	0.009587581798812967
+water	env_local_scale	saline water [ENVO:00002010]	2	0.00010145589205093085
+water	env_local_scale	sea [ENVO:00000016]	11	0.0005580074062801197
+water	env_local_scale	sea beach [ENVO:00000092]	29	0.0014711104347384975
+water	env_local_scale	sea floor [ENVO:00000482]	1	5.072794602546543e-05
+water	env_local_scale	sea grass bed [ENVO:01000059]	3	0.00015218383807639628
+water	env_local_scale	sea ice [ENVO:00002200]	2	0.00010145589205093085
+water	env_local_scale	sea ice floe [ENVO:03000066]	21	0.001065286866534774
+water	env_local_scale	sea water [ENVO:00002149]	744	0.03774159184294628
+water	env_local_scale	sea water environment [ENVO:01000321]	3	0.00015218383807639628
+water	env_local_scale	seamount [ENVO:00000264] | mid-ocean ridge [ENVO:00000406]	20	0.0010145589205093086
+water	env_local_scale	shore [ENVO:00000304]	18	0.0009131030284583778
+water	env_local_scale	sinkhole [ENVO:00000195]	15	0.0007609191903819814
+water	env_local_scale	stream [ENVO:00000023]	311	0.015776391213919747
+water	env_local_scale	submarine groundwater discharge process [ENVO:01001630] | microbial feature [ENVO:01000007]	35	0.0017754781108912901
+water	env_local_scale	surface layer [ENVO:00010504]	313	0.01587784710597068
+water	env_local_scale	surface water [ENVO:00002042]	879	0.04458986455638411
+water	env_local_scale	surface water [ENVO:00002042] | oceanic pelagic zone biome [ENVO:01000033] | marine pelagic zone [ENVO:00000208]	81	0.0041089636280627
+water	env_local_scale	tributary [ENVO:00000495]	6	0.00030436767615279255
+water	env_local_scale	tundra [ENVO:00000112]	75	0.0038045959519099073
+water	env_local_scale	unmapped [unmapped]	7489	0.3799015877847106
+water	env_local_scale	waste water [ENVO:00002001]	1	5.072794602546543e-05
+water	env_local_scale	water [CHEBI:15377]	52	0.0026378531933242025
+water	env_local_scale	water column [ENVO:06105011]	27	0.0013696545426875666
+water	env_local_scale	wetland [ENVO:00000043]	23	0.0011667427585857048
+water	env_medium	Bacteria [NCBITaxon:2]	1	5.2801098262843864e-05
+water	env_medium	DNA [CHEBI:16991]	44	0.00232324832356513
+water	env_medium	algal material [ENVO:01001189]	50	0.0026400549131421936
+water	env_medium	animal feed [ENVO:02000047]	1	5.2801098262843864e-05
+water	env_medium	biofilm [ENVO:00002034]	7	0.0003696076878399071
+water	env_medium	biofilm material [ENVO:01000156]	60	0.003168065895770632
+water	env_medium	biofilter [ENVO:00002152]	1	5.2801098262843864e-05
+water	env_medium	brackish water [ENVO:00002019]	153	0.008078568034215111
+water	env_medium	brown sea ice [ENVO:01001190]	2	0.00010560219652568773
+water	env_medium	chemically induced mutation [EFO:0000370]	12	0.0006336131791541264
+water	env_medium	coastal sea water [ENVO:00002150]	728	0.038439199535350334
+water	env_medium	compost biofilter [ENVO:00002153]	1	5.2801098262843864e-05
+water	env_medium	deep marine sediment [ENVO:00002113]	33	0.0017424362426738476
+water	env_medium	estuarine water [ENVO:01000301]	271	0.014309097629230688
+water	env_medium	eutrophic water [ENVO:00002224]	1	5.2801098262843864e-05
+water	env_medium	fresh water [ENVO:00002011]	6044	0.3191298379006283
+water	env_medium	freshwater lake [ENVO:00000021]	1	5.2801098262843864e-05
+water	env_medium	genomic DNA [EFO:0008479]	7	0.0003696076878399071
+water	env_medium	glass [ENVO:01000480]	8	0.0004224087861027509
+water	env_medium	groundwater [ENVO:01001004]	10	0.0005280109826284387
+water	env_medium	hypersaline water [ENVO:00002012]	63	0.003326469190559164
+water	env_medium	lake [ENVO:00000020]	1	5.2801098262843864e-05
+water	env_medium	leaf [PO:0025034]	6	0.0003168065895770632
+water	env_medium	liquid water [ENVO:00002006]	372	0.01964200855377792
+water	env_medium	melt pond [ENVO:03000040]	2	0.00010560219652568773
+water	env_medium	microbial mat [ENVO:01000008]	2	0.00010560219652568773
+water	env_medium	moderately saline water [ENVO:01001038]	1	5.2801098262843864e-05
+water	env_medium	obsolete marine habitat [ENVO:00000569]	2	0.00010560219652568773
+water	env_medium	obsolete ocean water [ENVO:00002151]	174	0.009187391097734834
+water	env_medium	oligotrophic water [ENVO:00002223]	13	0.0006864142774169702
+water	env_medium	particulate matter [ENVO:01000060]	65	0.0034320713870848512
+water	env_medium	planktonic material [ENVO:01000063]	78	0.0041184856645018215
+water	env_medium	plastic [ENVO:06105101]	9	0.0004752098843655948
+water	env_medium	plutonic rock [ENVO:00002014]	2	0.00010560219652568773
+water	env_medium	pond water [ENVO:00002228]	25	0.0013200274565710968
+water	env_medium	radioactive sediment [ENVO:00002154]	1	5.2801098262843864e-05
+water	env_medium	saline shrimp pond water [ENVO:01001257]	69	0.003643275780136227
+water	env_medium	saline water [ENVO:00002010]	594	0.031363852368129254
+water	env_medium	sand [ENVO:01000017]	92	0.004857701040181636
+water	env_medium	sea ice [ENVO:00002200]	59	0.003115264797507788
+water	env_medium	sea water [ENVO:00002149]	3106	0.16400021120439306
+water	env_medium	sea water [ENVO:00002149] | oligotrophic water [ENVO:00002223]	247	0.013041871270922436
+water	env_medium	sediment [ENVO:00002007]	196	0.010349015259517398
+water	env_medium	sediment surface [ENVO:01001192]	6	0.0003168065895770632
+water	env_medium	snow [ENVO:01000406]	8	0.0004224087861027509
+water	env_medium	sterile water [ENVO:00005791]	47	0.0024816516183536618
+water	env_medium	surface water [ENVO:00002042]	101	0.00533291092454723
+water	env_medium	tile [ENVO:01000514]	9	0.0004752098843655948
+water	env_medium	underground water [ENVO:00005792]	220	0.011616241617825651
+water	env_medium	unmapped [unmapped]	3435	0.18137177253286868
+water	env_medium	waste water [ENVO:00002001]	3	0.0001584032947885316
+water	env_medium	water [CHEBI:15377]	2438	0.12872907756481336
+water	env_medium	water column [ENVO:06105011]	40	0.0021120439305137547
+water	env_medium	water ice [ENVO:01000277]	5	0.00026400549131421933
+water	env_medium	waterborne particulate matter [ENVO:01000436]	13	0.0006864142774169702
+water	experimental_factor	formaldehyde [CHEBI:16842]	39	0.0951219512195122
+water	experimental_factor	unmapped [unmapped]	371	0.9048780487804878
+water	host_body_product	Feces [FMA:64183]	4	0.038834951456310676
+water	host_body_product	organism substance [UBERON:0000463]	3	0.02912621359223301
+water	host_body_product	unmapped [unmapped]	96	0.9320388349514563
+water	ploidy	diploid [PATO:0001394]	9	0.5625
+water	ploidy	haploid [PATO:0001375]	6	0.375
+water	ploidy	unmapped [unmapped]	1	0.0625
+water	samp_collect_device	bottle [FOODON:03490214]	27	0.030612244897959183
+water	samp_collect_device	unmapped [unmapped]	855	0.9693877551020408
